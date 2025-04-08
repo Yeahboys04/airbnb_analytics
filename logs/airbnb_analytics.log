@@ -84,3 +84,776 @@ INFO 2025-04-08 21:00:23,108 basehttp 24880 23360 "GET / HTTP/1.1" 200 15043
 INFO 2025-04-08 21:00:25,168 basehttp 24880 23360 "GET /destinations/add/ HTTP/1.1" 302 0
 WARNING 2025-04-08 21:00:25,185 log 24880 23360 Not Found: /accounts/login/
 WARNING 2025-04-08 21:00:25,193 basehttp 24880 23360 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+INFO 2025-04-08 21:03:18,082 basehttp 24880 21336 "GET /dashboard/ HTTP/1.1" 200 20906
+INFO 2025-04-08 21:04:41,601 basehttp 24880 21336 "GET /destinations/add/ HTTP/1.1" 302 0
+WARNING 2025-04-08 21:04:41,626 log 24880 21336 Not Found: /accounts/login/
+WARNING 2025-04-08 21:04:41,631 basehttp 24880 21336 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+INFO 2025-04-08 21:04:59,764 basehttp 24880 22108 "GET /destinations/add/ HTTP/1.1" 302 0
+WARNING 2025-04-08 21:04:59,784 log 24880 22108 Not Found: /accounts/login/
+WARNING 2025-04-08 21:04:59,797 basehttp 24880 22108 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+INFO 2025-04-08 21:05:12,548 basehttp 24880 22108 "GET /destinations/add/ HTTP/1.1" 302 0
+WARNING 2025-04-08 21:05:12,563 log 24880 22108 Not Found: /accounts/login/
+WARNING 2025-04-08 21:05:12,571 basehttp 24880 22108 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+INFO 2025-04-08 21:05:18,509 basehttp 24880 22108 "GET /destinations/add/ HTTP/1.1" 302 0
+WARNING 2025-04-08 21:05:18,523 log 24880 22108 Not Found: /accounts/login/
+WARNING 2025-04-08 21:05:18,531 basehttp 24880 22108 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+INFO 2025-04-08 21:05:25,349 basehttp 24880 22108 "GET /destinations/add/ HTTP/1.1" 302 0
+WARNING 2025-04-08 21:05:25,385 log 24880 22108 Not Found: /accounts/login/
+WARNING 2025-04-08 21:05:25,392 basehttp 24880 22108 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+ERROR 2025-04-08 21:05:31,380 log 24880 22108 Internal Server Error: /comparison/
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "dest.months|get_item:month_id|get_item:'is_cheapest'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py", line 394, in price_comparison_view
+    return render(request, 'dashboard/price_comparison.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\templates.py", line 102, in render
+    return real_render(request, template_name, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get_item'
+ERROR 2025-04-08 21:05:31,412 basehttp 24880 22108 "GET /comparison/ HTTP/1.1" 500 361833
+INFO 2025-04-08 21:05:39,140 basehttp 24880 22108 "GET /dashboard/ HTTP/1.1" 200 20906
+INFO 2025-04-08 21:05:41,380 basehttp 24880 22108 "GET / HTTP/1.1" 200 15043
+INFO 2025-04-08 21:05:49,000 basehttp 24880 22108 "GET /destinations/add/ HTTP/1.1" 302 0
+WARNING 2025-04-08 21:05:49,024 log 24880 22108 Not Found: /accounts/login/
+WARNING 2025-04-08 21:05:49,032 basehttp 24880 22108 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+INFO 2025-04-08 21:13:49,594 basehttp 24880 4136 "GET /destinations/add/ HTTP/1.1" 302 0
+WARNING 2025-04-08 21:13:49,610 log 24880 4136 Not Found: /accounts/login/
+WARNING 2025-04-08 21:13:49,618 basehttp 24880 4136 "GET /accounts/login/?next=/destinations/add/ HTTP/1.1" 404 3583
+INFO 2025-04-08 21:14:05,108 basehttp 24880 4136 "GET / HTTP/1.1" 200 15043
+INFO 2025-04-08 21:15:13,792 autoreload 24880 23712 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:15:15,206 autoreload 25212 19504 Watching for file changes with StatReloader
+INFO 2025-04-08 21:15:17,841 basehttp 25212 22388 "GET / HTTP/1.1" 200 15043
+INFO 2025-04-08 21:15:19,378 basehttp 25212 22388 "GET /destinations/add/ HTTP/1.1" 200 12362
+INFO 2025-04-08 21:15:24,016 autoreload 25212 19504 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:15:25,530 autoreload 12892 7872 Watching for file changes with StatReloader
+INFO 2025-04-08 21:15:54,115 autoreload 12892 7872 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:15:55,258 autoreload 7800 20884 Watching for file changes with StatReloader
+INFO 2025-04-08 21:15:56,454 basehttp 7800 17348 "GET /destinations/add/ HTTP/1.1" 200 12362
+INFO 2025-04-08 21:15:57,358 basehttp 7800 17348 "GET / HTTP/1.1" 200 15043
+INFO 2025-04-08 21:15:59,056 basehttp 7800 17348 "GET /dashboard/ HTTP/1.1" 200 20906
+INFO 2025-04-08 21:16:03,186 basehttp 7800 17348 "GET / HTTP/1.1" 200 15043
+INFO 2025-04-08 21:16:04,973 basehttp 7800 17348 "GET /destinations/add/ HTTP/1.1" 200 12362
+INFO 2025-04-08 21:16:22,703 signals 7800 17348 Nouvelle destination créée: Paris,France (ID: 1)
+INFO 2025-04-08 21:16:22,708 basehttp 7800 17348 "POST /destinations/add/ HTTP/1.1" 302 0
+ERROR 2025-04-08 21:16:23,157 log 7800 17348 Internal Server Error: /destinations/parisfrance/
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 38, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\templates.py", line 75, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'div'
+ERROR 2025-04-08 21:16:23,181 basehttp 7800 17348 "GET /destinations/parisfrance/ HTTP/1.1" 500 311337
+INFO 2025-04-08 21:18:15,724 autoreload 7800 20884 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:18:16,909 autoreload 5780 18132 Watching for file changes with StatReloader
+INFO 2025-04-08 21:18:33,652 autoreload 5780 18132 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:18:34,752 autoreload 25320 20092 Watching for file changes with StatReloader
+INFO 2025-04-08 21:19:12,792 autoreload 25320 20092 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:19:14,000 autoreload 19372 5924 Watching for file changes with StatReloader
+INFO 2025-04-08 21:19:35,896 autoreload 19372 5924 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:19:37,086 autoreload 3220 25076 Watching for file changes with StatReloader
+INFO 2025-04-08 21:20:50,305 autoreload 3220 25076 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:20:51,553 autoreload 16004 24560 Watching for file changes with StatReloader
+INFO 2025-04-08 21:21:04,459 autoreload 16004 24560 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:21:05,434 autoreload 19676 17272 Watching for file changes with StatReloader
+INFO 2025-04-08 21:22:38,656 autoreload 19676 17272 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 21:22:39,750 autoreload 10160 6468 Watching for file changes with StatReloader
+INFO 2025-04-08 21:23:55,902 basehttp 10160 12816 "GET /destinations/add/ HTTP/1.1" 200 12704
+INFO 2025-04-08 21:23:59,742 basehttp 10160 8892 "GET / HTTP/1.1" 200 15120
+INFO 2025-04-08 21:24:02,047 basehttp 10160 8892 "GET /destinations/parisfrance/ HTTP/1.1" 200 10338
+INFO 2025-04-08 21:24:04,816 signals 10160 8892 Nouvelle tâche de scraping créée pour Paris,France (ID: 1, statut: pending)
+INFO 2025-04-08 21:24:04,832 signals 10160 8892 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-08 21:24:04,850 signals 10160 8892 Destination mise à jour: Paris,France (ID: 1)
+ERROR 2025-04-08 21:24:17,293 views 10160 8892 Erreur lors du scraping de Paris,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 21:24:17,324 signals 10160 8892 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-08 21:24:17,341 basehttp 10160 8892 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 21:24:17,365 basehttp 10160 8892 "GET /destinations/parisfrance/ HTTP/1.1" 200 10708
+INFO 2025-04-08 21:24:23,688 basehttp 10160 17920 "GET / HTTP/1.1" 200 15108
+INFO 2025-04-08 21:24:30,058 basehttp 10160 1412 "GET /destinations/add/ HTTP/1.1" 200 12362
+INFO 2025-04-08 21:24:58,812 basehttp 10160 23472 "POST /destinations/add/ HTTP/1.1" 200 12522
+INFO 2025-04-08 21:25:13,383 basehttp 10160 1376 "POST /destinations/add/ HTTP/1.1" 200 12519
+INFO 2025-04-08 21:25:18,969 signals 10160 1376 Nouvelle destination créée: Lyon,France (ID: 2)
+INFO 2025-04-08 21:25:18,975 basehttp 10160 1376 "POST /destinations/add/ HTTP/1.1" 302 0
+INFO 2025-04-08 21:25:18,996 basehttp 10160 1376 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10677
+INFO 2025-04-08 21:25:22,076 signals 10160 23724 Nouvelle tâche de scraping créée pour Lyon,France (ID: 2, statut: pending)
+INFO 2025-04-08 21:25:22,085 signals 10160 23724 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:25:22,111 signals 10160 23724 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 21:25:25,558 views 10160 23724 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 21:25:25,583 signals 10160 23724 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:25:25,600 basehttp 10160 23724 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 21:25:25,624 basehttp 10160 23724 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 21:31:46,696 basehttp 10160 15248 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+WARNING 2025-04-08 21:31:48,801 log 10160 8636 Not Found: /favicon.ico
+WARNING 2025-04-08 21:31:48,805 basehttp 10160 8636 "GET /favicon.ico HTTP/1.1" 404 3547
+INFO 2025-04-08 21:43:08,464 signals 10160 7504 Nouvelle tâche de scraping créée pour Lyon,France (ID: 3, statut: pending)
+INFO 2025-04-08 21:43:08,467 signals 10160 7504 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:43:08,473 signals 10160 7504 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 21:43:10,299 views 10160 7504 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 21:43:10,305 signals 10160 7504 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:43:10,309 basehttp 10160 7504 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 21:43:10,319 basehttp 10160 7504 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 21:44:54,883 autoreload 10160 6468 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 21:44:55,695 autoreload 4104 13668 Watching for file changes with StatReloader
+INFO 2025-04-08 21:45:12,865 autoreload 4104 13668 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 21:45:13,464 autoreload 10176 24996 Watching for file changes with StatReloader
+INFO 2025-04-08 21:45:23,120 signals 10176 19976 Nouvelle tâche de scraping créée pour Lyon,France (ID: 4, statut: pending)
+INFO 2025-04-08 21:45:23,122 signals 10176 19976 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:45:23,127 signals 10176 19976 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 21:45:24,955 views 10176 19976 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 21:45:24,962 signals 10176 19976 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:45:24,969 basehttp 10176 19976 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 21:45:25,041 basehttp 10176 19976 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 21:53:16,068 autoreload 10176 24996 C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\actions\wheel_input.py changed, reloading.
+INFO 2025-04-08 21:53:16,671 autoreload 23592 21252 Watching for file changes with StatReloader
+INFO 2025-04-08 21:54:03,442 basehttp 23592 25296 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 21:54:04,777 signals 23592 25296 Nouvelle tâche de scraping créée pour Lyon,France (ID: 5, statut: pending)
+INFO 2025-04-08 21:54:04,780 signals 23592 25296 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:54:04,785 signals 23592 25296 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 21:54:06,255 views 23592 25296 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 21:54:06,264 signals 23592 25296 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 21:54:06,268 basehttp 23592 25296 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 21:54:06,275 basehttp 23592 25296 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:03:42,795 autoreload 23592 21252 C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py changed, reloading.
+INFO 2025-04-08 22:03:43,403 autoreload 15780 4432 Watching for file changes with StatReloader
+INFO 2025-04-08 22:03:47,827 autoreload 15780 4432 C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\webdriver_manager\core\driver.py changed, reloading.
+INFO 2025-04-08 22:03:48,960 autoreload 10928 20324 Watching for file changes with StatReloader
+INFO 2025-04-08 22:04:08,058 basehttp 10928 9056 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:04:09,671 signals 10928 9056 Nouvelle tâche de scraping créée pour Lyon,France (ID: 6, statut: pending)
+INFO 2025-04-08 22:04:09,676 signals 10928 9056 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:04:09,681 signals 10928 9056 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:04:11,158 views 10928 9056 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:04:11,166 signals 10928 9056 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:04:11,169 basehttp 10928 9056 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:04:11,177 basehttp 10928 9056 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:10:04,104 autoreload 10928 20324 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:10:04,712 autoreload 12916 15732 Watching for file changes with StatReloader
+INFO 2025-04-08 22:12:16,297 basehttp 12916 16664 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:12:17,793 signals 12916 16664 Nouvelle tâche de scraping créée pour Lyon,France (ID: 7, statut: pending)
+INFO 2025-04-08 22:12:17,796 signals 12916 16664 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:12:17,801 signals 12916 16664 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:12:19,260 views 12916 16664 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:12:19,267 signals 12916 16664 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:12:19,273 basehttp 12916 16664 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:12:19,281 basehttp 12916 16664 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:13:40,091 autoreload 12916 15732 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:13:40,623 autoreload 1228 23376 Watching for file changes with StatReloader
+INFO 2025-04-08 22:14:15,412 autoreload 1228 23376 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:14:15,993 autoreload 12264 18016 Watching for file changes with StatReloader
+INFO 2025-04-08 22:15:25,916 basehttp 12264 23388 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:15:27,527 signals 12264 23388 Nouvelle tâche de scraping créée pour Lyon,France (ID: 8, statut: pending)
+INFO 2025-04-08 22:15:27,530 signals 12264 23388 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:15:27,536 signals 12264 23388 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:15:32,431 views 12264 23388 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:15:32,439 signals 12264 23388 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:15:32,444 basehttp 12264 23388 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:15:32,453 basehttp 12264 23388 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:16:24,103 autoreload 12264 18016 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:16:24,750 autoreload 23724 20224 Watching for file changes with StatReloader
+INFO 2025-04-08 22:16:27,125 basehttp 23724 23260 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:16:28,231 signals 23724 23260 Nouvelle tâche de scraping créée pour Lyon,France (ID: 9, statut: pending)
+INFO 2025-04-08 22:16:28,235 signals 23724 23260 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:16:28,239 signals 23724 23260 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:16:29,985 views 23724 23260 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:16:29,992 signals 23724 23260 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:16:29,995 basehttp 23724 23260 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:16:30,003 basehttp 23724 23260 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:16:39,050 autoreload 21532 23980 Watching for file changes with StatReloader
+INFO 2025-04-08 22:16:42,107 basehttp 21532 15440 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:16:43,874 signals 21532 15440 Nouvelle tâche de scraping créée pour Lyon,France (ID: 10, statut: pending)
+INFO 2025-04-08 22:16:43,877 signals 21532 15440 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:16:43,881 signals 21532 15440 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:16:45,316 views 21532 15440 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:16:45,324 signals 21532 15440 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:16:45,328 basehttp 21532 15440 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:16:45,335 basehttp 21532 15440 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:22:17,592 autoreload 21532 23980 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:22:18,147 autoreload 8892 23840 Watching for file changes with StatReloader
+INFO 2025-04-08 22:24:33,692 autoreload 8892 23840 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-08 22:24:34,261 autoreload 7840 15284 Watching for file changes with StatReloader
+INFO 2025-04-08 22:25:07,477 basehttp 7840 9336 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:25:08,868 basehttp 7840 9336 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:25:10,317 signals 7840 9336 Nouvelle tâche de scraping créée pour Lyon,France (ID: 11, statut: pending)
+INFO 2025-04-08 22:25:10,320 signals 7840 9336 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:25:10,324 signals 7840 9336 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:25:11,866 views 7840 9336 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:25:11,874 signals 7840 9336 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:25:11,878 basehttp 7840 9336 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:25:11,886 basehttp 7840 9336 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:26:05,514 autoreload 21660 19696 Watching for file changes with StatReloader
+INFO 2025-04-08 22:26:09,091 signals 21660 8864 Nouvelle tâche de scraping créée pour Lyon,France (ID: 12, statut: pending)
+INFO 2025-04-08 22:26:09,094 signals 21660 8864 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:26:09,098 signals 21660 8864 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:26:10,431 views 21660 8864 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:26:10,437 signals 21660 8864 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:26:10,442 basehttp 21660 8864 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:26:10,463 basehttp 21660 8864 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:35:56,715 autoreload 20884 15592 Watching for file changes with StatReloader
+INFO 2025-04-08 22:36:05,637 signals 20884 23324 Nouvelle tâche de scraping créée pour Lyon,France (ID: 13, statut: pending)
+INFO 2025-04-08 22:36:05,641 signals 20884 23324 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:36:05,646 signals 20884 23324 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-08 22:36:07,021 views 20884 23324 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-08 22:36:07,028 signals 20884 23324 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:36:07,033 basehttp 20884 23324 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 22:36:07,049 basehttp 20884 23324 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10705
+INFO 2025-04-08 22:37:35,865 autoreload 20884 15592 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:37:36,481 autoreload 5708 25172 Watching for file changes with StatReloader
+INFO 2025-04-08 22:38:43,632 autoreload 5708 25172 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:38:44,193 autoreload 18920 6748 Watching for file changes with StatReloader
+INFO 2025-04-08 22:39:21,976 autoreload 18920 6748 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 22:39:42,279 autoreload 2228 12312 Watching for file changes with StatReloader
+INFO 2025-04-08 22:39:49,932 basehttp 2228 24708 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:39:52,148 signals 2228 24708 Nouvelle tâche de scraping créée pour Lyon,France (ID: 14, statut: pending)
+INFO 2025-04-08 22:39:52,151 signals 2228 24708 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:39:52,157 signals 2228 24708 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:46:40,085 autoreload 4804 23424 Watching for file changes with StatReloader
+INFO 2025-04-08 22:47:52,844 basehttp 4804 23504 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:47:54,382 signals 4804 23504 Nouvelle tâche de scraping créée pour Lyon,France (ID: 15, statut: pending)
+INFO 2025-04-08 22:47:54,384 signals 4804 23504 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:47:54,390 signals 4804 23504 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:55:38,754 autoreload 9268 11280 Watching for file changes with StatReloader
+INFO 2025-04-08 22:55:48,365 signals 9268 5872 Nouvelle tâche de scraping créée pour Lyon,France (ID: 16, statut: pending)
+INFO 2025-04-08 22:55:48,367 signals 9268 5872 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:55:48,372 signals 9268 5872 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:56:40,525 autoreload 5172 20680 Watching for file changes with StatReloader
+INFO 2025-04-08 22:56:49,451 signals 5172 4184 Nouvelle tâche de scraping créée pour Lyon,France (ID: 17, statut: pending)
+INFO 2025-04-08 22:56:49,454 signals 5172 4184 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:56:49,460 signals 5172 4184 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:56:54,859 basehttp 5172 6784 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:56:56,178 signals 5172 1536 Nouvelle tâche de scraping créée pour Lyon,France (ID: 18, statut: pending)
+INFO 2025-04-08 22:56:56,181 signals 5172 1536 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:56:56,186 signals 5172 1536 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:57:42,871 autoreload 23040 25128 Watching for file changes with StatReloader
+INFO 2025-04-08 22:57:45,104 basehttp 23040 15172 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 22:57:48,862 signals 23040 15172 Nouvelle tâche de scraping créée pour Lyon,France (ID: 19, statut: pending)
+INFO 2025-04-08 22:57:48,864 signals 23040 15172 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 22:57:48,870 signals 23040 15172 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:14:57,529 autoreload 19436 11664 Watching for file changes with StatReloader
+INFO 2025-04-08 23:15:13,350 autoreload 19436 11664 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 23:15:13,912 autoreload 20768 18188 Watching for file changes with StatReloader
+INFO 2025-04-08 23:15:16,630 basehttp 20768 22448 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 23:15:17,714 signals 20768 22448 Nouvelle tâche de scraping créée pour Lyon,France (ID: 20, statut: pending)
+INFO 2025-04-08 23:15:17,717 signals 20768 22448 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:15:17,722 signals 20768 22448 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:18:13,337 autoreload 20768 18188 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-08 23:18:17,730 autoreload 20200 508 Watching for file changes with StatReloader
+INFO 2025-04-08 23:18:25,442 basehttp 20200 17776 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 23:18:26,414 signals 20200 17776 Nouvelle tâche de scraping créée pour Lyon,France (ID: 21, statut: pending)
+INFO 2025-04-08 23:18:26,417 signals 20200 17776 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:18:26,422 signals 20200 17776 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:24:19,475 data_processor 20200 17776 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-08 23:24:19,476 data_processor 20200 17776 Fichier le plus récent pour Lyon,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250408_232413.csv
+INFO 2025-04-08 23:24:19,488 data_processor 20200 17776 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-08 23:24:19,500 data_processor 20200 17776 Données traitées avec succès
+ERROR 2025-04-08 23:24:19,510 data_processor 20200 17776 Erreur lors du calcul des statistiques: unhashable type: 'Series'
+INFO 2025-04-08 23:24:19,566 data_processor 20200 17776 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Lyon_France_processed_20250408_232419.csv
+ERROR 2025-04-08 23:24:19,568 views 20200 17776 Erreur lors du scraping de Lyon,France: 'season'
+INFO 2025-04-08 23:24:19,576 signals 20200 17776 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:24:19,582 basehttp 20200 17776 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 23:24:19,593 basehttp 20200 17776 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10675
+INFO 2025-04-08 23:32:24,143 autoreload 20200 508 C:\Users\ryank\PycharmProjects\airbnb_analytics\analyzer\data_processor.py changed, reloading.
+INFO 2025-04-08 23:32:24,930 autoreload 19012 22544 Watching for file changes with StatReloader
+INFO 2025-04-08 23:37:43,159 autoreload 19012 22544 C:\Users\ryank\PycharmProjects\airbnb_analytics\airbnb_analytics\settings.py changed, reloading.
+INFO 2025-04-08 23:37:43,719 autoreload 18204 17468 Watching for file changes with StatReloader
+INFO 2025-04-08 23:37:53,975 signals 18204 16808 Nouvelle tâche de scraping créée pour Lyon,France (ID: 22, statut: pending)
+INFO 2025-04-08 23:37:53,979 signals 18204 16808 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:37:53,985 signals 18204 16808 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:44:01,897 data_processor 18204 16808 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-08 23:44:01,898 data_processor 18204 16808 Fichier le plus récent pour Lyon,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250408_234355.csv
+INFO 2025-04-08 23:44:01,912 data_processor 18204 16808 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-08 23:44:01,925 data_processor 18204 16808 Données traitées avec succès
+ERROR 2025-04-08 23:44:01,936 data_processor 18204 16808 Erreur lors du calcul des statistiques: unhashable type: 'Series'
+INFO 2025-04-08 23:44:01,998 data_processor 18204 16808 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Lyon_France_processed_20250408_234401.csv
+ERROR 2025-04-08 23:44:01,999 views 18204 16808 Erreur lors du scraping de Lyon,France: 'season'
+INFO 2025-04-08 23:44:02,007 signals 18204 16808 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-08 23:44:02,015 basehttp 18204 16808 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-08 23:44:02,033 basehttp 18204 16808 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10675
+INFO 2025-04-08 23:45:31,488 basehttp 18204 16808 "GET / HTTP/1.1" 200 15497
+INFO 2025-04-08 23:45:36,175 basehttp 18204 16808 "GET /destinations/lyonfrance/ HTTP/1.1" 200 10336
+INFO 2025-04-08 23:45:41,032 basehttp 18204 16808 "GET /destinations/parisfrance/ HTTP/1.1" 200 10338
+INFO 2025-04-08 23:45:46,762 basehttp 18204 16808 "GET /dashboard/ HTTP/1.1" 200 23278
+INFO 2025-04-08 23:45:55,068 basehttp 18204 16808 "GET /destinations/parisfrance/ HTTP/1.1" 200 10338
+INFO 2025-04-08 23:56:11,902 basehttp 18204 19936 "GET / HTTP/1.1" 200 15497
+INFO 2025-04-08 23:56:34,071 basehttp 18204 19936 "GET /dashboard/ HTTP/1.1" 200 23278
+ERROR 2025-04-08 23:56:35,403 log 18204 19936 Internal Server Error: /comparison/
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "dest.months|get_item:month_id|get_item:'is_cheapest'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py", line 414, in price_comparison_view
+    return render(request, 'dashboard/price_comparison.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\templates.py", line 102, in render
+    return real_render(request, template_name, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get_item'
+ERROR 2025-04-08 23:56:35,419 basehttp 18204 19936 "GET /comparison/ HTTP/1.1" 500 367642
+INFO 2025-04-08 23:57:07,896 basehttp 18204 19936 "GET / HTTP/1.1" 200 15497
+INFO 2025-04-08 23:57:15,350 basehttp 18204 19936 "GET / HTTP/1.1" 200 15497
+INFO 2025-04-08 23:58:02,918 basehttp 18204 19936 "GET /dashboard/ HTTP/1.1" 200 23278
+ERROR 2025-04-08 23:58:04,549 log 18204 19936 Internal Server Error: /comparison/
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "dest.months|get_item:month_id|get_item:'is_cheapest'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py", line 414, in price_comparison_view
+    return render(request, 'dashboard/price_comparison.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\django\templates.py", line 102, in render
+    return real_render(request, template_name, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get_item'
+ERROR 2025-04-08 23:58:04,555 basehttp 18204 19936 "GET /comparison/ HTTP/1.1" 500 367642
+INFO 2025-04-08 23:58:32,799 autoreload 18204 17468 C:\Users\ryank\PycharmProjects\airbnb_analytics\analyzer\data_processor.py changed, reloading.
+INFO 2025-04-08 23:58:33,969 autoreload 1264 8596 Watching for file changes with StatReloader

@@ -3,9 +3,13 @@ import time
 import random
 import json
 import logging
+import traceback
 import pandas as pd
 from datetime import datetime, timedelta
 from pathlib import Path
+import re
+
+# Selenium imports
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -16,6 +20,8 @@ from selenium.common.exceptions import (
     TimeoutException, NoSuchElementException, StaleElementReferenceException,
     WebDriverException
 )
+
+# Web utilities
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 
@@ -45,11 +51,15 @@ class AirbnbScraper:
         self.max_retries = max_retries
         self.timeout = timeout
 
+        # Créer le répertoire de données s'il n'existe pas
+        os.makedirs(self.raw_data_dir, exist_ok=True)
+
         # Configurer les options du navigateur
         self.chrome_options = Options()
         if headless:
             self.chrome_options.add_argument("--headless")
 
+        # Arguments pour améliorer la stabilité
         self.chrome_options.add_argument("--window-size=1920,1080")
         self.chrome_options.add_argument("--disable-notifications")
         self.chrome_options.add_argument("--disable-infobars")
@@ -62,7 +72,7 @@ class AirbnbScraper:
         self.chrome_options.add_argument(
             "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36")
 
-        # Initialiser le driver à None (sera créé lors de l'appel à run)
+        # Initialiser le driver à None
         self.driver = None
 
         logger.info("AirbnbScraper initialisé avec succès")
@@ -82,19 +92,44 @@ class AirbnbScraper:
     def _setup_driver(self):
         """Configure et initialise le driver Selenium"""
         try:
-            service = Service(ChromeDriverManager().install())
+            # Chemins possibles pour le ChromeDriver
+            possible_paths = [
+                os.path.join(os.getcwd(), 'chromedriver-win64', 'chromedriver.exe'),
+                os.path.join(os.path.dirname(__file__), '..', 'chromedriver-win64', 'chromedriver.exe')
+            ]
+
+            # Trouver le chemin du ChromeDriver
+            chromedriver_path = None
+            for path in possible_paths:
+                if os.path.exists(path):
+                    chromedriver_path = path
+                    break
+
+            # Si aucun chemin n'est trouvé, utiliser ChromeDriverManager
+            if not chromedriver_path:
+                chromedriver_path = ChromeDriverManager().install()
+
+            # Configurer le service
+            service = Service(chromedriver_path)
+
+            # Créer le driver
             self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
             self.driver.implicitly_wait(10)
-            logger.info("Driver Selenium initialisé avec succès")
+
+            logger.info(f"Driver Selenium initialisé avec succès. Chemin: {chromedriver_path}")
             return True
-        except WebDriverException as e:
+        except Exception as e:
             logger.error(f"Erreur lors de l'initialisation du driver: {str(e)}")
+            logger.error(traceback.format_exc())
             return False
 
     def close(self):
         """Ferme le navigateur s'il est ouvert"""
         if self.driver:
-            self.driver.quit()
+            try:
+                self.driver.quit()
+            except Exception as e:
+                logger.warning(f"Erreur lors de la fermeture du driver: {e}")
             self.driver = None
             logger.info("Driver Selenium fermé")
 
@@ -154,27 +189,22 @@ class AirbnbScraper:
                 soup = BeautifulSoup(html, 'html.parser')
 
                 # Trouver tous les conteneurs de cartes d'hébergement
-                listings = soup.find_all("div", attrs={"data-testid": "card-container"})
+                listings = soup.find_all('div', {'data-testid': "card-container"})
                 logger.info(f"Nombre d'hébergements trouvés: {len(listings)}")
+
 
                 # Extraire les prix
                 for listing in listings:
                     # Chercher l'élément de prix (le sélecteur peut varier, donc plusieurs tentatives)
-                    price_element = listing.select_one('span[data-testid="price-element"] span')
+                    price_element = listing.find('span', class_="_hb913q") or listing.find('span', class_="_tyxjp1")
 
                     if not price_element:
-                        price_element = listing.select_one('span._tyxjp1')  # Alternative CSS selector
+                        continue
 
-                    if price_element:
-                        price_text = price_element.get_text().strip()
-                        # Nettoyer le texte du prix (supprimer la devise et les espaces)
-                        price_text = price_text.replace('€', '').replace(' ', '').replace('\xa0', '')
-                        try:
-                            # Convertir en nombre (gérer la virgule comme séparateur décimal)
-                            price = float(price_text.replace(',', '.'))
-                            prices.append(price)
-                        except ValueError:
-                            logger.warning(f"Impossible de convertir le prix: {price_text}")
+                    price = re.sub(r"\D", "", price_element.text)
+
+                    if price.isdigit():
+                        prices.append(int(price))
 
                 logger.info(f"Extraction réussie de {len(prices)} prix")
                 return prices
@@ -352,24 +382,40 @@ def scrape_destination(destination, data_dir, year=None, stay_duration=7, headle
     max_retries = settings.MAX_RETRIES
     timeout = settings.REQUEST_TIMEOUT
 
-    with AirbnbScraper(base_url, data_dir, headless, max_retries, timeout) as scraper:
-        logger.info(f"Début du scraping pour {destination}")
+    scraper = AirbnbScraper(base_url, data_dir, headless, max_retries, timeout)
+    logger.info(f"Début du scraping pour {destination}")
+
+    try:
         result = scraper.run(destination, year, stay_duration)
+
         if result is not None:
             logger.info(f"Scraping terminé avec succès pour {destination}")
         else:
             logger.error(f"Échec du scraping pour {destination}")
+
         return result
+    finally:
+        scraper.close()
 
 
 if __name__ == "__main__":
     # Point d'entrée pour exécution directe (tests)
     import sys
+    import logging
     from django.conf import settings
 
-    logging.config.dictConfig(settings.LOGGING)
+    # Configuration du logging
+    logging.basicConfig(level=logging.INFO,
+                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
+    # Configuration spécifique pour le scraper
+    logger = logging.getLogger('scraper')
+    logger.setLevel(logging.INFO)
+
+    # Destination par défaut si aucune n'est spécifiée
     destination = sys.argv[1] if len(sys.argv) > 1 else "Paris,France"
+
+    # Utiliser le répertoire de données de Django
     data_dir = settings.DATA_DIR
 
     print(f"Scraping de {destination}...")

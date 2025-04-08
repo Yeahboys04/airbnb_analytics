@@ -97,6 +97,29 @@ class DestinationDetailView(DetailView):
             for season, data in analysis.season_analysis.items():
                 season_data[season] = data.get('avg_price', 0)
 
+        if analysis:
+            # Calcul des différences de prix
+            cheapest_price = analysis.price_ranking[0]['price']
+            price_ranking_with_diff = []
+
+            for month in analysis.price_ranking:
+                month_data = month.copy()
+
+                # Calculer la différence de prix et le pourcentage
+                if month['price'] != cheapest_price:
+                    price_diff = month['price'] - cheapest_price
+                    percentage_diff = (price_diff / cheapest_price) * 100
+                    month_data['price_diff'] = price_diff
+                    month_data['percentage_diff'] = percentage_diff
+                else:
+                    month_data['price_diff'] = 0
+                    month_data['percentage_diff'] = 0
+
+                price_ranking_with_diff.append(month_data)
+
+            # Remplacer le price_ranking original
+            analysis.price_ranking = price_ranking_with_diff
+
         context.update({
             'price_data': price_data,
             'analysis': analysis,
@@ -108,7 +131,7 @@ class DestinationDetailView(DetailView):
         return context
 
 
-@method_decorator(login_required, name='dispatch')
+
 class AddDestinationView(FormView):
     """Vue pour ajouter une nouvelle destination."""
     template_name = 'dashboard/add_destination.html'
@@ -126,9 +149,8 @@ class AddDestinationView(FormView):
         return redirect('destination_detail', slug=destination.slug)
 
 
-@login_required
+
 def run_scraper_view(request):
-    """Vue pour déclencher un scraping manuel."""
     if request.method == 'POST':
         form = ScrapingForm(request.POST)
         if form.is_valid():
@@ -144,8 +166,6 @@ def run_scraper_view(request):
             # Mettre à jour le statut de la destination
             destination.update_scraping_status('pending')
 
-            # Lancer le scraping en arrière-plan (dans un cas réel, utiliser Celery)
-            # Pour simplifier, nous l'exécutons de manière synchrone ici
             try:
                 job.status = 'running'
                 job.started_at = timezone.now()

@@ -189,6 +189,6 @@ LOGGING = {
 # Variables spécifiques à l'application
 AIRBNB_BASE_URL = 'https://www.airbnb.fr'
 CHROMEDRIVER_PATH = os.environ.get('CHROMEDRIVER_PATH', '')
-MAX_RETRIES = 3
+MAX_RETRIES = 1
 REQUEST_TIMEOUT = 30
 DEFAULT_DESTINATION = 'Paris,France'

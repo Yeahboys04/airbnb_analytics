@@ -162,8 +162,7 @@
                                     {% if forloop.first %}
                                     -
                                     {% else %}
-                                    +{{ month.price|floatformat:2|cut:"-"|add:"-"|add:analysis.price_ranking.0.price|floatformat:2 }} €
-                                    ({{ month.price|floatformat:2|cut:"-"|add:"-"|add:analysis.price_ranking.0.price|floatformat:2|cut:"-"|add:"-"|div:analysis.price_ranking.0.price|mul:100|floatformat:1 }}%)
+                                    +{{ month.price_diff|floatformat:2 }} € ({{ month.percentage_diff|floatformat:1 }}%)
                                     {% endif %}
                                 </td>
                             </tr>

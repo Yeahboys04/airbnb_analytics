@@ -1,0 +1,665 @@
+INFO 2025-04-08 21:24:04,850 scraper 10160 8892 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 21:24:04,850 scraper 10160 8892 Début du scraping pour Paris,France
+INFO 2025-04-08 21:24:04,858 scraper 10160 8892 Début du scraping des prix pour Paris,France en 2025
+ERROR 2025-04-08 21:24:17,046 scraper 10160 8892 Erreur fatale lors du scraping: [WinError 193] %1 n’est pas une application Win32 valide
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 326, in run
+    return self.get_monthly_prices(destination, year, stay_duration)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 227, in get_monthly_prices
+    if not self._setup_driver():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 86, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 21:24:17,284 scraper 10160 8892 Échec du scraping pour Paris,France
+INFO 2025-04-08 21:25:22,111 scraper 10160 23724 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 21:25:22,111 scraper 10160 23724 Début du scraping pour Lyon,France
+INFO 2025-04-08 21:25:22,111 scraper 10160 23724 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 21:25:25,535 scraper 10160 23724 Erreur fatale lors du scraping: [WinError 193] %1 n’est pas une application Win32 valide
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 326, in run
+    return self.get_monthly_prices(destination, year, stay_duration)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 227, in get_monthly_prices
+    if not self._setup_driver():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 86, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 21:25:25,544 scraper 10160 23724 Échec du scraping pour Lyon,France
+INFO 2025-04-08 21:43:08,474 scraper 10160 7504 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 21:43:08,474 scraper 10160 7504 Début du scraping pour Lyon,France
+INFO 2025-04-08 21:43:08,474 scraper 10160 7504 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 21:43:10,235 scraper 10160 7504 Erreur fatale lors du scraping: [WinError 193] %1 n’est pas une application Win32 valide
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 326, in run
+    return self.get_monthly_prices(destination, year, stay_duration)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 227, in get_monthly_prices
+    if not self._setup_driver():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 86, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 21:43:10,297 scraper 10160 7504 Échec du scraping pour Lyon,France
+INFO 2025-04-08 21:45:23,127 scraper 10176 19976 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 21:45:23,127 scraper 10176 19976 Début du scraping pour Lyon,France
+INFO 2025-04-08 21:45:23,127 scraper 10176 19976 Début du scraping pour Lyon,France
+INFO 2025-04-08 21:45:23,128 scraper 10176 19976 Année: 2025
+INFO 2025-04-08 21:45:23,128 scraper 10176 19976 Durée du séjour: 7 jours
+INFO 2025-04-08 21:45:23,128 scraper 10176 19976 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 21:45:24,521 scraper 10176 19976 Erreur fatale lors du scraping de Lyon,France: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 21:45:24,952 scraper 10176 19976 Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 332, in run
+    result = self.get_monthly_prices(destination, year, stay_duration)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 229, in get_monthly_prices
+    if not self._setup_driver():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 88, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+
+ERROR 2025-04-08 21:45:24,953 scraper 10176 19976 Échec du scraping pour Lyon,France
+INFO 2025-04-08 21:54:04,785 scraper 23592 25296 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 21:54:04,786 scraper 23592 25296 Début du scraping pour Lyon,France
+INFO 2025-04-08 21:54:04,786 scraper 23592 25296 Début du scraping pour Lyon,France
+INFO 2025-04-08 21:54:04,786 scraper 23592 25296 Année: 2025
+INFO 2025-04-08 21:54:04,786 scraper 23592 25296 Durée du séjour: 7 jours
+INFO 2025-04-08 21:54:04,786 scraper 23592 25296 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 21:54:06,195 scraper 23592 25296 Erreur fatale lors du scraping de Lyon,France: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 21:54:06,252 scraper 23592 25296 Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 332, in run
+    result = self.get_monthly_prices(destination, year, stay_duration)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 229, in get_monthly_prices
+    if not self._setup_driver():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 88, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 220, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+
+ERROR 2025-04-08 21:54:06,254 scraper 23592 25296 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:04:09,681 scraper 10928 9056 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:04:09,681 scraper 10928 9056 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:04:09,681 scraper 10928 9056 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:04:09,683 scraper 10928 9056 Année: 2025
+INFO 2025-04-08 22:04:09,683 scraper 10928 9056 Durée du séjour: 7 jours
+INFO 2025-04-08 22:04:09,683 scraper 10928 9056 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:04:11,106 scraper 10928 9056 Erreur fatale lors du scraping de Lyon,France: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 22:04:11,155 scraper 10928 9056 Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 332, in run
+    result = self.get_monthly_prices(destination, year, stay_duration)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 229, in get_monthly_prices
+    if not self._setup_driver():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 88, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+
+ERROR 2025-04-08 22:04:11,157 scraper 10928 9056 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:12:17,801 scraper 12916 16664 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:12:17,802 scraper 12916 16664 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:12:17,802 scraper 12916 16664 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:12:17,802 scraper 12916 16664 Année: 2025
+INFO 2025-04-08 22:12:17,802 scraper 12916 16664 Durée du séjour: 7 jours
+INFO 2025-04-08 22:12:17,802 scraper 12916 16664 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:12:19,213 scraper 12916 16664 Erreur lors de l'initialisation du driver: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 22:12:19,255 scraper 12916 16664 Impossible de configurer le driver Selenium, abandon du scraping
+ERROR 2025-04-08 22:12:19,256 scraper 12916 16664 Aucun résultat obtenu pour Lyon,France
+ERROR 2025-04-08 22:12:19,259 scraper 12916 16664 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:15:27,537 scraper 12264 23388 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:15:27,537 scraper 12264 23388 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:15:27,537 scraper 12264 23388 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:15:27,537 scraper 12264 23388 Année: 2025
+INFO 2025-04-08 22:15:27,537 scraper 12264 23388 Durée du séjour: 7 jours
+INFO 2025-04-08 22:15:27,537 scraper 12264 23388 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:15:32,386 scraper 12264 23388 Erreur lors de l'initialisation du driver: 'AirbnbScraper' object has no attribute 'firefox_options'
+ERROR 2025-04-08 22:15:32,426 scraper 12264 23388 Impossible de configurer le driver Selenium, abandon du scraping
+ERROR 2025-04-08 22:15:32,428 scraper 12264 23388 Aucun résultat obtenu pour Lyon,France
+ERROR 2025-04-08 22:15:32,430 scraper 12264 23388 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:16:28,240 scraper 23724 23260 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:16:28,240 scraper 23724 23260 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:16:28,240 scraper 23724 23260 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:16:28,240 scraper 23724 23260 Année: 2025
+INFO 2025-04-08 22:16:28,240 scraper 23724 23260 Durée du séjour: 7 jours
+INFO 2025-04-08 22:16:28,240 scraper 23724 23260 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:16:29,943 scraper 23724 23260 Erreur lors de l'initialisation du driver: 'AirbnbScraper' object has no attribute 'firefox_options'
+ERROR 2025-04-08 22:16:29,981 scraper 23724 23260 Impossible de configurer le driver Selenium, abandon du scraping
+ERROR 2025-04-08 22:16:29,983 scraper 23724 23260 Aucun résultat obtenu pour Lyon,France
+ERROR 2025-04-08 22:16:29,984 scraper 23724 23260 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:16:43,881 scraper 21532 15440 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:16:43,881 scraper 21532 15440 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:16:43,882 scraper 21532 15440 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:16:43,882 scraper 21532 15440 Année: 2025
+INFO 2025-04-08 22:16:43,882 scraper 21532 15440 Durée du séjour: 7 jours
+INFO 2025-04-08 22:16:43,882 scraper 21532 15440 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:16:45,268 scraper 21532 15440 Erreur lors de l'initialisation du driver: 'AirbnbScraper' object has no attribute 'firefox_options'
+ERROR 2025-04-08 22:16:45,313 scraper 21532 15440 Impossible de configurer le driver Selenium, abandon du scraping
+ERROR 2025-04-08 22:16:45,314 scraper 21532 15440 Aucun résultat obtenu pour Lyon,France
+ERROR 2025-04-08 22:16:45,315 scraper 21532 15440 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:25:10,325 scraper 7840 9336 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:25:10,325 scraper 7840 9336 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:25:11,806 scraper 7840 9336 Erreur lors de l'initialisation du driver: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 22:25:11,860 scraper 7840 9336 Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 87, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+
+ERROR 2025-04-08 22:25:11,863 scraper 7840 9336 Impossible de configurer le driver Selenium, abandon du scraping
+ERROR 2025-04-08 22:25:11,865 scraper 7840 9336 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:26:09,098 scraper 21660 8864 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:26:09,098 scraper 21660 8864 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:26:10,387 scraper 21660 8864 Erreur lors de l'initialisation du driver: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 22:26:10,426 scraper 21660 8864 Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 87, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+
+ERROR 2025-04-08 22:26:10,429 scraper 21660 8864 Impossible de configurer le driver Selenium, abandon du scraping
+ERROR 2025-04-08 22:26:10,430 scraper 21660 8864 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:36:05,646 scraper 20884 23324 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:36:05,646 scraper 20884 23324 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:36:05,646 scraper 20884 23324 Début du scraping des prix pour Lyon,France en 2025
+ERROR 2025-04-08 22:36:06,976 scraper 20884 23324 Erreur fatale lors du scraping: [WinError 193] %1 n’est pas une application Win32 valide
+Traceback (most recent call last):
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 326, in run
+    return self.get_monthly_prices(destination, year, stay_duration)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 227, in get_monthly_prices
+    if not self._setup_driver():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py", line 86, in _setup_driver
+    self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    self.service.start()
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\selenium\webdriver\common\service.py", line 208, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\PycharmProjects\airbnb_analytics\.venv\Lib\site-packages\sentry_sdk\integrations\stdlib.py", line 217, in sentry_patched_popen_init
+    rv = old_popen_init(self, *a, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ryank\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-08 22:36:07,020 scraper 20884 23324 Échec du scraping pour Lyon,France
+INFO 2025-04-08 22:39:52,157 scraper 2228 24708 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:39:52,157 scraper 2228 24708 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:39:52,158 scraper 2228 24708 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 22:39:53,185 scraper 2228 24708 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 22:39:53,185 scraper 2228 24708 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 22:39:53,185 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:40:13,311 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:40:13,339 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:40:13,339 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:40:28,886 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:40:28,916 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:40:28,917 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:40:45,322 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:40:45,349 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:40:54,859 scraper 2228 24708 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-08 22:40:54,859 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:41:12,651 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:41:12,684 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:41:12,685 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:41:30,621 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:41:30,647 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:41:30,647 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:41:48,275 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:41:48,302 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:41:59,995 scraper 2228 24708 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-08 22:41:59,995 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:42:17,664 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:42:17,692 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:42:17,692 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:42:33,336 scraper 2228 24708 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:42:33,363 scraper 2228 24708 Extraction réussie de 0 prix
+INFO 2025-04-08 22:42:33,363 scraper 2228 24708 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:47:54,390 scraper 4804 23504 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:47:54,390 scraper 4804 23504 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:47:54,390 scraper 4804 23504 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 22:47:55,546 scraper 4804 23504 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 22:47:55,546 scraper 4804 23504 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 22:47:55,547 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:48:13,890 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:48:13,918 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:48:13,919 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:48:30,268 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:48:30,296 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:48:30,297 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:48:46,983 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:48:47,013 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:48:59,459 scraper 4804 23504 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-08 22:48:59,459 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:49:15,719 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:49:15,763 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:49:15,764 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:49:32,119 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:49:32,162 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:49:32,163 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:49:49,503 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:49:49,545 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:49:59,681 scraper 4804 23504 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-08 22:49:59,681 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:50:16,663 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:50:16,698 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:50:16,699 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:50:33,404 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:50:33,439 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:50:33,439 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:50:48,549 scraper 4804 23504 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:50:48,587 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:51:01,637 scraper 4804 23504 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-08 22:51:01,637 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:51:18,018 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:51:18,059 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:51:18,059 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:51:36,431 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:51:36,467 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:51:36,467 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:51:51,601 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:51:51,636 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:52:01,863 scraper 4804 23504 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-08 22:52:01,863 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:52:19,206 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:52:19,244 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:52:19,244 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:52:34,887 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:52:34,922 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:52:34,922 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:52:50,012 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:52:50,049 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:53:03,344 scraper 4804 23504 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-08 22:53:03,344 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:53:21,353 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:53:21,388 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:53:21,389 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:53:39,120 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:53:39,169 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:53:39,169 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:53:54,922 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:53:54,975 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:54:04,857 scraper 4804 23504 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-08 22:54:04,857 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:54:21,480 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:54:21,526 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:54:21,527 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:54:38,676 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:54:38,718 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:54:38,718 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:54:54,583 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:54:54,619 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:55:04,295 scraper 4804 23504 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-08 22:55:04,295 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:55:21,845 scraper 4804 23504 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 22:55:21,897 scraper 4804 23504 Extraction réussie de 0 prix
+INFO 2025-04-08 22:55:21,897 scraper 4804 23504 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:55:48,372 scraper 9268 5872 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:55:48,372 scraper 9268 5872 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:55:48,372 scraper 9268 5872 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 22:55:49,567 scraper 9268 5872 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 22:55:49,568 scraper 9268 5872 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 22:55:49,568 scraper 9268 5872 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:56:08,210 scraper 9268 5872 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:56:08,239 scraper 9268 5872 Extraction réussie de 0 prix
+INFO 2025-04-08 22:56:08,240 scraper 9268 5872 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:56:24,249 scraper 9268 5872 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:56:24,283 scraper 9268 5872 Extraction réussie de 0 prix
+INFO 2025-04-08 22:56:24,284 scraper 9268 5872 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:56:49,460 scraper 5172 4184 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:56:49,460 scraper 5172 4184 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:56:49,461 scraper 5172 4184 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 22:56:50,452 scraper 5172 4184 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 22:56:50,452 scraper 5172 4184 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 22:56:50,453 scraper 5172 4184 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:56:56,186 scraper 5172 1536 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:56:56,186 scraper 5172 1536 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:56:56,186 scraper 5172 1536 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 22:56:57,241 scraper 5172 1536 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 22:56:57,241 scraper 5172 1536 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 22:56:57,241 scraper 5172 1536 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:57:11,169 scraper 5172 4184 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:57:11,337 scraper 5172 4184 Extraction réussie de 0 prix
+INFO 2025-04-08 22:57:11,338 scraper 5172 4184 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:57:17,194 scraper 5172 1536 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:57:17,408 scraper 5172 1536 Extraction réussie de 0 prix
+INFO 2025-04-08 22:57:17,408 scraper 5172 1536 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:57:29,970 scraper 5172 4184 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:57:30,175 scraper 5172 4184 Extraction réussie de 0 prix
+INFO 2025-04-08 22:57:30,176 scraper 5172 4184 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:57:33,444 scraper 5172 1536 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:57:33,595 scraper 5172 1536 Extraction réussie de 0 prix
+INFO 2025-04-08 22:57:33,596 scraper 5172 1536 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+ERROR 2025-04-08 22:57:36,661 scraper 5172 4184 Erreur lors du scraping du mois 1: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+INFO 2025-04-08 22:57:48,870 scraper 23040 15172 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 22:57:48,871 scraper 23040 15172 Début du scraping pour Lyon,France
+INFO 2025-04-08 22:57:48,871 scraper 23040 15172 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 22:57:49,927 scraper 23040 15172 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 22:57:49,927 scraper 23040 15172 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 22:57:49,928 scraper 23040 15172 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 22:58:09,515 scraper 23040 15172 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 22:58:09,640 scraper 23040 15172 Extraction réussie de 0 prix
+INFO 2025-04-08 22:58:09,641 scraper 23040 15172 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+ERROR 2025-04-08 22:58:10,452 scraper 23040 15172 Erreur lors du scraping du mois 1: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+INFO 2025-04-08 22:58:10,503 scraper 23040 15172 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-08 22:58:10,504 scraper 23040 15172 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:15:17,722 scraper 20768 22448 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 23:15:17,722 scraper 20768 22448 Début du scraping pour Lyon,France
+INFO 2025-04-08 23:15:17,723 scraper 20768 22448 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 23:15:19,064 scraper 20768 22448 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 23:15:19,065 scraper 20768 22448 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 23:15:19,065 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:15:38,902 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:15:38,910 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:15:38,910 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:15:55,900 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:15:55,908 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:15:55,908 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:16:11,817 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:16:11,825 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:16:26,432 scraper 20768 22448 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-08 23:16:26,432 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:16:43,438 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:16:43,447 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:16:43,448 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:16:59,987 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:16:59,998 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:16:59,999 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:17:16,248 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:17:16,259 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:17:30,330 scraper 20768 22448 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-08 23:17:30,330 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:17:47,345 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:17:47,353 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:17:47,354 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:18:05,672 scraper 20768 22448 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:18:05,681 scraper 20768 22448 Extraction réussie de 0 prix
+INFO 2025-04-08 23:18:05,681 scraper 20768 22448 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:18:26,423 scraper 20200 17776 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 23:18:26,423 scraper 20200 17776 Début du scraping pour Lyon,France
+INFO 2025-04-08 23:18:26,423 scraper 20200 17776 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 23:18:27,676 scraper 20200 17776 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 23:18:27,677 scraper 20200 17776 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 23:18:27,678 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:18:46,534 scraper 20200 17776 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:18:46,541 scraper 20200 17776 Extraction réussie de 6 prix
+INFO 2025-04-08 23:18:46,548 scraper 20200 17776 Mois January: prix moyen = 114.17€, 6 échantillons
+INFO 2025-04-08 23:18:58,975 scraper 20200 17776 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-08 23:18:58,975 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:19:15,313 scraper 20200 17776 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:19:15,320 scraper 20200 17776 Extraction réussie de 6 prix
+INFO 2025-04-08 23:19:15,321 scraper 20200 17776 Mois February: prix moyen = 104.17€, 6 échantillons
+INFO 2025-04-08 23:19:25,321 scraper 20200 17776 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-08 23:19:25,321 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:19:42,914 scraper 20200 17776 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:19:42,920 scraper 20200 17776 Extraction réussie de 7 prix
+INFO 2025-04-08 23:19:42,921 scraper 20200 17776 Mois March: prix moyen = 120.29€, 7 échantillons
+INFO 2025-04-08 23:19:52,218 scraper 20200 17776 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-08 23:19:52,219 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:20:10,955 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:20:10,963 scraper 20200 17776 Extraction réussie de 11 prix
+INFO 2025-04-08 23:20:10,964 scraper 20200 17776 Mois April: prix moyen = 65.00€, 11 échantillons
+INFO 2025-04-08 23:20:19,931 scraper 20200 17776 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-08 23:20:19,931 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:20:38,402 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:20:38,409 scraper 20200 17776 Extraction réussie de 14 prix
+INFO 2025-04-08 23:20:38,411 scraper 20200 17776 Mois May: prix moyen = 67.50€, 14 échantillons
+INFO 2025-04-08 23:20:47,812 scraper 20200 17776 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-08 23:20:47,812 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:21:04,986 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:21:04,991 scraper 20200 17776 Extraction réussie de 15 prix
+INFO 2025-04-08 23:21:04,992 scraper 20200 17776 Mois June: prix moyen = 65.47€, 15 échantillons
+INFO 2025-04-08 23:21:16,974 scraper 20200 17776 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-08 23:21:16,975 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:21:33,190 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:21:33,197 scraper 20200 17776 Extraction réussie de 12 prix
+INFO 2025-04-08 23:21:33,197 scraper 20200 17776 Mois July: prix moyen = 65.67€, 12 échantillons
+INFO 2025-04-08 23:21:41,412 scraper 20200 17776 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-08 23:21:41,412 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:21:58,678 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:21:58,684 scraper 20200 17776 Extraction réussie de 12 prix
+INFO 2025-04-08 23:21:58,684 scraper 20200 17776 Mois August: prix moyen = 64.83€, 12 échantillons
+INFO 2025-04-08 23:22:09,691 scraper 20200 17776 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-08 23:22:09,692 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:22:27,750 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:22:27,756 scraper 20200 17776 Extraction réussie de 16 prix
+INFO 2025-04-08 23:22:27,757 scraper 20200 17776 Mois September: prix moyen = 67.44€, 16 échantillons
+INFO 2025-04-08 23:22:41,591 scraper 20200 17776 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-08 23:22:41,591 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:22:57,970 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:22:57,978 scraper 20200 17776 Extraction réussie de 8 prix
+INFO 2025-04-08 23:22:57,979 scraper 20200 17776 Mois October: prix moyen = 65.25€, 8 échantillons
+INFO 2025-04-08 23:23:11,582 scraper 20200 17776 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-08 23:23:11,582 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:23:28,663 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:23:28,670 scraper 20200 17776 Extraction réussie de 10 prix
+INFO 2025-04-08 23:23:28,671 scraper 20200 17776 Mois November: prix moyen = 76.60€, 10 échantillons
+INFO 2025-04-08 23:23:43,213 scraper 20200 17776 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-08 23:23:43,213 scraper 20200 17776 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:24:00,762 scraper 20200 17776 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:24:00,772 scraper 20200 17776 Extraction réussie de 12 prix
+INFO 2025-04-08 23:24:00,773 scraper 20200 17776 Mois December: prix moyen = 78.92€, 12 échantillons
+INFO 2025-04-08 23:24:13,225 scraper 20200 17776 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250408_232413.csv
+INFO 2025-04-08 23:24:19,474 scraper 20200 17776 Driver Selenium fermé
+INFO 2025-04-08 23:24:19,474 scraper 20200 17776 Scraping terminé avec succès pour Lyon,France
+INFO 2025-04-08 23:37:53,985 scraper 18204 16808 AirbnbScraper initialisé avec succès
+INFO 2025-04-08 23:37:53,985 scraper 18204 16808 Début du scraping pour Lyon,France
+INFO 2025-04-08 23:37:53,985 scraper 18204 16808 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-08 23:37:55,307 scraper 18204 16808 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-08 23:37:55,307 scraper 18204 16808 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-08 23:37:55,308 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:38:18,488 scraper 18204 16808 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:38:18,494 scraper 18204 16808 Extraction réussie de 4 prix
+INFO 2025-04-08 23:38:18,495 scraper 18204 16808 Mois January: prix moyen = 142.75€, 4 échantillons
+INFO 2025-04-08 23:38:30,606 scraper 18204 16808 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-08 23:38:30,606 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:38:50,590 scraper 18204 16808 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:38:50,597 scraper 18204 16808 Extraction réussie de 5 prix
+INFO 2025-04-08 23:38:50,598 scraper 18204 16808 Mois February: prix moyen = 126.40€, 5 échantillons
+INFO 2025-04-08 23:38:59,242 scraper 18204 16808 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-08 23:38:59,242 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:39:16,823 scraper 18204 16808 Nombre d'hébergements trouvés: 18
+INFO 2025-04-08 23:39:16,829 scraper 18204 16808 Extraction réussie de 5 prix
+INFO 2025-04-08 23:39:16,830 scraper 18204 16808 Mois March: prix moyen = 147.00€, 5 échantillons
+INFO 2025-04-08 23:39:30,084 scraper 18204 16808 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-08 23:39:30,084 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:39:51,373 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:39:51,381 scraper 18204 16808 Extraction réussie de 9 prix
+INFO 2025-04-08 23:39:51,382 scraper 18204 16808 Mois April: prix moyen = 72.11€, 9 échantillons
+INFO 2025-04-08 23:40:04,830 scraper 18204 16808 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-08 23:40:04,830 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:40:24,434 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:40:24,441 scraper 18204 16808 Extraction réussie de 14 prix
+INFO 2025-04-08 23:40:24,442 scraper 18204 16808 Mois May: prix moyen = 72.00€, 14 échantillons
+INFO 2025-04-08 23:40:33,042 scraper 18204 16808 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-08 23:40:33,042 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:40:51,187 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:40:51,194 scraper 18204 16808 Extraction réussie de 14 prix
+INFO 2025-04-08 23:40:51,195 scraper 18204 16808 Mois June: prix moyen = 69.93€, 14 échantillons
+INFO 2025-04-08 23:40:59,279 scraper 18204 16808 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-08 23:40:59,279 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:41:17,273 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:41:17,280 scraper 18204 16808 Extraction réussie de 15 prix
+INFO 2025-04-08 23:41:17,282 scraper 18204 16808 Mois July: prix moyen = 64.27€, 15 échantillons
+INFO 2025-04-08 23:41:28,747 scraper 18204 16808 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-08 23:41:28,747 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:41:45,733 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:41:45,740 scraper 18204 16808 Extraction réussie de 13 prix
+INFO 2025-04-08 23:41:45,740 scraper 18204 16808 Mois August: prix moyen = 62.15€, 13 échantillons
+INFO 2025-04-08 23:41:57,961 scraper 18204 16808 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-08 23:41:57,961 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:42:14,695 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:42:14,702 scraper 18204 16808 Extraction réussie de 16 prix
+INFO 2025-04-08 23:42:14,702 scraper 18204 16808 Mois September: prix moyen = 67.00€, 16 échantillons
+INFO 2025-04-08 23:42:23,032 scraper 18204 16808 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-08 23:42:23,032 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:42:41,482 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:42:41,488 scraper 18204 16808 Extraction réussie de 10 prix
+INFO 2025-04-08 23:42:41,489 scraper 18204 16808 Mois October: prix moyen = 68.00€, 10 échantillons
+INFO 2025-04-08 23:42:55,956 scraper 18204 16808 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-08 23:42:55,956 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:43:12,742 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:43:12,749 scraper 18204 16808 Extraction réussie de 11 prix
+INFO 2025-04-08 23:43:12,750 scraper 18204 16808 Mois November: prix moyen = 72.91€, 11 échantillons
+INFO 2025-04-08 23:43:24,658 scraper 18204 16808 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-08 23:43:24,658 scraper 18204 16808 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-08 23:43:40,686 scraper 18204 16808 Nombre d'hébergements trouvés: 24
+INFO 2025-04-08 23:43:40,692 scraper 18204 16808 Extraction réussie de 12 prix
+INFO 2025-04-08 23:43:40,693 scraper 18204 16808 Mois December: prix moyen = 84.00€, 12 échantillons
+INFO 2025-04-08 23:43:55,644 scraper 18204 16808 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250408_234355.csv
+INFO 2025-04-08 23:44:01,894 scraper 18204 16808 Driver Selenium fermé
+INFO 2025-04-08 23:44:01,895 scraper 18204 16808 Scraping terminé avec succès pour Lyon,France
