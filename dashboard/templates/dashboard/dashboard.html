@@ -1,0 +1,373 @@
+{% extends 'dashboard/base.html' %}
+
+{% block title %}Tableau de bord - Airbnb Analytics{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-chart-line me-2"></i> Tableau de bord</h1>
+</div>
+
+<!-- Statistiques générales -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card stats-card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-muted">Destinations</h5>
+                <div class="d-flex align-items-center">
+                    <div class="display-4 me-3">{{ stats.destination_count }}</div>
+                    <div>
+                        <span class="text-muted">destinations analysées</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stats-card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-muted">Économies moyennes</h5>
+                <div class="d-flex align-items-center">
+                    <div class="display-4 me-3">{{ stats.avg_savings }}%</div>
+                    <div>
+                        <span class="text-muted">en choisissant le bon mois</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stats-card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-muted">Variation annuelle</h5>
+                <div class="d-flex align-items-center">
+                    <div class="display-4 me-3">{{ stats.avg_variation }}%</div>
+                    <div>
+                        <span class="text-muted">coefficient de variation moyen</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stats-card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-muted">Saison la moins chère</h5>
+                <div class="d-flex align-items-center">
+                    {% with max_season=stats.cheapest_seasons.items|dictsort:1|last %}
+                    <div class="display-4 me-3">
+                        {% if max_season.0 == 'Hiver' %}
+                            <i class="fa-solid fa-snowflake season-winter"></i>
+                        {% elif max_season.0 == 'Printemps' %}
+                            <i class="fa-solid fa-seedling season-spring"></i>
+                        {% elif max_season.0 == 'Été' %}
+                            <i class="fa-solid fa-sun season-summer"></i>
+                        {% elif max_season.0 == 'Automne' %}
+                            <i class="fa-solid fa-leaf season-autumn"></i>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <span class="fs-3">{{ max_season.0 }}</span><br>
+                        <span class="text-muted">pour {{ max_season.1 }} destinations</span>
+                    </div>
+                    {% endwith %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Prix moyens par destination -->
+    <div class="col-md-8">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Prix par destination</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="destinationPricesChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prix moyens par saison -->
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Prix moyens par saison</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="seasonPricesChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Économies potentielles -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Économies potentielles</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="savingsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destinations -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Destinations analysées</h5>
+            </div>
+            <div class="card-body">
+                {% if destinations %}
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Destination</th>
+                                <th>Mois le moins cher</th>
+                                <th>Dernier scraping</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for dest in destinations %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'destination_detail' slug=dest.slug %}">
+                                        {{ dest.name }}
+                                    </a>
+                                </td>
+                                <td>
+                                    {% for result in dest.analysis_results.all %}
+                                    {% if forloop.first %}
+                                    <span class="cheapest-badge">{{ result.cheapest_month }}</span>
+                                    {% endif %}
+                                    {% empty %}
+                                    <span class="text-muted">Non disponible</span>
+                                    {% endfor %}
+                                </td>
+                                <td>
+                                    {% if dest.last_scraping %}
+                                    {{ dest.last_scraping|date:"d/m/Y H:i" }}
+                                    {% else %}
+                                    <span class="text-muted">Jamais</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <a href="{% url 'destination_detail' slug=dest.slug %}" class="btn btn-sm btn-outline-primary">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <div class="text-center py-5">
+                    <i class="fa-solid fa-map-location-dot fa-3x mb-3 text-muted"></i>
+                    <p>Aucune destination n'a encore été analysée.</p>
+                    <a href="{% url 'add_destination' %}" class="btn btn-primary">
+                        <i class="fa-solid fa-plus me-1"></i> Ajouter une destination
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Données pour les graphiques
+    const destinationPrices = {{ destination_prices|safe }};
+    const seasonData = {{ season_data|safe }};
+    const savingsData = {{ savings_data|safe }};
+
+    // Couleurs pour les saisons
+    const seasonColors = {
+        'Hiver': '#2196F3',
+        'Printemps': '#4CAF50',
+        'Été': '#FF9800',
+        'Automne': '#795548'
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Graphique des prix par destination
+        if (destinationPrices.length > 0) {
+            const destLabels = destinationPrices.map(item => item.name);
+            const avgPrices = destinationPrices.map(item => item.avg_price);
+            const minPrices = destinationPrices.map(item => item.min_price);
+            const maxPrices = destinationPrices.map(item => item.max_price);
+
+            const destChart = new Chart(
+                document.getElementById('destinationPricesChart'),
+                {
+                    type: 'bar',
+                    data: {
+                        labels: destLabels,
+                        datasets: [
+                            {
+                                label: 'Prix moyen',
+                                data: avgPrices,
+                                backgroundColor: '#36A2EB',
+                                borderColor: '#36A2EB',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Prix minimum',
+                                data: minPrices,
+                                backgroundColor: '#4BC0C0',
+                                borderColor: '#4BC0C0',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Prix maximum',
+                                data: maxPrices,
+                                backgroundColor: '#FF6384',
+                                borderColor: '#FF6384',
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Prix (€)'
+                                }
+                            }
+                        }
+                    }
+                }
+            );
+        }
+
+        // Graphique des prix par saison
+        const seasonLabels = Object.keys(seasonData);
+        const seasonValues = [];
+        const seasonBgColors = [];
+
+        for (const season of seasonLabels) {
+            // Calculer la moyenne pour chaque saison
+            const prices = seasonData[season];
+            const avgPrice = prices.length > 0
+                ? prices.reduce((sum, price) => sum + price, 0) / prices.length
+                : 0;
+
+            seasonValues.push(avgPrice);
+            seasonBgColors.push(seasonColors[season]);
+        }
+
+        const seasonChart = new Chart(
+            document.getElementById('seasonPricesChart'),
+            {
+                type: 'doughnut',
+                data: {
+                    labels: seasonLabels,
+                    datasets: [
+                        {
+                            data: seasonValues,
+                            backgroundColor: seasonBgColors,
+                            borderColor: 'white',
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.raw;
+                                    return `${context.label}: ${value.toFixed(2)}€`;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        );
+
+        // Graphique des économies potentielles
+        if (savingsData.length > 0) {
+            const savingsLabels = savingsData.map(item => item.name);
+            const savingsValues = savingsData.map(item => item.savings);
+            const savingsPercentages = savingsData.map(item => item.percentage);
+
+            const savingsChart = new Chart(
+                document.getElementById('savingsChart'),
+                {
+                    type: 'bar',
+                    data: {
+                        labels: savingsLabels,
+                        datasets: [
+                            {
+                                label: 'Économie (€)',
+                                data: savingsValues,
+                                backgroundColor: '#FF9F40',
+                                yAxisID: 'y',
+                                order: 1
+                            },
+                            {
+                                label: 'Économie (%)',
+                                data: savingsPercentages,
+                                backgroundColor: '#FF6384',
+                                borderColor: '#FF6384',
+                                type: 'line',
+                                yAxisID: 'y1',
+                                order: 0
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                position: 'left',
+                                title: {
+                                    display: true,
+                                    text: 'Économie (€)'
+                                }
+                            },
+                            y1: {
+                                beginAtZero: true,
+                                position: 'right',
+                                title: {
+                                    display: true,
+                                    text: 'Économie (%)'
+                                },
+                                grid: {
+                                    drawOnChartArea: false
+                                }
+                            }
+                        }
+                    }
+                }
+            );
+        }
+    });
+</script>
+{% endblock %}

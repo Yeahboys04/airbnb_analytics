@@ -1,0 +1,207 @@
+{% extends 'dashboard/base.html' %}
+
+{% block title %}Comparaison des prix - Airbnb Analytics{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-scale-balanced me-2"></i> Comparaison des prix</h1>
+</div>
+
+<!-- Filtres -->
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="get" id="comparisonForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="destinations" class="form-label">Destinations</label>
+                    <select name="destinations" id="destinations" class="form-select" multiple size="5">
+                        {% for dest in destinations %}
+                        <option value="{{ dest.id }}" {% if dest.id in selected_destinations %}selected{% endif %}>
+                            {{ dest.name }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                    <div class="form-text">Maintenez Ctrl (ou Cmd) pour sélectionner plusieurs destinations</div>
+                </div>
+                <div class="col-md-4">
+                    <label for="month" class="form-label">Mois spécifique (optionnel)</label>
+                    <select name="month" id="month" class="form-select">
+                        <option value="">Tous les mois</option>
+                        {% for month_id, month_name in months %}
+                        <option value="{{ month_id }}" {% if selected_month == month_id|stringformat:"i" %}selected{% endif %}>
+                            {{ month_name }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fa-solid fa-filter me-1"></i> Appliquer
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% if comparison_data %}
+<!-- Graphique de comparaison -->
+<div class="card mb-4">
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Comparaison des prix mensuels</h5>
+    </div>
+    <div class="card-body">
+        <div class="chart-container" style="height: 400px;">
+            <canvas id="comparisonChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- Tableau de comparaison -->
+<div class="card">
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Tableau comparatif des prix</h5>
+    </div>
+    <div class="card-body">
+        {% if selected_month %}
+        <!-- Affichage pour un mois spécifique -->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Destination</th>
+                        <th>Prix moyen</th>
+                        <th>Est le moins cher</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for dest in comparison_data %}
+                    <tr>
+                        <td>{{ dest.name }}</td>
+                        <td>
+                            {% for month_id, month_data in dest.months.items %}
+                            {% if month_id|stringformat:"i" == selected_month %}
+                            {{ month_data.avg_price|floatformat:2 }} €
+                            {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td>
+                            {% for month_id, month_data in dest.months.items %}
+                            {% if month_id|stringformat:"i" == selected_month and month_data.is_cheapest %}
+                            <span class="badge bg-success"><i class="fa-solid fa-check me-1"></i> Oui</span>
+                            {% endif %}
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <!-- Affichage pour tous les mois -->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Mois</th>
+                        {% for dest in comparison_data %}
+                        <th>{{ dest.name }}</th>
+                        {% endfor %}
+                        <th>Différence max</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for month_id, month_name in months %}
+                    <tr>
+                        <td>{{ month_name }}</td>
+                        {% for dest in comparison_data %}
+                        <td {% if dest.months|get_item:month_id|get_item:'is_cheapest' %}class="table-success"{% endif %}>
+                            {% if dest.months|get_item:month_id %}
+                            {{ dest.months|get_item:month_id|get_item:'avg_price'|floatformat:2 }} €
+                            {% else %}
+                            -
+                            {% endif %}
+                        </td>
+                        {% endfor %}
+                        <td>
+                            {% with prices=comparison_data|map_month_prices:month_id %}
+                            {% if prices|length > 1 %}
+                            {{ prices|max|subtract:prices|min|floatformat:2 }} €
+                            ({{ prices|max|subtract:prices|min|divide:prices|min|multiply:100|floatformat:1 }}%)
+                            {% else %}
+                            -
+                            {% endif %}
+                            {% endwith %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% else %}
+<div class="alert alert-info">
+    <i class="fa-solid fa-info-circle me-2"></i> Veuillez sélectionner au moins une destination pour afficher la comparaison.
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+{% if comparison_data %}
+<script>
+    // Données pour le graphique
+    const chartData = {{ chart_data|safe }};
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
+
+        const comparisonChart = new Chart(comparisonCtx, {
+            type: 'line',
+            data: chartData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: {
+                        tension: 0.3
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Prix moyen (€)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Mois'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const value = context.raw;
+                                if (value === null) {
+                                    return `${context.dataset.label}: Données non disponibles`;
+                                }
+                                return `${context.dataset.label}: ${value.toFixed(2)}€`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+{% endif %}
+{% endblock %}

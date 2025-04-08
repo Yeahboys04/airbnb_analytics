@@ -1,0 +1,339 @@
+{% extends 'dashboard/base.html' %}
+
+{% block title %}{{ destination.name }} - Airbnb Analytics{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1>{{ destination.name }}</h1>
+        <p class="text-muted">
+            {% if destination.last_scraping %}
+            <i class="fa-solid fa-calendar-check me-1"></i> Dernière mise à jour: {{ destination.last_scraping|date:"d/m/Y H:i" }}
+            {% else %}
+            <i class="fa-solid fa-calendar-xmark me-1"></i> Jamais mis à jour
+            {% endif %}
+        </p>
+    </div>
+    <div>
+        <form class="scraping-form" method="post" action="{% url 'run_scraper' %}">
+            {% csrf_token %}
+            {{ form.destination }}
+            <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-sync me-1"></i> Mettre à jour les données
+            </button>
+        </form>
+    </div>
+</div>
+
+{% if not price_data %}
+<div class="alert alert-info">
+    <i class="fa-solid fa-info-circle me-2"></i> Aucune donnée disponible pour cette destination. Veuillez lancer une mise à jour des données.
+</div>
+{% else %}
+
+<!-- Carte principale des statistiques -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Prix moyens mensuels pour {{ destination.name }}</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Mois le moins cher</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="display-1 me-3 text-success">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                    </div>
+                    <div>
+                        <h3>{{ analysis.cheapest_month }}</h3>
+                        <h4 class="text-success">{{ analysis.cheapest_month_price }} €</h4>
+                        <p class="mb-0 text-muted">
+                            {% if analysis.season_analysis %}
+                            <i class="fa-solid
+                                {% if analysis.statistics.cheapest_month.season == 'Hiver' %}
+                                fa-snowflake season-winter
+                                {% elif analysis.statistics.cheapest_month.season == 'Printemps' %}
+                                fa-seedling season-spring
+                                {% elif analysis.statistics.cheapest_month.season == 'Été' %}
+                                fa-sun season-summer
+                                {% elif analysis.statistics.cheapest_month.season == 'Automne' %}
+                                fa-leaf season-autumn
+                                {% endif %}
+                                me-1"></i>
+                            Saison: {{ analysis.statistics.cheapest_month.season }}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Économies potentielles</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="display-4 me-3 text-danger">{{ analysis.most_expensive_month_price }} €</div>
+                    <div>
+                        <h5 class="mb-0">{{ analysis.most_expensive_month }}</h5>
+                        <p class="text-muted mb-0">Mois le plus cher</p>
+                    </div>
+                </div>
+
+                <div class="text-center my-3">
+                    <i class="fa-solid fa-arrow-down fa-2x"></i>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="display-4 me-3 text-success">{{ analysis.potential_savings }} €</div>
+                    <div>
+                        <h5 class="mb-0">{{ analysis.savings_percentage }}%</h5>
+                        <p class="text-muted mb-0">d'économies potentielles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Autres statistiques -->
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Prix par saison</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="seasonChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Classement des mois</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Mois</th>
+                                <th>Prix moyen</th>
+                                <th>Saison</th>
+                                <th>Diff. avec min</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for month in analysis.price_ranking %}
+                            <tr {% if forloop.first %}class="table-success"{% endif %} {% if forloop.last %}class="table-danger"{% endif %}>
+                                <td>{{ forloop.counter }}</td>
+                                <td>{{ month.month }}</td>
+                                <td>{{ month.price }} €</td>
+                                <td>
+                                    <span class="
+                                        {% if month.season == 'Hiver' %}text-primary
+                                        {% elif month.season == 'Printemps' %}text-success
+                                        {% elif month.season == 'Été' %}text-warning
+                                        {% elif month.season == 'Automne' %}text-brown
+                                        {% endif %}
+                                    ">
+                                        {{ month.season }}
+                                    </span>
+                                </td>
+                                <td>
+                                    {% if forloop.first %}
+                                    -
+                                    {% else %}
+                                    +{{ month.price|floatformat:2|cut:"-"|add:"-"|add:analysis.price_ranking.0.price|floatformat:2 }} €
+                                    ({{ month.price|floatformat:2|cut:"-"|add:"-"|add:analysis.price_ranking.0.price|floatformat:2|cut:"-"|add:"-"|div:analysis.price_ranking.0.price|mul:100|floatformat:1 }}%)
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Données détaillées -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Données détaillées</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Mois</th>
+                                <th>Prix moyen</th>
+                                <th>Prix médian</th>
+                                <th>Prix min</th>
+                                <th>Prix max</th>
+                                <th>Échantillon</th>
+                                <th>Saison</th>
+                                <th>Prix relatif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for data in price_data %}
+                            <tr {% if data.is_cheapest %}class="table-success"{% endif %}>
+                                <td>{{ data.month_name }}</td>
+                                <td>{{ data.avg_price|floatformat:2 }} €</td>
+                                <td>{{ data.median_price|floatformat:2 }} €</td>
+                                <td>{{ data.min_price|floatformat:2 }} €</td>
+                                <td>{{ data.max_price|floatformat:2 }} €</td>
+                                <td>{{ data.sample_size }}</td>
+                                <td>{{ data.season }}</td>
+                                <td>{{ data.relative_price|floatformat:2 }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+{% if price_data %}
+<script>
+    // Données pour les graphiques
+    const chartData = {{ chart_data|safe }};
+    const seasonData = {{ season_data|safe }};
+
+    // Couleurs pour les saisons
+    const seasonColors = {
+        'Hiver': '#2196F3',
+        'Printemps': '#4CAF50',
+        'Été': '#FF9800',
+        'Automne': '#795548'
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Graphique principal des prix
+        const priceCtx = document.getElementById('priceChart').getContext('2d');
+        const priceChart = new Chart(priceCtx, {
+            type: 'bar',
+            data: {
+                labels: chartData.months,
+                datasets: [
+                    {
+                        label: 'Prix moyen',
+                        data: chartData.avg_prices,
+                        backgroundColor: '#FF5A5F',
+                        borderColor: '#FF5A5F',
+                        borderWidth: 1,
+                        order: 1
+                    },
+                    {
+                        label: 'Prix médian',
+                        data: chartData.median_prices,
+                        backgroundColor: '#00A699',
+                        borderColor: '#00A699',
+                        borderWidth: 1,
+                        order: 2
+                    },
+                    {
+                        label: 'Fourchette de prix',
+                        data: chartData.min_prices,
+                        backgroundColor: 'rgba(0, 0, 0, 0)',
+                        borderColor: 'rgba(0, 0, 0, 0)',
+                        type: 'line',
+                        order: 0,
+                        pointStyle: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Prix (€)'
+                        }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            afterLabel: function(context) {
+                                const dataIndex = context.dataIndex;
+                                const min = chartData.min_prices[dataIndex];
+                                const max = chartData.max_prices[dataIndex];
+                                return `Min: ${min}€ - Max: ${max}€`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Graphique des saisons
+        const seasonCtx = document.getElementById('seasonChart').getContext('2d');
+        const seasonLabels = Object.keys(seasonData);
+        const seasonValues = Object.values(seasonData);
+        const seasonBgColors = seasonLabels.map(season => seasonColors[season]);
+
+        const seasonChart = new Chart(seasonCtx, {
+            type: 'pie',
+            data: {
+                labels: seasonLabels,
+                datasets: [{
+                    data: seasonValues,
+                    backgroundColor: seasonBgColors,
+                    borderWidth: 1,
+                    borderColor: '#fff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const value = context.raw;
+                                return `${context.label}: ${value.toFixed(2)}€`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+{% endif %}
+{% endblock %}

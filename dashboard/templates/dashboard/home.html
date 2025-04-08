@@ -1,0 +1,185 @@
+{% extends 'dashboard/base.html' %}
+
+{% block title %}Accueil - Airbnb Analytics{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-house me-2"></i> Airbnb Analytics</h1>
+</div>
+
+<!-- Introduction -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2>Trouvez le meilleur moment pour voyager</h2>
+                <p class="lead">
+                    Airbnb Analytics vous aide à analyser les prix des logements Airbnb tout au long de l'année pour différentes destinations.
+                </p>
+                <p>
+                    Notre outil collecte et analyse les données de prix pour vous aider à planifier votre voyage au moment le plus économique de l'année.
+                    Vous pouvez comparer les prix entre les différents mois, analyser les tendances saisonnières et faire des économies substantielles.
+                </p>
+                <div class="mt-4">
+                    <a href="{% url 'dashboard' %}" class="btn btn-primary">
+                        <i class="fa-solid fa-chart-line me-1"></i> Voir le tableau de bord
+                    </a>
+                    <a href="{% url 'add_destination' %}" class="btn btn-outline-secondary ms-2">
+                        <i class="fa-solid fa-plus me-1"></i> Ajouter une destination
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Statistiques</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="display-3 me-3">{{ destination_count }}</div>
+                    <div>
+                        <h5 class="mb-0">Destinations</h5>
+                        <p class="text-muted mb-0">analysées</p>
+                    </div>
+                </div>
+
+                {% if cheapest_months %}
+                <h6 class="mt-4">Mois les moins chers</h6>
+                <ul class="list-group">
+                    {% for dest, data in cheapest_months.items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ dest }}
+                        <span class="cheapest-badge">{{ data.month }} ({{ data.price|floatformat:0 }}€)</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Destinations -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Destinations disponibles</h5>
+            </div>
+            <div class="card-body">
+                {% if destinations %}
+                <ul class="destination-list">
+                    {% for dest in destinations %}
+                    <li>
+                        <a href="{% url 'destination_detail' slug=dest.slug %}">
+                            <i class="fa-solid fa-location-dot me-1"></i> {{ dest.name }}
+
+                            {% if dest.status == 'completed' %}
+                            <span class="badge bg-success float-end">Données disponibles</span>
+                            {% elif dest.status == 'running' %}
+                            <span class="badge bg-warning float-end">Scraping en cours</span>
+                            {% elif dest.status == 'failed' %}
+                            <span class="badge bg-danger float-end">Échec</span>
+                            {% else %}
+                            <span class="badge bg-secondary float-end">Pas de données</span>
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <div class="text-center py-4">
+                    <i class="fa-solid fa-map-location-dot fa-3x mb-3 text-muted"></i>
+                    <p>Aucune destination n'a encore été ajoutée.</p>
+                    <a href="{% url 'add_destination' %}" class="btn btn-primary">
+                        <i class="fa-solid fa-plus me-1"></i> Ajouter une destination
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+            <div class="card-footer bg-white">
+                <a href="{% url 'add_destination' %}" class="btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-plus me-1"></i> Ajouter une destination
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Mises à jour récentes</h5>
+            </div>
+            <div class="card-body">
+                {% if recent_updates %}
+                <div class="list-group">
+                    {% for dest in recent_updates %}
+                    <a href="{% url 'destination_detail' slug=dest.slug %}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">{{ dest.name }}</h6>
+                            <small>{{ dest.last_scraping|date:"d/m/Y H:i" }}</small>
+                        </div>
+                        <p class="mb-1 text-muted">
+                            Dernière mise à jour des données
+                        </p>
+                    </a>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="text-center py-4">
+                    <i class="fa-solid fa-clock-rotate-left fa-3x mb-3 text-muted"></i>
+                    <p>Aucune mise à jour récente.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Comment ça marche -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Comment ça marche</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="display-5 mb-3">
+                            <i class="fa-solid fa-magnifying-glass text-primary"></i>
+                        </div>
+                        <h5>1. Ajoutez une destination</h5>
+                        <p>
+                            Entrez le nom d'une ville ou d'une région que vous souhaitez analyser.
+                            Notre système collectera les données de prix Airbnb pour cette destination.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="display-5 mb-3">
+                            <i class="fa-solid fa-chart-column text-primary"></i>
+                        </div>
+                        <h5>2. Explorez les analyses</h5>
+                        <p>
+                            Consultez les graphiques et statistiques détaillées montrant l'évolution des prix tout au long de l'année.
+                            Identifiez les mois les moins chers pour votre voyage.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="display-5 mb-3">
+                            <i class="fa-solid fa-piggy-bank text-primary"></i>
+                        </div>
+                        <h5>3. Économisez sur votre réservation</h5>
+                        <p>
+                            Réservez votre séjour pendant la période la plus économique et réalisez des économies substantielles
+                            par rapport aux mois les plus chers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

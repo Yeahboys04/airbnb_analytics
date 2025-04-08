@@ -1,0 +1,69 @@
+{% extends 'dashboard/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Ajouter une destination - Airbnb Analytics{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-plus me-2"></i> Ajouter une destination</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Nouvelle destination</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="alert alert-info">
+                        <i class="fa-solid fa-info-circle me-2"></i> Entrez le nom de la destination au format "Ville,Pays" (ex: Paris,France).
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-save me-1"></i> Enregistrer
+                    </button>
+                    <a href="{% url 'home' %}" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-times me-1"></i> Annuler
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Informations</h5>
+            </div>
+            <div class="card-body">
+                <h6>Comment ça fonctionne ?</h6>
+                <p>
+                    Lorsque vous ajoutez une nouvelle destination, vous devrez ensuite lancer manuellement
+                    une première collecte de données pour cette destination.
+                </p>
+
+                <h6>Exemples de destinations</h6>
+                <ul>
+                    <li>Paris,France</li>
+                    <li>Londres,Royaume-Uni</li>
+                    <li>Barcelone,Espagne</li>
+                    <li>New York,États-Unis</li>
+                    <li>Tokyo,Japon</li>
+                </ul>
+
+                <h6>Après l'ajout</h6>
+                <p>
+                    Une fois la destination ajoutée, vous serez redirigé vers sa page détaillée où vous pourrez
+                    lancer le scraping en cliquant sur le bouton "Mettre à jour les données".
+                </p>
+                <p>
+                    La collecte des données peut prendre plusieurs minutes. Vous pouvez quitter la page et revenir
+                    plus tard pour consulter les résultats.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
