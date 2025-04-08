@@ -142,32 +142,32 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for month in analysis.price_ranking %}
-                            <tr {% if forloop.first %}class="table-success"{% endif %} {% if forloop.last %}class="table-danger"{% endif %}>
-                                <td>{{ forloop.counter }}</td>
-                                <td>{{ month.month }}</td>
-                                <td>{{ month.price }} €</td>
-                                <td>
-                                    <span class="
-                                        {% if month.season == 'Hiver' %}text-primary
-                                        {% elif month.season == 'Printemps' %}text-success
-                                        {% elif month.season == 'Été' %}text-warning
-                                        {% elif month.season == 'Automne' %}text-brown
-                                        {% endif %}
-                                    ">
-                                        {{ month.season }}
-                                    </span>
-                                </td>
-                                <td>
-                                    {% if forloop.first %}
-                                    -
-                                    {% else %}
-                                    +{{ month.price_diff|floatformat:2 }} € ({{ month.percentage_diff|floatformat:1 }}%)
+                        {% for month in price_ranking %}
+                        <tr {% if forloop.first %}class="table-success"{% endif %} {% if forloop.last %}class="table-danger"{% endif %}>
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ month.month }}</td>
+                            <td>{{ month.price }} €</td>
+                            <td>
+                                <span class="
+                                    {% if month.season == 'Hiver' %}text-primary
+                                    {% elif month.season == 'Printemps' %}text-success
+                                    {% elif month.season == 'Été' %}text-warning
+                                    {% elif month.season == 'Automne' %}text-brown
                                     {% endif %}
-                                </td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
+                                ">
+                                    {{ month.season }}
+                                </span>
+                            </td>
+                            <td>
+                                {% if forloop.first %}
+                                -
+                                {% else %}
+                                +{{ month.price_diff|floatformat:2 }} € ({{ month.percentage_diff|floatformat:1 }}%)
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
                     </table>
                 </div>
             </div>

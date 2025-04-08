@@ -1,4 +1,5 @@
 {% extends 'dashboard/base.html' %}
+{% load dashboard_extras %}
 
 {% block title %}Comparaison des prix - Airbnb Analytics{% endblock %}
 
@@ -126,8 +127,8 @@
                         <td>
                             {% with prices=comparison_data|map_month_prices:month_id %}
                             {% if prices|length > 1 %}
-                            {{ prices|max|subtract:prices|min|floatformat:2 }} €
-                            ({{ prices|max|subtract:prices|min|divide:prices|min|multiply:100|floatformat:1 }}%)
+                            {{ prices|price_difference|floatformat:2 }} €
+                            ({{ prices|price_difference_percent|floatformat:1 }}%)
                             {% else %}
                             -
                             {% endif %}

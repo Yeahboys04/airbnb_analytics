@@ -663,3 +663,271 @@ INFO 2025-04-08 23:43:40,693 scraper 18204 16808 Mois December: prix moyen = 84.
 INFO 2025-04-08 23:43:55,644 scraper 18204 16808 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250408_234355.csv
 INFO 2025-04-08 23:44:01,894 scraper 18204 16808 Driver Selenium fermé
 INFO 2025-04-08 23:44:01,895 scraper 18204 16808 Scraping terminé avec succès pour Lyon,France
+INFO 2025-04-09 00:18:50,435 scraper 13176 18516 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 00:18:50,436 scraper 13176 18516 Début du scraping pour Knutange,France
+INFO 2025-04-09 00:18:50,436 scraper 13176 18516 Début du scraping des prix pour Knutange,France en 2025
+INFO 2025-04-09 00:18:51,762 scraper 13176 18516 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 00:18:51,763 scraper 13176 18516 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 00:18:51,763 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:19:11,556 scraper 13176 18516 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:19:11,563 scraper 13176 18516 Extraction réussie de 2 prix
+INFO 2025-04-09 00:19:11,568 scraper 13176 18516 Mois January: prix moyen = 85.00€, 2 échantillons
+INFO 2025-04-09 00:19:25,450 scraper 13176 18516 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 00:19:25,450 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:19:42,098 scraper 13176 18516 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:19:42,104 scraper 13176 18516 Extraction réussie de 2 prix
+INFO 2025-04-09 00:19:42,105 scraper 13176 18516 Mois February: prix moyen = 85.00€, 2 échantillons
+INFO 2025-04-09 00:19:54,305 scraper 13176 18516 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 00:19:54,305 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:20:12,246 scraper 13176 18516 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:20:12,253 scraper 13176 18516 Extraction réussie de 2 prix
+INFO 2025-04-09 00:20:12,254 scraper 13176 18516 Mois March: prix moyen = 85.00€, 2 échantillons
+INFO 2025-04-09 00:20:20,987 scraper 13176 18516 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 00:20:20,987 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:20:38,847 scraper 13176 18516 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:20:38,852 scraper 13176 18516 Extraction réussie de 12 prix
+INFO 2025-04-09 00:20:38,853 scraper 13176 18516 Mois April: prix moyen = 76.00€, 12 échantillons
+INFO 2025-04-09 00:20:53,589 scraper 13176 18516 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 00:20:53,589 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:21:11,671 scraper 13176 18516 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:21:11,678 scraper 13176 18516 Extraction réussie de 9 prix
+INFO 2025-04-09 00:21:11,679 scraper 13176 18516 Mois May: prix moyen = 69.11€, 9 échantillons
+INFO 2025-04-09 00:21:21,759 scraper 13176 18516 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 00:21:21,759 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:21:37,078 scraper 13176 18516 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:21:37,084 scraper 13176 18516 Extraction réussie de 12 prix
+INFO 2025-04-09 00:21:37,085 scraper 13176 18516 Mois June: prix moyen = 61.33€, 12 échantillons
+INFO 2025-04-09 00:21:45,961 scraper 13176 18516 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 00:21:45,961 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:22:03,460 scraper 13176 18516 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:22:03,467 scraper 13176 18516 Extraction réussie de 13 prix
+INFO 2025-04-09 00:22:03,468 scraper 13176 18516 Mois July: prix moyen = 68.92€, 13 échantillons
+INFO 2025-04-09 00:22:15,761 scraper 13176 18516 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 00:22:15,761 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:22:34,686 scraper 13176 18516 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:22:34,692 scraper 13176 18516 Extraction réussie de 13 prix
+INFO 2025-04-09 00:22:34,693 scraper 13176 18516 Mois August: prix moyen = 66.77€, 13 échantillons
+INFO 2025-04-09 00:22:45,254 scraper 13176 18516 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 00:22:45,254 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:23:03,233 scraper 13176 18516 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:23:03,239 scraper 13176 18516 Extraction réussie de 13 prix
+INFO 2025-04-09 00:23:03,240 scraper 13176 18516 Mois September: prix moyen = 67.92€, 13 échantillons
+INFO 2025-04-09 00:23:13,959 scraper 13176 18516 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 00:23:13,959 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:23:30,726 scraper 13176 18516 Nombre d'hébergements trouvés: 21
+INFO 2025-04-09 00:23:30,731 scraper 13176 18516 Extraction réussie de 14 prix
+INFO 2025-04-09 00:23:30,732 scraper 13176 18516 Mois October: prix moyen = 69.50€, 14 échantillons
+INFO 2025-04-09 00:23:42,695 scraper 13176 18516 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 00:23:42,695 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:23:59,130 scraper 13176 18516 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:23:59,135 scraper 13176 18516 Extraction réussie de 12 prix
+INFO 2025-04-09 00:23:59,136 scraper 13176 18516 Mois November: prix moyen = 69.25€, 12 échantillons
+INFO 2025-04-09 00:24:13,003 scraper 13176 18516 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 00:24:13,003 scraper 13176 18516 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:24:31,286 scraper 13176 18516 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:24:31,291 scraper 13176 18516 Extraction réussie de 12 prix
+INFO 2025-04-09 00:24:31,291 scraper 13176 18516 Mois December: prix moyen = 70.17€, 12 échantillons
+INFO 2025-04-09 00:24:43,518 scraper 13176 18516 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Knutange_France_2025_20250409_002443.csv
+INFO 2025-04-09 00:24:49,766 scraper 13176 18516 Driver Selenium fermé
+INFO 2025-04-09 00:24:49,766 scraper 13176 18516 Scraping terminé avec succès pour Knutange,France
+INFO 2025-04-09 00:29:41,575 scraper 25436 11220 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 00:29:41,575 scraper 25436 11220 Début du scraping pour Lyon,France
+INFO 2025-04-09 00:29:41,575 scraper 25436 11220 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-09 00:29:42,739 scraper 25436 11220 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 00:29:42,740 scraper 25436 11220 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 00:29:42,740 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:30:01,638 scraper 25436 11220 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:30:01,645 scraper 25436 11220 Extraction réussie de 6 prix
+INFO 2025-04-09 00:30:01,646 scraper 25436 11220 Mois January: prix moyen = 131.17€, 6 échantillons
+INFO 2025-04-09 00:30:15,644 scraper 25436 11220 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 00:30:15,644 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:30:32,621 scraper 25436 11220 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:30:32,628 scraper 25436 11220 Extraction réussie de 4 prix
+INFO 2025-04-09 00:30:32,629 scraper 25436 11220 Mois February: prix moyen = 149.25€, 4 échantillons
+INFO 2025-04-09 00:30:43,571 scraper 25436 11220 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 00:30:43,571 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:31:01,918 scraper 25436 11220 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:31:01,926 scraper 25436 11220 Extraction réussie de 4 prix
+INFO 2025-04-09 00:31:01,927 scraper 25436 11220 Mois March: prix moyen = 149.25€, 4 échantillons
+INFO 2025-04-09 00:31:14,233 scraper 25436 11220 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 00:31:14,233 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:31:30,501 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:31:30,508 scraper 25436 11220 Extraction réussie de 12 prix
+INFO 2025-04-09 00:31:30,510 scraper 25436 11220 Mois April: prix moyen = 65.42€, 12 échantillons
+INFO 2025-04-09 00:31:39,637 scraper 25436 11220 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 00:31:39,637 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:31:56,062 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:31:56,067 scraper 25436 11220 Extraction réussie de 16 prix
+INFO 2025-04-09 00:31:56,068 scraper 25436 11220 Mois May: prix moyen = 66.44€, 16 échantillons
+INFO 2025-04-09 00:32:07,346 scraper 25436 11220 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 00:32:07,346 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:32:22,964 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:32:22,970 scraper 25436 11220 Extraction réussie de 15 prix
+INFO 2025-04-09 00:32:22,971 scraper 25436 11220 Mois June: prix moyen = 66.73€, 15 échantillons
+INFO 2025-04-09 00:32:31,135 scraper 25436 11220 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 00:32:31,135 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:32:48,818 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:32:48,824 scraper 25436 11220 Extraction réussie de 12 prix
+INFO 2025-04-09 00:32:48,825 scraper 25436 11220 Mois July: prix moyen = 60.50€, 12 échantillons
+INFO 2025-04-09 00:33:01,235 scraper 25436 11220 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 00:33:01,235 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:33:19,013 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:33:19,018 scraper 25436 11220 Extraction réussie de 13 prix
+INFO 2025-04-09 00:33:19,019 scraper 25436 11220 Mois August: prix moyen = 60.77€, 13 échantillons
+INFO 2025-04-09 00:33:32,016 scraper 25436 11220 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 00:33:32,016 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:33:48,546 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:33:48,551 scraper 25436 11220 Extraction réussie de 15 prix
+INFO 2025-04-09 00:33:48,552 scraper 25436 11220 Mois September: prix moyen = 73.73€, 15 échantillons
+INFO 2025-04-09 00:33:59,220 scraper 25436 11220 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 00:33:59,220 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:34:15,967 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:34:15,974 scraper 25436 11220 Extraction réussie de 12 prix
+INFO 2025-04-09 00:34:15,974 scraper 25436 11220 Mois October: prix moyen = 72.67€, 12 échantillons
+INFO 2025-04-09 00:34:29,540 scraper 25436 11220 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 00:34:29,540 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:34:46,846 scraper 25436 11220 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:34:46,857 scraper 25436 11220 Extraction réussie de 11 prix
+INFO 2025-04-09 00:34:46,858 scraper 25436 11220 Mois November: prix moyen = 71.09€, 11 échantillons
+INFO 2025-04-09 00:34:58,149 scraper 25436 11220 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 00:34:58,149 scraper 25436 11220 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:35:14,022 scraper 25436 11220 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:35:14,026 scraper 25436 11220 Extraction réussie de 12 prix
+INFO 2025-04-09 00:35:14,027 scraper 25436 11220 Mois December: prix moyen = 83.33€, 12 échantillons
+INFO 2025-04-09 00:35:23,683 scraper 25436 11220 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250409_003523.csv
+INFO 2025-04-09 00:35:29,945 scraper 25436 11220 Driver Selenium fermé
+INFO 2025-04-09 00:35:29,946 scraper 25436 11220 Scraping terminé avec succès pour Lyon,France
+INFO 2025-04-09 00:38:54,284 scraper 8620 21312 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 00:38:54,285 scraper 8620 21312 Début du scraping pour Knutange,France
+INFO 2025-04-09 00:38:54,285 scraper 8620 21312 Début du scraping des prix pour Knutange,France en 2025
+INFO 2025-04-09 00:38:55,352 scraper 8620 21312 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 00:38:55,352 scraper 8620 21312 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 00:38:55,352 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:39:14,472 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:39:14,479 scraper 8620 21312 Extraction réussie de 1 prix
+INFO 2025-04-09 00:39:14,480 scraper 8620 21312 Mois January: prix moyen = 94.00€, 1 échantillons
+INFO 2025-04-09 00:39:25,880 scraper 8620 21312 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 00:39:25,880 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:39:44,433 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:39:44,440 scraper 8620 21312 Extraction réussie de 1 prix
+INFO 2025-04-09 00:39:44,441 scraper 8620 21312 Mois February: prix moyen = 94.00€, 1 échantillons
+INFO 2025-04-09 00:39:57,465 scraper 8620 21312 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 00:39:57,465 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:40:14,319 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:40:14,329 scraper 8620 21312 Extraction réussie de 1 prix
+INFO 2025-04-09 00:40:14,329 scraper 8620 21312 Mois March: prix moyen = 94.00€, 1 échantillons
+INFO 2025-04-09 00:40:27,636 scraper 8620 21312 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 00:40:27,636 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:40:43,991 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:40:43,996 scraper 8620 21312 Extraction réussie de 10 prix
+INFO 2025-04-09 00:40:43,997 scraper 8620 21312 Mois April: prix moyen = 69.20€, 10 échantillons
+INFO 2025-04-09 00:40:56,534 scraper 8620 21312 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 00:40:56,534 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:41:14,833 scraper 8620 21312 Nombre d'hébergements trouvés: 21
+INFO 2025-04-09 00:41:14,839 scraper 8620 21312 Extraction réussie de 9 prix
+INFO 2025-04-09 00:41:14,840 scraper 8620 21312 Mois May: prix moyen = 68.33€, 9 échantillons
+INFO 2025-04-09 00:41:23,253 scraper 8620 21312 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 00:41:23,253 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:41:40,964 scraper 8620 21312 Nombre d'hébergements trouvés: 22
+INFO 2025-04-09 00:41:40,972 scraper 8620 21312 Extraction réussie de 11 prix
+INFO 2025-04-09 00:41:40,973 scraper 8620 21312 Mois June: prix moyen = 59.36€, 11 échantillons
+INFO 2025-04-09 00:41:49,311 scraper 8620 21312 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 00:41:49,311 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:42:07,301 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:42:07,307 scraper 8620 21312 Extraction réussie de 10 prix
+INFO 2025-04-09 00:42:07,307 scraper 8620 21312 Mois July: prix moyen = 62.50€, 10 échantillons
+INFO 2025-04-09 00:42:15,339 scraper 8620 21312 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 00:42:15,339 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:42:32,643 scraper 8620 21312 Nombre d'hébergements trouvés: 21
+INFO 2025-04-09 00:42:32,648 scraper 8620 21312 Extraction réussie de 13 prix
+INFO 2025-04-09 00:42:32,648 scraper 8620 21312 Mois August: prix moyen = 67.31€, 13 échantillons
+INFO 2025-04-09 00:42:45,017 scraper 8620 21312 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 00:42:45,017 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:43:02,795 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:43:02,799 scraper 8620 21312 Extraction réussie de 12 prix
+INFO 2025-04-09 00:43:02,799 scraper 8620 21312 Mois September: prix moyen = 60.83€, 12 échantillons
+INFO 2025-04-09 00:43:16,528 scraper 8620 21312 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 00:43:16,528 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:43:32,614 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:43:32,618 scraper 8620 21312 Extraction réussie de 12 prix
+INFO 2025-04-09 00:43:32,619 scraper 8620 21312 Mois October: prix moyen = 64.08€, 12 échantillons
+INFO 2025-04-09 00:43:41,371 scraper 8620 21312 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 00:43:41,373 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:43:58,772 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:43:58,776 scraper 8620 21312 Extraction réussie de 12 prix
+INFO 2025-04-09 00:43:58,777 scraper 8620 21312 Mois November: prix moyen = 66.50€, 12 échantillons
+INFO 2025-04-09 00:44:08,603 scraper 8620 21312 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 00:44:08,603 scraper 8620 21312 Navigation vers https://www.airbnb.fr/s/Knutange--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:44:26,314 scraper 8620 21312 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:44:26,320 scraper 8620 21312 Extraction réussie de 13 prix
+INFO 2025-04-09 00:44:26,321 scraper 8620 21312 Mois December: prix moyen = 67.46€, 13 échantillons
+INFO 2025-04-09 00:44:37,895 scraper 8620 21312 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Knutange_France_2025_20250409_004437.csv
+INFO 2025-04-09 00:44:44,122 scraper 8620 21312 Driver Selenium fermé
+INFO 2025-04-09 00:44:44,123 scraper 8620 21312 Scraping terminé avec succès pour Knutange,France
+INFO 2025-04-09 00:48:29,561 scraper 2268 21740 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 00:48:29,562 scraper 2268 21740 Début du scraping pour Lyon,France
+INFO 2025-04-09 00:48:29,562 scraper 2268 21740 Début du scraping des prix pour Lyon,France en 2025
+INFO 2025-04-09 00:48:30,577 scraper 2268 21740 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 00:48:30,578 scraper 2268 21740 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 00:48:30,578 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:48:50,145 scraper 2268 21740 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:48:50,151 scraper 2268 21740 Extraction réussie de 6 prix
+INFO 2025-04-09 00:48:50,152 scraper 2268 21740 Mois January: prix moyen = 103.17€, 6 échantillons
+INFO 2025-04-09 00:49:03,016 scraper 2268 21740 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 00:49:03,016 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:49:20,102 scraper 2268 21740 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:49:20,108 scraper 2268 21740 Extraction réussie de 6 prix
+INFO 2025-04-09 00:49:20,109 scraper 2268 21740 Mois February: prix moyen = 103.17€, 6 échantillons
+INFO 2025-04-09 00:49:33,817 scraper 2268 21740 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 00:49:33,817 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:49:51,026 scraper 2268 21740 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 00:49:51,033 scraper 2268 21740 Extraction réussie de 6 prix
+INFO 2025-04-09 00:49:51,034 scraper 2268 21740 Mois March: prix moyen = 103.17€, 6 échantillons
+INFO 2025-04-09 00:50:01,624 scraper 2268 21740 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 00:50:01,624 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:50:17,752 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:50:17,759 scraper 2268 21740 Extraction réussie de 12 prix
+INFO 2025-04-09 00:50:17,760 scraper 2268 21740 Mois April: prix moyen = 66.33€, 12 échantillons
+INFO 2025-04-09 00:50:29,314 scraper 2268 21740 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 00:50:29,314 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:50:47,292 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:50:47,298 scraper 2268 21740 Extraction réussie de 14 prix
+INFO 2025-04-09 00:50:47,299 scraper 2268 21740 Mois May: prix moyen = 67.07€, 14 échantillons
+INFO 2025-04-09 00:50:56,160 scraper 2268 21740 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 00:50:56,160 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:51:14,230 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:51:14,236 scraper 2268 21740 Extraction réussie de 15 prix
+INFO 2025-04-09 00:51:14,237 scraper 2268 21740 Mois June: prix moyen = 63.20€, 15 échantillons
+INFO 2025-04-09 00:51:26,215 scraper 2268 21740 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 00:51:26,215 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:51:44,371 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:51:44,377 scraper 2268 21740 Extraction réussie de 12 prix
+INFO 2025-04-09 00:51:44,378 scraper 2268 21740 Mois July: prix moyen = 65.42€, 12 échantillons
+INFO 2025-04-09 00:51:59,150 scraper 2268 21740 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 00:51:59,150 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:52:14,372 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:52:14,378 scraper 2268 21740 Extraction réussie de 13 prix
+INFO 2025-04-09 00:52:14,379 scraper 2268 21740 Mois August: prix moyen = 64.38€, 13 échantillons
+INFO 2025-04-09 00:52:25,520 scraper 2268 21740 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 00:52:25,520 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:52:42,096 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:52:42,103 scraper 2268 21740 Extraction réussie de 16 prix
+INFO 2025-04-09 00:52:42,103 scraper 2268 21740 Mois September: prix moyen = 66.44€, 16 échantillons
+INFO 2025-04-09 00:52:50,181 scraper 2268 21740 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 00:52:50,181 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:53:06,387 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:53:06,394 scraper 2268 21740 Extraction réussie de 9 prix
+INFO 2025-04-09 00:53:06,396 scraper 2268 21740 Mois October: prix moyen = 64.56€, 9 échantillons
+INFO 2025-04-09 00:53:20,765 scraper 2268 21740 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 00:53:20,765 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:53:37,524 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:53:37,531 scraper 2268 21740 Extraction réussie de 10 prix
+INFO 2025-04-09 00:53:37,532 scraper 2268 21740 Mois November: prix moyen = 72.60€, 10 échantillons
+INFO 2025-04-09 00:53:48,034 scraper 2268 21740 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 00:53:48,034 scraper 2268 21740 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 00:54:04,992 scraper 2268 21740 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 00:54:05,000 scraper 2268 21740 Extraction réussie de 12 prix
+INFO 2025-04-09 00:54:05,001 scraper 2268 21740 Mois December: prix moyen = 74.58€, 12 échantillons
+INFO 2025-04-09 00:54:13,051 scraper 2268 21740 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250409_005413.csv
+INFO 2025-04-09 00:54:19,287 scraper 2268 21740 Driver Selenium fermé
+INFO 2025-04-09 00:54:19,288 scraper 2268 21740 Scraping terminé avec succès pour Lyon,France

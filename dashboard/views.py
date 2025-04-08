@@ -97,28 +97,31 @@ class DestinationDetailView(DetailView):
             for season, data in analysis.season_analysis.items():
                 season_data[season] = data.get('avg_price', 0)
 
-        if analysis:
             # Calcul des différences de prix
-            cheapest_price = analysis.price_ranking[0]['price']
-            price_ranking_with_diff = []
+            if analysis.price_ranking and len(analysis.price_ranking) > 0:
+                cheapest_price = analysis.price_ranking[0]['price']
+                price_ranking_with_diff = []
 
-            for month in analysis.price_ranking:
-                month_data = month.copy()
+                for month in analysis.price_ranking:
+                    month_data = month.copy()
 
-                # Calculer la différence de prix et le pourcentage
-                if month['price'] != cheapest_price:
-                    price_diff = month['price'] - cheapest_price
-                    percentage_diff = (price_diff / cheapest_price) * 100
-                    month_data['price_diff'] = price_diff
-                    month_data['percentage_diff'] = percentage_diff
-                else:
-                    month_data['price_diff'] = 0
-                    month_data['percentage_diff'] = 0
+                    # Calculer la différence de prix et le pourcentage
+                    if month['price'] != cheapest_price:
+                        price_diff = month['price'] - cheapest_price
+                        percentage_diff = (price_diff / cheapest_price) * 100
+                        month_data['price_diff'] = price_diff
+                        month_data['percentage_diff'] = percentage_diff
+                    else:
+                        month_data['price_diff'] = 0
+                        month_data['percentage_diff'] = 0
 
-                price_ranking_with_diff.append(month_data)
+                    price_ranking_with_diff.append(month_data)
 
-            # Remplacer le price_ranking original
-            analysis.price_ranking = price_ranking_with_diff
+                # Au lieu de modifier analysis.price_ranking directement,
+                # ajoutons price_ranking_with_diff au contexte
+                context['price_ranking'] = price_ranking_with_diff
+            else:
+                context['price_ranking'] = []
 
         context.update({
             'price_data': price_data,
@@ -129,7 +132,6 @@ class DestinationDetailView(DetailView):
         })
 
         return context
-
 
 
 class AddDestinationView(FormView):
@@ -350,6 +352,9 @@ def price_comparison_view(request):
     comparison_data = []
     months_data = {}
 
+    # Pour le débogage
+    logger.info(f"Destinations sélectionnées: {selected_dest_ids}")
+
     for dest_id in selected_dest_ids:
         try:
             dest = Destination.objects.get(id=dest_id)
@@ -364,17 +369,24 @@ def price_comparison_view(request):
                 'months': {}
             }
 
+            # Pour le débogage
+            data_count = price_data.count()
+            logger.info(f"Destination {dest.name} (ID: {dest.id}): {data_count} entrées de prix trouvées")
+
             for data in price_data:
-                dest_data['months'][data.month] = {
+                dest_data['months'][str(data.month)] = {
                     'name': data.month_name,
                     'avg_price': data.avg_price,
                     'is_cheapest': data.is_cheapest
                 }
                 months_data[data.month] = data.month_name
+                # Pour le débogage
+                logger.info(f"  - Mois {data.month} ({data.month_name}): {data.avg_price}€")
 
             comparison_data.append(dest_data)
 
         except Destination.DoesNotExist:
+            logger.warning(f"Destination avec ID {dest_id} non trouvée")
             continue
 
     # Préparer les données pour le graphique
@@ -395,12 +407,17 @@ def price_comparison_view(request):
         }
 
         for month in sorted(months_data.keys()):
-            if month in dest_data['months']:
-                dataset['data'].append(dest_data['months'][month]['avg_price'])
+            month_str = str(month)
+            if month_str in dest_data['months']:
+                dataset['data'].append(dest_data['months'][month_str]['avg_price'])
             else:
                 dataset['data'].append(None)
 
         chart_data['datasets'].append(dataset)
+
+    # Pour le débogage
+    logger.info(f"Mois disponibles: {', '.join([f'{k}:{v}' for k, v in months_data.items()])}")
+    logger.info(f"Nombre de destinations dans comparison_data: {len(comparison_data)}")
 
     context = {
         'destinations': destinations,
@@ -438,34 +455,50 @@ def process_and_save_results(destination, df, stats=None):
 
     # Ajouter les nouvelles données de prix
     for _, row in df.iterrows():
-        PriceData.objects.create(
+        # S'assurer que toutes les colonnes requises existent
+        # Si 'season' n'existe pas, utiliser une valeur par défaut basée sur le mois
+        if 'season' not in row:
+            month = row.get('month', 1)
+            seasons = {
+                12: 'Hiver', 1: 'Hiver', 2: 'Hiver',
+                3: 'Printemps', 4: 'Printemps', 5: 'Printemps',
+                6: 'Été', 7: 'Été', 8: 'Été',
+                9: 'Automne', 10: 'Automne', 11: 'Automne'
+            }
+            season = seasons.get(month, 'Inconnu')
+        else:
+            season = row['season']
+
+        # S'assurer que toutes les autres colonnes requises existent
+        price_data = PriceData(
             destination=destination,
             year=year,
-            month=row['month'],
-            month_name=row['month_name'],
-            avg_price=row['avg_price'],
-            median_price=row['median_price'],
-            min_price=row['min_price'],
-            max_price=row['max_price'],
-            sample_size=row['sample_size'],
-            season=row['season'],
-            relative_price=row['relative_price'],
-            price_rank=row['price_rank'],
-            is_cheapest=row['is_cheapest']
+            month=row.get('month', 0),
+            month_name=row.get('month_name', ''),
+            avg_price=row.get('avg_price', 0),
+            median_price=row.get('median_price', 0),
+            min_price=row.get('min_price', 0),
+            max_price=row.get('max_price', 0),
+            sample_size=row.get('sample_size', 0),
+            season=season,
+            relative_price=row.get('relative_price', 1.0),
+            price_rank=row.get('price_rank', 0),
+            is_cheapest=row.get('is_cheapest', False)
         )
+        price_data.save()
 
     # Créer l'analyse
     if stats:
         analysis = AnalysisResult(
             destination=destination,
             year=year,
-            cheapest_month=stats['cheapest_month']['name'],
-            cheapest_month_price=stats['cheapest_month']['avg_price'],
-            most_expensive_month=stats['most_expensive_month']['name'],
-            most_expensive_month_price=stats['most_expensive_month']['avg_price'],
-            potential_savings=stats['potential_savings'],
-            savings_percentage=stats['savings_percentage'],
-            coefficient_of_variation=stats['annual_variation']['coefficient_of_variation']
+            cheapest_month=stats.get('cheapest_month', {}).get('name', ''),
+            cheapest_month_price=stats.get('cheapest_month', {}).get('avg_price', 0),
+            most_expensive_month=stats.get('most_expensive_month', {}).get('name', ''),
+            most_expensive_month_price=stats.get('most_expensive_month', {}).get('avg_price', 0),
+            potential_savings=stats.get('potential_savings', 0),
+            savings_percentage=stats.get('savings_percentage', 0),
+            coefficient_of_variation=stats.get('annual_variation', {}).get('coefficient_of_variation', 0)
         )
         analysis.statistics = stats
         analysis.save()

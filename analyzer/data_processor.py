@@ -185,22 +185,26 @@ class AirbnbDataProcessor:
             stats['potential_savings'] = round(potential_savings, 2)
             stats['savings_percentage'] = round(
                 (potential_savings / most_expensive_month['avg_price']) * 100, 2
-            )
+            ) if most_expensive_month['avg_price'] > 0 else 0
 
-            # Statistiques par saison
-            season_stats = df.groupby('season').agg({
-                'avg_price': ['mean', 'min', 'max'],
-                'month_name': lambda x: ', '.join(x),
-            }).reset_index()
+            # Statistiques par saison - CORRECTION ICI
+            # Assurons-nous que la colonne 'season' contient des valeurs hashables (str)
+            df['season'] = df['season'].astype(str)
 
+            # Approche simplifiée: traiter chaque groupe séparément sans fusion
             stats['season_analysis'] = {}
-            for _, row in season_stats.iterrows():
-                season = row['season']
+
+            for season, group in df.groupby('season'):
+                month_names = ', '.join(group['month_name'].tolist())
+                avg_price = group['avg_price'].mean()
+                min_price = group['avg_price'].min()
+                max_price = group['avg_price'].max()
+
                 stats['season_analysis'][season] = {
-                    'avg_price': round(row[('avg_price', 'mean')], 2),
-                    'min_price': round(row[('avg_price', 'min')], 2),
-                    'max_price': round(row[('avg_price', 'max')], 2),
-                    'months': row[('month_name', '<lambda>')],
+                    'avg_price': round(avg_price, 2),
+                    'min_price': round(min_price, 2),
+                    'max_price': round(max_price, 2),
+                    'months': month_names,
                 }
 
             # Variation de prix annuelle
@@ -212,7 +216,7 @@ class AirbnbDataProcessor:
                 'max': round(df['avg_price'].max(), 2),
                 'coefficient_of_variation': round(
                     (df['avg_price'].std() / df['avg_price'].mean()) * 100, 2
-                )
+                ) if df['avg_price'].mean() > 0 else 0
             }
 
             # Créer une liste de tous les mois ordonnés par prix
