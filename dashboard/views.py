@@ -453,8 +453,12 @@ def process_and_save_results(destination, df, stats=None):
     PriceData.objects.filter(destination=destination, year=year).delete()
     AnalysisResult.objects.filter(destination=destination, year=year).delete()
 
+    # Calculer la moyenne annuelle
+    annual_avg = df['avg_price'].mean()
     # Ajouter les nouvelles données de prix
     for _, row in df.iterrows():
+        # Recalculer le prix relatif explicitement
+        relative_price = row['avg_price'] / annual_avg if annual_avg > 0 else 1.0
         # S'assurer que toutes les colonnes requises existent
         # Si 'season' n'existe pas, utiliser une valeur par défaut basée sur le mois
         if 'season' not in row:
@@ -481,7 +485,7 @@ def process_and_save_results(destination, df, stats=None):
             max_price=row.get('max_price', 0),
             sample_size=row.get('sample_size', 0),
             season=season,
-            relative_price=row.get('relative_price', 1.0),
+            relative_price=relative_price,
             price_rank=row.get('price_rank', 0),
             is_cheapest=row.get('is_cheapest', False)
         )

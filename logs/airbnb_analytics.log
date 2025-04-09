@@ -3857,3 +3857,314 @@ AttributeError: property 'price_ranking' of 'AnalysisResult' object has no sette
 ERROR 2025-04-09 01:16:02,660 basehttp 11864 2200 "GET /destinations/lyonfrance/ HTTP/1.1" 500 98990
 INFO 2025-04-09 01:17:29,024 autoreload 11864 23984 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
 INFO 2025-04-09 01:17:29,600 autoreload 20676 5436 Watching for file changes with StatReloader
+INFO 2025-04-09 01:19:15,470 basehttp 20676 15676 "GET /destinations/lyonfrance/ HTTP/1.1" 200 34309
+INFO 2025-04-09 01:19:57,359 views 20676 15676 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 01:19:57,361 views 20676 15676 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 01:19:57,363 views 20676 15676 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 01:19:57,363 views 20676 15676   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 01:19:57,363 views 20676 15676   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 6 (June): 63.2€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 01:19:57,364 views 20676 15676   - Mois 11 (November): 72.6€
+INFO 2025-04-09 01:19:57,365 views 20676 15676   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 01:19:57,366 views 20676 15676 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 01:19:57,367 views 20676 15676 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 01:19:57,368 views 20676 15676   - Mois 1 (January): 94.0€
+INFO 2025-04-09 01:19:57,368 views 20676 15676   - Mois 2 (February): 94.0€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 3 (March): 94.0€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 4 (April): 69.2€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 7 (July): 62.5€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 11 (November): 66.5€
+INFO 2025-04-09 01:19:57,369 views 20676 15676   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 01:19:57,369 views 20676 15676 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 01:19:57,370 views 20676 15676 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 01:19:57,376 basehttp 20676 15676 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 01:19:59,665 basehttp 20676 15676 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:20:04,743 basehttp 20676 15676 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:20:14,300 basehttp 20676 15676 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:20:52,093 basehttp 20676 15676 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:20:52,933 basehttp 20676 15676 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:21:00,599 basehttp 20676 15676 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:22:34,292 autoreload 19004 23888 Watching for file changes with StatReloader
+INFO 2025-04-09 01:22:37,171 basehttp 19004 13516 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:22:40,844 basehttp 19004 13516 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:22:41,718 basehttp 19004 13516 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:22:43,350 views 19004 13516 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 01:22:43,351 views 19004 13516 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 01:22:43,353 views 19004 13516 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 01:22:43,353 views 19004 13516   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 01:22:43,354 views 19004 13516   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 01:22:43,354 views 19004 13516   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 01:22:43,354 views 19004 13516   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 01:22:43,354 views 19004 13516   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 01:22:43,354 views 19004 13516   - Mois 6 (June): 63.2€
+INFO 2025-04-09 01:22:43,354 views 19004 13516   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 01:22:43,354 views 19004 13516   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 01:22:43,355 views 19004 13516   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 01:22:43,355 views 19004 13516   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 01:22:43,355 views 19004 13516   - Mois 11 (November): 72.6€
+INFO 2025-04-09 01:22:43,355 views 19004 13516   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 01:22:43,356 views 19004 13516 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 01:22:43,357 views 19004 13516 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 1 (January): 94.0€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 2 (February): 94.0€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 3 (March): 94.0€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 4 (April): 69.2€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 7 (July): 62.5€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 01:22:43,358 views 19004 13516   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 01:22:43,359 views 19004 13516   - Mois 11 (November): 66.5€
+INFO 2025-04-09 01:22:43,359 views 19004 13516   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 01:22:43,359 views 19004 13516 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 01:22:43,359 views 19004 13516 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 01:22:43,364 basehttp 19004 13516 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 01:22:46,197 basehttp 19004 13516 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:22:49,667 basehttp 19004 2912 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:22:55,644 basehttp 19004 2912 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:23:00,123 views 19004 7052 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 01:23:00,124 views 19004 7052 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 01:23:00,126 views 19004 7052 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 01:23:00,127 views 19004 7052   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 6 (June): 63.2€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 01:23:00,128 views 19004 7052   - Mois 11 (November): 72.6€
+INFO 2025-04-09 01:23:00,129 views 19004 7052   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 01:23:00,129 views 19004 7052 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 01:23:00,131 views 19004 7052 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 01:23:00,131 views 19004 7052   - Mois 1 (January): 94.0€
+INFO 2025-04-09 01:23:00,131 views 19004 7052   - Mois 2 (February): 94.0€
+INFO 2025-04-09 01:23:00,132 views 19004 7052   - Mois 3 (March): 94.0€
+INFO 2025-04-09 01:23:00,132 views 19004 7052   - Mois 4 (April): 69.2€
+INFO 2025-04-09 01:23:00,132 views 19004 7052   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 01:23:00,132 views 19004 7052   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 01:23:00,132 views 19004 7052   - Mois 7 (July): 62.5€
+INFO 2025-04-09 01:23:00,132 views 19004 7052   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 01:23:00,132 views 19004 7052   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 01:23:00,133 views 19004 7052   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 01:23:00,133 views 19004 7052   - Mois 11 (November): 66.5€
+INFO 2025-04-09 01:23:00,133 views 19004 7052   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 01:23:00,133 views 19004 7052 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 01:23:00,133 views 19004 7052 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 01:23:00,137 basehttp 19004 7052 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 01:23:02,088 basehttp 19004 7052 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:23:03,123 basehttp 19004 7052 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:23:04,308 basehttp 19004 7052 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:23:05,600 views 19004 7052 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 01:23:05,601 views 19004 7052 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 01:23:05,603 views 19004 7052 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 6 (June): 63.2€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 01:23:05,604 views 19004 7052   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 01:23:05,605 views 19004 7052   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 01:23:05,605 views 19004 7052   - Mois 11 (November): 72.6€
+INFO 2025-04-09 01:23:05,605 views 19004 7052   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 01:23:05,606 views 19004 7052 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 01:23:05,607 views 19004 7052 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 01:23:05,607 views 19004 7052   - Mois 1 (January): 94.0€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 2 (February): 94.0€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 3 (March): 94.0€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 4 (April): 69.2€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 7 (July): 62.5€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 01:23:05,608 views 19004 7052   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 01:23:05,609 views 19004 7052   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 01:23:05,609 views 19004 7052   - Mois 11 (November): 66.5€
+INFO 2025-04-09 01:23:05,609 views 19004 7052   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 01:23:05,609 views 19004 7052 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 01:23:05,609 views 19004 7052 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 01:23:05,613 basehttp 19004 7052 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 01:23:07,059 basehttp 19004 7052 "GET /destinations/add/ HTTP/1.1" 200 12362
+INFO 2025-04-09 01:23:33,325 basehttp 19004 10364 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:23:39,286 basehttp 19004 10364 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:23:44,578 basehttp 19004 10364 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:23:45,403 basehttp 19004 10364 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:23:46,108 views 19004 10364 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 01:23:46,109 views 19004 10364 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 01:23:46,111 views 19004 10364 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 01:23:46,111 views 19004 10364   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 01:23:46,112 views 19004 10364   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 01:23:46,112 views 19004 10364   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 01:23:46,112 views 19004 10364   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 01:23:46,112 views 19004 10364   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 01:23:46,113 views 19004 10364   - Mois 6 (June): 63.2€
+INFO 2025-04-09 01:23:46,113 views 19004 10364   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 01:23:46,113 views 19004 10364   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 01:23:46,113 views 19004 10364   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 01:23:46,113 views 19004 10364   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 01:23:46,113 views 19004 10364   - Mois 11 (November): 72.6€
+INFO 2025-04-09 01:23:46,113 views 19004 10364   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 01:23:46,114 views 19004 10364 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 01:23:46,115 views 19004 10364 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 01:23:46,116 views 19004 10364   - Mois 1 (January): 94.0€
+INFO 2025-04-09 01:23:46,116 views 19004 10364   - Mois 2 (February): 94.0€
+INFO 2025-04-09 01:23:46,116 views 19004 10364   - Mois 3 (March): 94.0€
+INFO 2025-04-09 01:23:46,116 views 19004 10364   - Mois 4 (April): 69.2€
+INFO 2025-04-09 01:23:46,116 views 19004 10364   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 01:23:46,116 views 19004 10364   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 01:23:46,116 views 19004 10364   - Mois 7 (July): 62.5€
+INFO 2025-04-09 01:23:46,117 views 19004 10364   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 01:23:46,117 views 19004 10364   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 01:23:46,117 views 19004 10364   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 01:23:46,117 views 19004 10364   - Mois 11 (November): 66.5€
+INFO 2025-04-09 01:23:46,117 views 19004 10364   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 01:23:46,117 views 19004 10364 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 01:23:46,117 views 19004 10364 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 01:23:46,121 basehttp 19004 10364 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 01:23:46,833 basehttp 19004 10364 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:23:47,558 basehttp 19004 17312 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:23:48,805 basehttp 19004 17312 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:24:05,472 basehttp 19004 3620 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:24:06,355 basehttp 19004 3620 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:24:06,993 basehttp 19004 3620 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:24:07,716 basehttp 19004 13688 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:24:16,963 basehttp 19004 13688 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:24:17,576 views 19004 22776 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 01:24:17,577 views 19004 22776 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 01:24:17,578 views 19004 22776 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 01:24:17,579 views 19004 22776   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 01:24:17,579 views 19004 22776   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 01:24:17,579 views 19004 22776   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 01:24:17,579 views 19004 22776   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 6 (June): 63.2€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 11 (November): 72.6€
+INFO 2025-04-09 01:24:17,580 views 19004 22776   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 01:24:17,581 views 19004 22776 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 01:24:17,583 views 19004 22776 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 01:24:17,584 views 19004 22776   - Mois 1 (January): 94.0€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 2 (February): 94.0€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 3 (March): 94.0€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 4 (April): 69.2€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 7 (July): 62.5€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 11 (November): 66.5€
+INFO 2025-04-09 01:24:17,585 views 19004 22776   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 01:24:17,586 views 19004 22776 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 01:24:17,586 views 19004 22776 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 01:24:17,589 basehttp 19004 22776 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 01:24:23,008 basehttp 19004 22776 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:24:45,281 views 19004 4948 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 01:24:45,282 views 19004 4948 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 01:24:45,283 views 19004 4948 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 01:24:45,284 views 19004 4948   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 01:24:45,284 views 19004 4948   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 01:24:45,284 views 19004 4948   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 01:24:45,284 views 19004 4948   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 01:24:45,284 views 19004 4948   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 01:24:45,285 views 19004 4948   - Mois 6 (June): 63.2€
+INFO 2025-04-09 01:24:45,285 views 19004 4948   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 01:24:45,285 views 19004 4948   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 01:24:45,285 views 19004 4948   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 01:24:45,285 views 19004 4948   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 01:24:45,285 views 19004 4948   - Mois 11 (November): 72.6€
+INFO 2025-04-09 01:24:45,285 views 19004 4948   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 01:24:45,286 views 19004 4948 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 01:24:45,287 views 19004 4948 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 01:24:45,288 views 19004 4948   - Mois 1 (January): 94.0€
+INFO 2025-04-09 01:24:45,288 views 19004 4948   - Mois 2 (February): 94.0€
+INFO 2025-04-09 01:24:45,288 views 19004 4948   - Mois 3 (March): 94.0€
+INFO 2025-04-09 01:24:45,288 views 19004 4948   - Mois 4 (April): 69.2€
+INFO 2025-04-09 01:24:45,288 views 19004 4948   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 01:24:45,288 views 19004 4948   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 01:24:45,289 views 19004 4948   - Mois 7 (July): 62.5€
+INFO 2025-04-09 01:24:45,289 views 19004 4948   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 01:24:45,289 views 19004 4948   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 01:24:45,289 views 19004 4948   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 01:24:45,289 views 19004 4948   - Mois 11 (November): 66.5€
+INFO 2025-04-09 01:24:45,290 views 19004 4948   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 01:24:45,290 views 19004 4948 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 01:24:45,290 views 19004 4948 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 01:24:45,294 basehttp 19004 4948 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 01:24:53,552 basehttp 19004 5216 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:24:54,462 basehttp 19004 5216 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 01:24:55,223 basehttp 19004 5216 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 01:28:15,719 basehttp 19004 20772 "GET /destinations/lyonfrance/ HTTP/1.1" 200 34309
+INFO 2025-04-09 01:28:37,718 basehttp 19004 23704 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 08:33:26,497 autoreload 13232 8764 Watching for file changes with StatReloader
+INFO 2025-04-09 08:33:31,228 basehttp 13232 15012 "GET / HTTP/1.1" 200 17387
+WARNING 2025-04-09 08:33:32,161 log 13232 15012 Not Found: /favicon.ico
+WARNING 2025-04-09 08:33:32,161 basehttp 13232 15012 "GET /favicon.ico HTTP/1.1" 404 3547
+INFO 2025-04-09 08:33:36,534 basehttp 13232 5000 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 08:33:38,074 basehttp 13232 5000 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 08:33:39,636 views 13232 5000 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 08:33:39,644 views 13232 5000 Destination Paris,France (ID: 1): 0 entrées de prix trouvées
+INFO 2025-04-09 08:33:39,644 views 13232 5000 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 08:33:39,652 views 13232 5000   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 08:33:39,652 views 13232 5000   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 08:33:39,652 views 13232 5000   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 08:33:39,652 views 13232 5000   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 08:33:39,652 views 13232 5000   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 08:33:39,652 views 13232 5000   - Mois 6 (June): 63.2€
+INFO 2025-04-09 08:33:39,652 views 13232 5000   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 08:33:39,657 views 13232 5000   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 08:33:39,657 views 13232 5000   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 08:33:39,657 views 13232 5000   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 08:33:39,657 views 13232 5000   - Mois 11 (November): 72.6€
+INFO 2025-04-09 08:33:39,657 views 13232 5000   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 08:33:39,661 views 13232 5000 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 08:33:39,664 views 13232 5000 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 08:33:39,669 views 13232 5000   - Mois 1 (January): 94.0€
+INFO 2025-04-09 08:33:39,669 views 13232 5000   - Mois 2 (February): 94.0€
+INFO 2025-04-09 08:33:39,674 views 13232 5000   - Mois 3 (March): 94.0€
+INFO 2025-04-09 08:33:39,676 views 13232 5000   - Mois 4 (April): 69.2€
+INFO 2025-04-09 08:33:39,677 views 13232 5000   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 08:33:39,677 views 13232 5000   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 08:33:39,677 views 13232 5000   - Mois 7 (July): 62.5€
+INFO 2025-04-09 08:33:39,677 views 13232 5000   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 08:33:39,717 views 13232 5000   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 08:33:39,717 views 13232 5000   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 08:33:39,717 views 13232 5000   - Mois 11 (November): 66.5€
+INFO 2025-04-09 08:33:39,717 views 13232 5000   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 08:33:39,717 views 13232 5000 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 08:33:39,717 views 13232 5000 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 08:33:39,790 basehttp 13232 5000 "GET /comparison/ HTTP/1.1" 200 30356
+INFO 2025-04-09 08:33:43,413 basehttp 13232 5000 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 08:33:45,652 basehttp 13232 5000 "GET /destinations/lyonfrance/ HTTP/1.1" 200 34309
+INFO 2025-04-09 08:36:07,225 basehttp 13232 7868 "GET /dashboard/ HTTP/1.1" 200 25959
+INFO 2025-04-09 08:36:11,057 basehttp 13232 7868 "GET /destinations/testdestination/ HTTP/1.1" 200 34253
+INFO 2025-04-09 08:36:18,985 basehttp 13232 7868 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 08:36:19,596 basehttp 13232 7868 "GET / HTTP/1.1" 200 17387
+INFO 2025-04-09 08:36:54,696 basehttp 13232 7868 "GET /destinations/lyonfrance/ HTTP/1.1" 200 34309
+INFO 2025-04-09 08:48:24,221 autoreload 13232 8764 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-09 08:48:25,204 autoreload 7220 11892 Watching for file changes with StatReloader
+INFO 2025-04-09 08:48:32,320 autoreload 7220 11892 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-09 08:48:33,443 autoreload 13112 2044 Watching for file changes with StatReloader
+INFO 2025-04-09 08:49:50,750 autoreload 13112 2044 C:\Users\ryank\PycharmProjects\airbnb_analytics\dashboard\views.py changed, reloading.
+INFO 2025-04-09 08:49:54,574 autoreload 13476 11468 Watching for file changes with StatReloader
