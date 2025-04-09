@@ -1786,3 +1786,90 @@ INFO 2025-04-09 10:39:14,776 scraper 16884 10324 Résultat récupéré pour le mois 
 INFO 2025-04-09 10:39:15,541 scraper 16884 10324 Résultat récupéré pour le mois 11
 INFO 2025-04-09 10:39:15,549 scraper 16884 10324 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103915.csv
 INFO 2025-04-09 10:39:15,549 scraper 16884 10324 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:54:43,310 scraper 15408 16156 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:54:43,310 scraper 15408 16156 Début du scraping pour Barcelone,Espagne
+INFO 2025-04-09 10:54:45,105 scraper 15408 16156 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:54:51,262 scraper 15408 16156 Driver Selenium fermé
+INFO 2025-04-09 10:54:51,262 scraper 15408 16156 Début du scraping parallèle des prix pour Barcelone,Espagne en 2025
+INFO 2025-04-09 10:54:52,429 scraper 15408 16156 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:54:58,695 scraper 15408 16156 Driver Selenium fermé
+INFO 2025-04-09 10:54:58,695 scraper 15408 16336 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:54:58,695 scraper 15408 16540 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:54:58,695 scraper 15408 10612 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:54:59,876 scraper 15408 16540 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 10:54:59,876 scraper 15408 16540 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:54:59,892 scraper 15408 16336 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 10:54:59,892 scraper 15408 10612 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 10:54:59,892 scraper 15408 16336 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:54:59,892 scraper 15408 10612 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:55:17,471 scraper 15408 16540 Mois 3: 18 hébergements trouvés
+INFO 2025-04-09 10:55:17,593 scraper 15408 16540 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_3.json
+INFO 2025-04-09 10:55:17,593 scraper 15408 16540 Mois March: prix moyen = 97.61€, 18 échantillons
+INFO 2025-04-09 10:55:17,809 scraper 15408 10612 Mois 2: 18 hébergements trouvés
+INFO 2025-04-09 10:55:17,903 scraper 15408 10612 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_2.json
+INFO 2025-04-09 10:55:17,911 scraper 15408 10612 Mois February: prix moyen = 72.56€, 18 échantillons
+INFO 2025-04-09 10:55:18,091 scraper 15408 16336 Mois 1: 18 hébergements trouvés
+INFO 2025-04-09 10:55:18,186 scraper 15408 16336 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_1.json
+INFO 2025-04-09 10:55:18,187 scraper 15408 16336 Mois January: prix moyen = 71.22€, 18 échantillons
+INFO 2025-04-09 10:55:23,901 scraper 15408 16540 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:55:23,902 scraper 15408 16156 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:55:24,184 scraper 15408 16156 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:55:24,184 scraper 15408 10612 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:55:24,406 scraper 15408 16156 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:55:24,406 scraper 15408 16336 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:55:25,025 scraper 15408 16540 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 10:55:25,025 scraper 15408 16540 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:55:25,291 scraper 15408 10612 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 10:55:25,291 scraper 15408 10612 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:55:25,543 scraper 15408 16336 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 10:55:25,543 scraper 15408 16336 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:55:43,715 scraper 15408 16336 Mois 6: 24 hébergements trouvés
+INFO 2025-04-09 10:55:43,739 scraper 15408 16540 Mois 4: 24 hébergements trouvés
+INFO 2025-04-09 10:55:44,181 scraper 15408 16540 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_4.json
+INFO 2025-04-09 10:55:44,181 scraper 15408 16336 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_6.json
+INFO 2025-04-09 10:55:44,181 scraper 15408 16540 Mois April: prix moyen = 147.62€, 24 échantillons
+INFO 2025-04-09 10:55:44,181 scraper 15408 16336 Mois June: prix moyen = 129.42€, 24 échantillons
+INFO 2025-04-09 10:55:44,859 scraper 15408 10612 Mois 5: 24 hébergements trouvés
+INFO 2025-04-09 10:55:45,077 scraper 15408 10612 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_5.json
+INFO 2025-04-09 10:55:45,085 scraper 15408 10612 Mois May: prix moyen = 135.33€, 24 échantillons
+INFO 2025-04-09 10:55:50,561 scraper 15408 16540 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:55:50,561 scraper 15408 16156 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:55:50,643 scraper 15408 16336 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:55:50,643 scraper 15408 16156 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:55:51,378 scraper 15408 16156 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:55:51,378 scraper 15408 10612 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:55:51,642 scraper 15408 16540 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 10:55:51,642 scraper 15408 16540 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:55:51,771 scraper 15408 16336 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 10:55:51,771 scraper 15408 16336 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:55:52,488 scraper 15408 10612 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 10:55:52,496 scraper 15408 10612 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+WARNING 2025-04-09 10:55:56,787 scraper 15408 16540 Erreur lors du scraping du mois 7 (tentative 1): ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+ERROR 2025-04-09 10:55:56,795 scraper 15408 16540 Échec du scraping pour le mois 7 après 1 tentatives
+WARNING 2025-04-09 10:55:56,795 scraper 15408 16336 Erreur lors du scraping du mois 8 (tentative 1): ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+WARNING 2025-04-09 10:55:56,795 scraper 15408 10612 Erreur lors du scraping du mois 9 (tentative 1): ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+ERROR 2025-04-09 10:55:56,796 scraper 15408 16336 Échec du scraping pour le mois 8 après 1 tentatives
+ERROR 2025-04-09 10:55:56,796 scraper 15408 10612 Échec du scraping pour le mois 9 après 1 tentatives
+INFO 2025-04-09 10:56:17,194 scraper 15408 10612 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:56:17,194 scraper 15408 16336 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+WARNING 2025-04-09 10:56:17,194 scraper 15408 16156 Pas de résultat pour le mois 8
+WARNING 2025-04-09 10:56:17,204 scraper 15408 16156 Pas de résultat pour le mois 9
+INFO 2025-04-09 10:56:18,355 scraper 15408 16336 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 10:56:18,355 scraper 15408 16336 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:56:18,359 scraper 15408 10612 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 10:56:18,359 scraper 15408 10612 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+WARNING 2025-04-09 10:56:21,232 scraper 15408 16156 Pas de résultat pour le mois 7
+INFO 2025-04-09 10:56:21,232 scraper 15408 16540 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:56:22,342 scraper 15408 16540 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 10:56:22,342 scraper 15408 16540 Navigation vers https://www.airbnb.fr/s/Barcelone--Espagne/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:56:31,582 scraper 15408 16336 Mois 10: 24 hébergements trouvés
+INFO 2025-04-09 10:56:31,704 scraper 15408 16336 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_10.json
+INFO 2025-04-09 10:56:31,704 scraper 15408 16336 Mois October: prix moyen = 139.21€, 24 échantillons
+INFO 2025-04-09 10:56:34,583 scraper 15408 16540 Mois 12: 18 hébergements trouvés
+INFO 2025-04-09 10:56:34,683 scraper 15408 16540 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_12.json
+INFO 2025-04-09 10:56:34,683 scraper 15408 16540 Mois December: prix moyen = 107.83€, 18 échantillons
+INFO 2025-04-09 10:56:37,956 scraper 15408 16156 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:56:39,494 scraper 15408 10612 Mois 11: 24 hébergements trouvés
+INFO 2025-04-09 10:56:39,615 scraper 15408 10612 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Barcelone_Espagne_2025_11.json
+INFO 2025-04-09 10:56:39,615 scraper 15408 10612 Mois November: prix moyen = 127.46€, 24 échantillons
+INFO 2025-04-09 10:56:40,903 scraper 15408 16156 Résultat récupéré pour le mois 12

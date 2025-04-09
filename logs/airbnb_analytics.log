@@ -5804,3 +5804,13 @@ INFO 2025-04-09 10:39:15,737 basehttp 16884 10324 "GET /destinations/parisfrance
 INFO 2025-04-09 10:46:45,073 basehttp 16884 3508 "GET / HTTP/1.1" 200 31563
 INFO 2025-04-09 10:47:12,174 autoreload 16884 14144 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
 INFO 2025-04-09 10:47:13,716 autoreload 11176 2264 Watching for file changes with StatReloader
+INFO 2025-04-09 10:54:31,528 autoreload 11176 2264 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:54:32,963 autoreload 15408 7976 Watching for file changes with StatReloader
+INFO 2025-04-09 10:54:34,815 basehttp 15408 16156 "GET /destinations/add/ HTTP/1.1" 200 25581
+INFO 2025-04-09 10:54:41,675 signals 15408 16156 Nouvelle destination créée: Barcelone,Espagne (ID: 4)
+INFO 2025-04-09 10:54:41,683 basehttp 15408 16156 "POST /destinations/add/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:54:41,723 basehttp 15408 16156 "GET /destinations/barceloneespagne/ HTTP/1.1" 200 23914
+INFO 2025-04-09 10:54:43,285 signals 15408 16156 Nouvelle tâche de scraping créée pour Barcelone,Espagne (ID: 16, statut: pending)
+INFO 2025-04-09 10:54:43,294 signals 15408 16156 Destination mise à jour: Barcelone,Espagne (ID: 4)
+INFO 2025-04-09 10:54:43,310 signals 15408 16156 Destination mise à jour: Barcelone,Espagne (ID: 4)
+INFO 2025-04-09 10:56:57,097 autoreload 8412 8820 Watching for file changes with StatReloader

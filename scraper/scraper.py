@@ -72,6 +72,7 @@ class AirbnbScraper:
         self.chrome_options.add_argument("--disable-gpu")
         self.chrome_options.add_argument("--no-sandbox")
         self.chrome_options.add_argument("--disable-dev-shm-usage")
+        self.chrome_options.add_argument("--log-level=3")
 
         # Options pour améliorer la vitesse
         self.chrome_options.add_argument("--disable-images")
