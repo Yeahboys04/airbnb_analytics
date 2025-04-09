@@ -5355,3 +5355,452 @@ INFO 2025-04-09 09:31:46,645 views 6064 5124 Nombre de destinations dans compari
 INFO 2025-04-09 09:31:46,678 basehttp 6064 5124 "GET /comparison/ HTTP/1.1" 200 43579
 INFO 2025-04-09 09:31:49,784 basehttp 6064 5124 "GET / HTTP/1.1" 200 27648
 INFO 2025-04-09 09:31:58,392 autoreload 2932 12664 Watching for file changes with StatReloader
+INFO 2025-04-09 09:32:01,385 basehttp 2932 7968 "GET / HTTP/1.1" 200 27648
+INFO 2025-04-09 09:32:06,181 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 42855
+INFO 2025-04-09 09:32:21,819 views 2932 7968 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 09:32:21,819 views 2932 7968 Destination Paris,France (ID: 1): 12 entrées de prix trouvées
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 1 (January): 152.0€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 2 (February): 166.33333333333334€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 3 (March): 213.0€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 4 (April): 99.23076923076923€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 5 (May): 93.0€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 6 (June): 79.85714285714286€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 7 (July): 85.58333333333333€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 8 (August): 94.0909090909091€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 9 (September): 75.78571428571429€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 10 (October): 93.9€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 11 (November): 99.21428571428571€
+INFO 2025-04-09 09:32:21,827 views 2932 7968   - Mois 12 (December): 94.88235294117646€
+INFO 2025-04-09 09:32:21,827 views 2932 7968 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 6 (June): 63.2€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 11 (November): 72.6€
+INFO 2025-04-09 09:32:21,835 views 2932 7968   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 09:32:21,843 views 2932 7968 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 09:32:21,843 views 2932 7968 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 09:32:21,843 views 2932 7968   - Mois 1 (January): 94.0€
+INFO 2025-04-09 09:32:21,843 views 2932 7968   - Mois 2 (February): 94.0€
+INFO 2025-04-09 09:32:21,843 views 2932 7968   - Mois 3 (March): 94.0€
+INFO 2025-04-09 09:32:21,851 views 2932 7968   - Mois 4 (April): 69.2€
+INFO 2025-04-09 09:32:21,851 views 2932 7968   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 09:32:21,851 views 2932 7968   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 09:32:21,851 views 2932 7968   - Mois 7 (July): 62.5€
+INFO 2025-04-09 09:32:21,851 views 2932 7968   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 09:32:21,853 views 2932 7968   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 09:32:21,853 views 2932 7968   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 09:32:21,853 views 2932 7968   - Mois 11 (November): 66.5€
+INFO 2025-04-09 09:32:21,853 views 2932 7968   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 09:32:21,853 views 2932 7968 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 09:32:21,853 views 2932 7968 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 09:32:21,868 basehttp 2932 7968 "GET /comparison/ HTTP/1.1" 200 43579
+INFO 2025-04-09 09:32:27,363 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 42855
+INFO 2025-04-09 09:32:42,265 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 35654
+INFO 2025-04-09 09:32:47,456 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 21001
+INFO 2025-04-09 09:32:52,992 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 35654
+INFO 2025-04-09 09:33:10,926 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 42855
+INFO 2025-04-09 09:34:07,622 views 2932 7968 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 09:34:07,622 views 2932 7968 Destination Paris,France (ID: 1): 12 entrées de prix trouvées
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 1 (January): 152.0€
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 2 (February): 166.33333333333334€
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 3 (March): 213.0€
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 4 (April): 99.23076923076923€
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 5 (May): 93.0€
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 6 (June): 79.85714285714286€
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 7 (July): 85.58333333333333€
+INFO 2025-04-09 09:34:07,630 views 2932 7968   - Mois 8 (August): 94.0909090909091€
+INFO 2025-04-09 09:34:07,635 views 2932 7968   - Mois 9 (September): 75.78571428571429€
+INFO 2025-04-09 09:34:07,635 views 2932 7968   - Mois 10 (October): 93.9€
+INFO 2025-04-09 09:34:07,635 views 2932 7968   - Mois 11 (November): 99.21428571428571€
+INFO 2025-04-09 09:34:07,635 views 2932 7968   - Mois 12 (December): 94.88235294117646€
+INFO 2025-04-09 09:34:07,638 views 2932 7968 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 6 (June): 63.2€
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 09:34:07,638 views 2932 7968   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 09:34:07,646 views 2932 7968   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 09:34:07,646 views 2932 7968   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 09:34:07,646 views 2932 7968   - Mois 11 (November): 72.6€
+INFO 2025-04-09 09:34:07,646 views 2932 7968   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 09:34:07,646 views 2932 7968 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 09:34:07,646 views 2932 7968 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 1 (January): 94.0€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 2 (February): 94.0€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 3 (March): 94.0€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 4 (April): 69.2€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 7 (July): 62.5€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 09:34:07,654 views 2932 7968   - Mois 11 (November): 66.5€
+INFO 2025-04-09 09:34:07,662 views 2932 7968   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 09:34:07,662 views 2932 7968 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 09:34:07,662 views 2932 7968 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 09:34:07,673 basehttp 2932 7968 "GET /comparison/ HTTP/1.1" 200 43579
+INFO 2025-04-09 09:34:15,963 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 42855
+INFO 2025-04-09 09:34:16,583 basehttp 2932 7968 "GET / HTTP/1.1" 200 27648
+INFO 2025-04-09 09:34:41,643 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 42855
+INFO 2025-04-09 09:34:54,731 basehttp 2932 7968 "GET / HTTP/1.1" 200 27648
+INFO 2025-04-09 09:35:53,509 basehttp 2932 7968 "GET / HTTP/1.1" 200 31274
+INFO 2025-04-09 09:35:59,202 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 46481
+INFO 2025-04-09 09:36:07,675 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 46481
+INFO 2025-04-09 09:36:18,906 basehttp 2932 7968 "GET / HTTP/1.1" 200 31274
+INFO 2025-04-09 09:40:55,433 basehttp 2932 7968 "GET / HTTP/1.1" 200 31407
+INFO 2025-04-09 09:40:57,853 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 46923
+INFO 2025-04-09 09:41:09,415 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 46614
+INFO 2025-04-09 09:41:16,073 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 46614
+INFO 2025-04-09 09:41:30,014 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 46923
+INFO 2025-04-09 09:42:20,923 views 2932 7968 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 09:42:20,923 views 2932 7968 Destination Paris,France (ID: 1): 12 entrées de prix trouvées
+INFO 2025-04-09 09:42:20,932 views 2932 7968   - Mois 1 (January): 152.0€
+INFO 2025-04-09 09:42:20,932 views 2932 7968   - Mois 2 (February): 166.33333333333334€
+INFO 2025-04-09 09:42:20,934 views 2932 7968   - Mois 3 (March): 213.0€
+INFO 2025-04-09 09:42:20,935 views 2932 7968   - Mois 4 (April): 99.23076923076923€
+INFO 2025-04-09 09:42:20,935 views 2932 7968   - Mois 5 (May): 93.0€
+INFO 2025-04-09 09:42:20,936 views 2932 7968   - Mois 6 (June): 79.85714285714286€
+INFO 2025-04-09 09:42:20,937 views 2932 7968   - Mois 7 (July): 85.58333333333333€
+INFO 2025-04-09 09:42:20,937 views 2932 7968   - Mois 8 (August): 94.0909090909091€
+INFO 2025-04-09 09:42:20,937 views 2932 7968   - Mois 9 (September): 75.78571428571429€
+INFO 2025-04-09 09:42:20,937 views 2932 7968   - Mois 10 (October): 93.9€
+INFO 2025-04-09 09:42:20,940 views 2932 7968   - Mois 11 (November): 99.21428571428571€
+INFO 2025-04-09 09:42:20,940 views 2932 7968   - Mois 12 (December): 94.88235294117646€
+INFO 2025-04-09 09:42:20,940 views 2932 7968 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 09:42:20,940 views 2932 7968   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 09:42:20,948 views 2932 7968   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 09:42:20,948 views 2932 7968   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 09:42:20,948 views 2932 7968   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 09:42:20,951 views 2932 7968   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 09:42:20,952 views 2932 7968   - Mois 6 (June): 63.2€
+INFO 2025-04-09 09:42:20,952 views 2932 7968   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 09:42:20,953 views 2932 7968   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 09:42:20,953 views 2932 7968   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 09:42:20,953 views 2932 7968   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 09:42:20,953 views 2932 7968   - Mois 11 (November): 72.6€
+INFO 2025-04-09 09:42:20,953 views 2932 7968   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 09:42:20,957 views 2932 7968 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 09:42:20,964 views 2932 7968 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 09:42:20,966 views 2932 7968   - Mois 1 (January): 94.0€
+INFO 2025-04-09 09:42:20,966 views 2932 7968   - Mois 2 (February): 94.0€
+INFO 2025-04-09 09:42:20,966 views 2932 7968   - Mois 3 (March): 94.0€
+INFO 2025-04-09 09:42:20,966 views 2932 7968   - Mois 4 (April): 69.2€
+INFO 2025-04-09 09:42:20,970 views 2932 7968   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 09:42:20,970 views 2932 7968   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 09:42:20,970 views 2932 7968   - Mois 7 (July): 62.5€
+INFO 2025-04-09 09:42:20,970 views 2932 7968   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 09:42:20,972 views 2932 7968   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 09:42:20,973 views 2932 7968   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 09:42:20,973 views 2932 7968   - Mois 11 (November): 66.5€
+INFO 2025-04-09 09:42:20,973 views 2932 7968   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 09:42:20,973 views 2932 7968 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 09:42:20,977 views 2932 7968 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 09:42:20,997 basehttp 2932 7968 "GET /comparison/ HTTP/1.1" 200 47338
+INFO 2025-04-09 09:42:25,958 basehttp 2932 7968 "GET / HTTP/1.1" 200 31407
+INFO 2025-04-09 09:42:33,517 basehttp 2932 7968 "GET /destinations/parisfrance/ HTTP/1.1" 200 52771
+INFO 2025-04-09 09:44:03,229 basehttp 2932 7968 "GET /dashboard/ HTTP/1.1" 200 45649
+INFO 2025-04-09 09:44:20,679 views 2932 7968 Destinations sélectionnées: [1, 2, 3, 4]
+INFO 2025-04-09 09:44:20,679 views 2932 7968 Destination Paris,France (ID: 1): 12 entrées de prix trouvées
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 1 (January): 152.0€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 2 (February): 166.33333333333334€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 3 (March): 213.0€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 4 (April): 99.23076923076923€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 5 (May): 93.0€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 6 (June): 79.85714285714286€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 7 (July): 85.58333333333333€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 8 (August): 94.0909090909091€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 9 (September): 75.78571428571429€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 10 (October): 93.9€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 11 (November): 99.21428571428571€
+INFO 2025-04-09 09:44:20,687 views 2932 7968   - Mois 12 (December): 94.88235294117646€
+INFO 2025-04-09 09:44:20,695 views 2932 7968 Destination Lyon,France (ID: 2): 12 entrées de prix trouvées
+INFO 2025-04-09 09:44:20,699 views 2932 7968   - Mois 1 (January): 103.16666666666667€
+INFO 2025-04-09 09:44:20,699 views 2932 7968   - Mois 2 (February): 103.16666666666667€
+INFO 2025-04-09 09:44:20,699 views 2932 7968   - Mois 3 (March): 103.16666666666667€
+INFO 2025-04-09 09:44:20,699 views 2932 7968   - Mois 4 (April): 66.33333333333333€
+INFO 2025-04-09 09:44:20,699 views 2932 7968   - Mois 5 (May): 67.07142857142857€
+INFO 2025-04-09 09:44:20,699 views 2932 7968   - Mois 6 (June): 63.2€
+INFO 2025-04-09 09:44:20,703 views 2932 7968   - Mois 7 (July): 65.41666666666667€
+INFO 2025-04-09 09:44:20,703 views 2932 7968   - Mois 8 (August): 64.38461538461539€
+INFO 2025-04-09 09:44:20,703 views 2932 7968   - Mois 9 (September): 66.4375€
+INFO 2025-04-09 09:44:20,703 views 2932 7968   - Mois 10 (October): 64.55555555555556€
+INFO 2025-04-09 09:44:20,703 views 2932 7968   - Mois 11 (November): 72.6€
+INFO 2025-04-09 09:44:20,703 views 2932 7968   - Mois 12 (December): 74.58333333333333€
+INFO 2025-04-09 09:44:20,703 views 2932 7968 Destination Knutange,France (ID: 3): 0 entrées de prix trouvées
+INFO 2025-04-09 09:44:20,712 views 2932 7968 Destination Test,Destination (ID: 4): 12 entrées de prix trouvées
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 1 (January): 94.0€
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 2 (February): 94.0€
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 3 (March): 94.0€
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 4 (April): 69.2€
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 5 (May): 68.33333333333333€
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 6 (June): 59.36363636363637€
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 7 (July): 62.5€
+INFO 2025-04-09 09:44:20,712 views 2932 7968   - Mois 8 (August): 67.3076923076923€
+INFO 2025-04-09 09:44:20,718 views 2932 7968   - Mois 9 (September): 60.833333333333336€
+INFO 2025-04-09 09:44:20,718 views 2932 7968   - Mois 10 (October): 64.08333333333333€
+INFO 2025-04-09 09:44:20,720 views 2932 7968   - Mois 11 (November): 66.5€
+INFO 2025-04-09 09:44:20,720 views 2932 7968   - Mois 12 (December): 67.46153846153847€
+INFO 2025-04-09 09:44:20,720 views 2932 7968 Mois disponibles: 1:January, 2:February, 3:March, 4:April, 5:May, 6:June, 7:July, 8:August, 9:September, 10:October, 11:November, 12:December
+INFO 2025-04-09 09:44:20,720 views 2932 7968 Nombre de destinations dans comparison_data: 4
+INFO 2025-04-09 09:44:20,736 basehttp 2932 7968 "GET /comparison/ HTTP/1.1" 200 47338
+INFO 2025-04-09 09:44:25,404 basehttp 2932 7968 "GET / HTTP/1.1" 200 31407
+INFO 2025-04-09 09:44:30,126 basehttp 2932 7968 "GET /destinations/testdestination/ HTTP/1.1" 200 52691
+INFO 2025-04-09 09:44:38,958 basehttp 2932 7968 "GET /destinations/lyonfrance/ HTTP/1.1" 200 52747
+INFO 2025-04-09 09:44:43,147 basehttp 2932 7968 "GET /destinations/parisfrance/ HTTP/1.1" 200 52771
+INFO 2025-04-09 09:44:58,049 basehttp 2932 7968 "GET / HTTP/1.1" 200 31407
+INFO 2025-04-09 09:49:14,459 autoreload 14572 6512 Watching for file changes with StatReloader
+INFO 2025-04-09 09:49:15,739 basehttp 14572 14264 "GET / HTTP/1.1" 200 28262
+INFO 2025-04-09 09:53:11,808 autoreload 14572 6512 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 09:53:13,136 autoreload 2556 2852 Watching for file changes with StatReloader
+INFO 2025-04-09 09:57:35,917 autoreload 2556 2852 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 09:57:37,157 autoreload 5704 8436 Watching for file changes with StatReloader
+INFO 2025-04-09 09:58:01,496 autoreload 5704 8436 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 09:58:02,367 autoreload 11696 7308 Watching for file changes with StatReloader
+INFO 2025-04-09 10:02:57,701 autoreload 11696 7308 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:03:03,553 autoreload 8964 11904 Watching for file changes with StatReloader
+INFO 2025-04-09 10:03:08,724 basehttp 8964 3740 "GET / HTTP/1.1" 200 28262
+INFO 2025-04-09 10:03:11,249 basehttp 8964 3740 "GET /dashboard/ HTTP/1.1" 200 39542
+INFO 2025-04-09 10:03:14,182 basehttp 8964 3740 "GET / HTTP/1.1" 200 28262
+INFO 2025-04-09 10:03:15,445 basehttp 8964 3740 "GET /destinations/add/ HTTP/1.1" 200 25581
+INFO 2025-04-09 10:03:21,842 signals 8964 3740 Nouvelle destination créée: Paris,France (ID: 1)
+INFO 2025-04-09 10:03:21,860 basehttp 8964 3740 "POST /destinations/add/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:03:21,941 basehttp 8964 3740 "GET /destinations/parisfrance/ HTTP/1.1" 200 23899
+INFO 2025-04-09 10:03:23,687 signals 8964 3740 Nouvelle tâche de scraping créée pour Paris,France (ID: 1, statut: pending)
+INFO 2025-04-09 10:03:23,696 signals 8964 3740 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:03:23,712 signals 8964 3740 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:05:03,851 data_processor 8964 3740 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:05:03,851 data_processor 8964 3740 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_100457.csv
+INFO 2025-04-09 10:05:03,866 data_processor 8964 3740 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:05:03,866 data_processor 8964 3740 Données traitées avec succès
+INFO 2025-04-09 10:05:03,882 data_processor 8964 3740 Statistiques calculées avec succès
+INFO 2025-04-09 10:05:03,882 data_processor 8964 3740 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_100503.csv
+INFO 2025-04-09 10:05:03,945 signals 8964 3740 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: July (80.54€)
+INFO 2025-04-09 10:05:03,945 views 8964 3740 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:05:03,945 signals 8964 3740 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:05:03,945 basehttp 8964 3740 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:05:04,008 basehttp 8964 3740 "GET /destinations/parisfrance/ HTTP/1.1" 200 53140
+INFO 2025-04-09 10:06:41,489 basehttp 8964 3740 "GET / HTTP/1.1" 200 29152
+INFO 2025-04-09 10:06:48,502 basehttp 8964 3740 "GET /destinations/parisfrance/ HTTP/1.1" 200 52808
+INFO 2025-04-09 10:11:09,413 autoreload 8964 11904 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:11:10,908 autoreload 10680 12036 Watching for file changes with StatReloader
+INFO 2025-04-09 10:11:59,592 basehttp 10680 14144 "GET / HTTP/1.1" 200 29152
+INFO 2025-04-09 10:12:06,142 autoreload 5332 11728 Watching for file changes with StatReloader
+INFO 2025-04-09 10:12:09,381 basehttp 5332 13988 "GET /destinations/parisfrance/ HTTP/1.1" 200 52808
+INFO 2025-04-09 10:12:11,113 signals 5332 13988 Nouvelle tâche de scraping créée pour Paris,France (ID: 2, statut: pending)
+INFO 2025-04-09 10:12:11,117 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:11,129 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:11,173 data_processor 5332 13988 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:12:11,176 data_processor 5332 13988 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_101211.csv
+INFO 2025-04-09 10:12:11,182 data_processor 5332 13988 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:12:11,182 data_processor 5332 13988 Données traitées avec succès
+INFO 2025-04-09 10:12:11,190 data_processor 5332 13988 Statistiques calculées avec succès
+INFO 2025-04-09 10:12:11,194 data_processor 5332 13988 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_101211.csv
+INFO 2025-04-09 10:12:11,277 signals 5332 13988 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: July (80.54€)
+INFO 2025-04-09 10:12:11,278 views 5332 13988 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:12:11,286 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:11,293 basehttp 5332 13988 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:12:11,312 basehttp 5332 13988 "GET /destinations/parisfrance/ HTTP/1.1" 200 53140
+INFO 2025-04-09 10:12:13,993 signals 5332 13988 Nouvelle tâche de scraping créée pour Paris,France (ID: 3, statut: pending)
+INFO 2025-04-09 10:12:14,001 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:14,017 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:14,065 data_processor 5332 13988 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:12:14,073 data_processor 5332 13988 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_101214.csv
+INFO 2025-04-09 10:12:14,079 data_processor 5332 13988 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:12:14,089 data_processor 5332 13988 Données traitées avec succès
+INFO 2025-04-09 10:12:14,095 data_processor 5332 13988 Statistiques calculées avec succès
+INFO 2025-04-09 10:12:14,095 data_processor 5332 13988 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_101214.csv
+INFO 2025-04-09 10:12:14,227 signals 5332 13988 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: July (80.54€)
+INFO 2025-04-09 10:12:14,227 views 5332 13988 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:12:14,259 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:14,266 basehttp 5332 13988 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:12:14,317 basehttp 5332 13988 "GET /destinations/parisfrance/ HTTP/1.1" 200 53140
+INFO 2025-04-09 10:12:22,064 signals 5332 13988 Nouvelle tâche de scraping créée pour Paris,France (ID: 4, statut: pending)
+INFO 2025-04-09 10:12:22,070 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:22,084 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:22,117 data_processor 5332 13988 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:12:22,117 data_processor 5332 13988 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_101222.csv
+INFO 2025-04-09 10:12:22,126 data_processor 5332 13988 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:12:22,134 data_processor 5332 13988 Données traitées avec succès
+INFO 2025-04-09 10:12:22,142 data_processor 5332 13988 Statistiques calculées avec succès
+INFO 2025-04-09 10:12:22,142 data_processor 5332 13988 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_101222.csv
+INFO 2025-04-09 10:12:22,247 signals 5332 13988 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: July (80.54€)
+INFO 2025-04-09 10:12:22,248 views 5332 13988 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:12:22,259 signals 5332 13988 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:12:22,267 basehttp 5332 13988 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:12:22,317 basehttp 5332 13988 "GET /destinations/parisfrance/ HTTP/1.1" 200 53140
+INFO 2025-04-09 10:12:25,189 basehttp 5332 13988 "GET / HTTP/1.1" 200 29152
+INFO 2025-04-09 10:12:27,269 basehttp 5332 13988 "GET /destinations/add/ HTTP/1.1" 200 25581
+INFO 2025-04-09 10:12:39,217 signals 5332 13988 Nouvelle destination créée: Lyon,France (ID: 2)
+INFO 2025-04-09 10:12:39,221 basehttp 5332 13988 "POST /destinations/add/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:12:39,247 basehttp 5332 13988 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23896
+INFO 2025-04-09 10:12:40,929 signals 5332 13988 Nouvelle tâche de scraping créée pour Lyon,France (ID: 5, statut: pending)
+INFO 2025-04-09 10:12:40,941 signals 5332 13988 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:12:40,958 signals 5332 13988 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-09 10:13:13,208 views 5332 13988 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-09 10:13:13,227 signals 5332 13988 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:13:13,228 basehttp 5332 13988 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:13:13,243 basehttp 5332 13988 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23924
+INFO 2025-04-09 10:16:13,820 autoreload 9468 11452 Watching for file changes with StatReloader
+INFO 2025-04-09 10:16:28,686 basehttp 9468 5248 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23555
+INFO 2025-04-09 10:16:30,661 signals 9468 5248 Nouvelle tâche de scraping créée pour Lyon,France (ID: 6, statut: pending)
+INFO 2025-04-09 10:16:30,671 signals 9468 5248 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:16:30,687 signals 9468 5248 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-09 10:16:33,218 views 9468 5248 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-09 10:16:33,230 signals 9468 5248 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:16:33,244 basehttp 9468 5248 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:16:33,260 basehttp 9468 5248 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23924
+INFO 2025-04-09 10:16:46,459 autoreload 9468 11452 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:16:47,637 autoreload 7072 13832 Watching for file changes with StatReloader
+INFO 2025-04-09 10:16:48,948 signals 7072 12352 Nouvelle tâche de scraping créée pour Lyon,France (ID: 7, statut: pending)
+INFO 2025-04-09 10:16:48,966 signals 7072 12352 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:16:48,977 signals 7072 12352 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-09 10:17:06,233 views 7072 12352 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-09 10:17:06,249 signals 7072 12352 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:17:06,327 basehttp 7072 12352 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:17:06,374 basehttp 7072 12352 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23924
+INFO 2025-04-09 10:17:19,767 autoreload 7072 13832 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:17:20,820 autoreload 8792 8876 Watching for file changes with StatReloader
+INFO 2025-04-09 10:19:01,624 autoreload 8792 8876 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:19:02,590 autoreload 11968 5336 Watching for file changes with StatReloader
+INFO 2025-04-09 10:19:08,592 autoreload 11968 5336 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:19:10,631 autoreload 6348 2484 Watching for file changes with StatReloader
+INFO 2025-04-09 10:19:34,508 autoreload 6348 2484 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:19:35,491 autoreload 10520 10500 Watching for file changes with StatReloader
+INFO 2025-04-09 10:19:40,621 basehttp 10520 14520 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23555
+INFO 2025-04-09 10:19:41,895 signals 10520 14520 Nouvelle tâche de scraping créée pour Lyon,France (ID: 8, statut: pending)
+INFO 2025-04-09 10:19:41,902 signals 10520 14520 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:19:41,916 signals 10520 14520 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-09 10:19:59,002 views 10520 14520 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-09 10:19:59,018 signals 10520 14520 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:19:59,018 basehttp 10520 14520 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:19:59,034 basehttp 10520 14520 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23924
+INFO 2025-04-09 10:20:24,777 autoreload 10916 11700 Watching for file changes with StatReloader
+INFO 2025-04-09 10:20:25,951 basehttp 10916 13524 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23555
+INFO 2025-04-09 10:20:27,289 signals 10916 13524 Nouvelle tâche de scraping créée pour Lyon,France (ID: 9, statut: pending)
+INFO 2025-04-09 10:20:27,294 signals 10916 13524 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:20:27,307 signals 10916 13524 Destination mise à jour: Lyon,France (ID: 2)
+ERROR 2025-04-09 10:20:44,817 views 10916 13524 Erreur lors du scraping de Lyon,France: Le scraping n'a pas renvoyé de résultats.
+INFO 2025-04-09 10:20:44,841 signals 10916 13524 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:20:44,841 basehttp 10916 13524 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:20:44,872 basehttp 10916 13524 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23924
+INFO 2025-04-09 10:24:18,615 autoreload 10916 11700 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:24:19,699 autoreload 12172 1848 Watching for file changes with StatReloader
+INFO 2025-04-09 10:24:39,196 autoreload 12172 1848 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:24:40,258 autoreload 6488 10528 Watching for file changes with StatReloader
+INFO 2025-04-09 10:24:49,837 autoreload 6488 10528 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:24:50,869 autoreload 2652 12600 Watching for file changes with StatReloader
+INFO 2025-04-09 10:25:01,973 autoreload 15212 3856 Watching for file changes with StatReloader
+INFO 2025-04-09 10:25:05,792 basehttp 15212 9756 "GET /destinations/lyonfrance/ HTTP/1.1" 200 23555
+INFO 2025-04-09 10:25:07,723 signals 15212 9756 Nouvelle tâche de scraping créée pour Lyon,France (ID: 10, statut: pending)
+INFO 2025-04-09 10:25:07,730 signals 15212 9756 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:25:07,739 signals 15212 9756 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:26:54,057 data_processor 15212 9756 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:26:54,059 data_processor 15212 9756 Fichier le plus récent pour Lyon,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250409_102654.csv
+INFO 2025-04-09 10:26:54,072 data_processor 15212 9756 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:26:54,088 data_processor 15212 9756 Données traitées avec succès
+INFO 2025-04-09 10:26:54,093 data_processor 15212 9756 Statistiques calculées avec succès
+INFO 2025-04-09 10:26:54,093 data_processor 15212 9756 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Lyon_France_processed_20250409_102654.csv
+INFO 2025-04-09 10:26:54,199 signals 15212 9756 Nouvelle analyse pour Lyon,France, 2025. Mois le moins cher: August (69.12€)
+INFO 2025-04-09 10:26:54,199 views 15212 9756 Résultats enregistrés pour Lyon,France
+INFO 2025-04-09 10:26:54,215 signals 15212 9756 Destination mise à jour: Lyon,France (ID: 2)
+INFO 2025-04-09 10:26:54,215 basehttp 15212 9756 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:26:54,262 basehttp 15212 9756 "GET /destinations/lyonfrance/ HTTP/1.1" 200 53071
+INFO 2025-04-09 10:30:26,932 basehttp 15212 9756 "GET / HTTP/1.1" 200 30336
+INFO 2025-04-09 10:30:30,018 basehttp 15212 9756 "GET /destinations/add/ HTTP/1.1" 200 25581
+INFO 2025-04-09 10:30:36,954 signals 15212 9756 Nouvelle destination créée: Londres,Royaume-Uni (ID: 3)
+INFO 2025-04-09 10:30:36,960 basehttp 15212 9756 "POST /destinations/add/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:30:36,980 basehttp 15212 9756 "GET /destinations/londresroyaume-uni/ HTTP/1.1" 200 23920
+INFO 2025-04-09 10:30:38,370 signals 15212 9756 Nouvelle tâche de scraping créée pour Londres,Royaume-Uni (ID: 11, statut: pending)
+INFO 2025-04-09 10:30:38,380 signals 15212 9756 Destination mise à jour: Londres,Royaume-Uni (ID: 3)
+INFO 2025-04-09 10:30:38,394 signals 15212 9756 Destination mise à jour: Londres,Royaume-Uni (ID: 3)
+INFO 2025-04-09 10:32:34,097 data_processor 15212 9756 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:32:34,100 data_processor 15212 9756 Fichier le plus récent pour Londres,Royaume-Uni: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Londres_Royaume-Uni_2025_20250409_103234.csv
+INFO 2025-04-09 10:32:34,115 data_processor 15212 9756 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:32:34,121 data_processor 15212 9756 Données traitées avec succès
+INFO 2025-04-09 10:32:34,130 data_processor 15212 9756 Statistiques calculées avec succès
+INFO 2025-04-09 10:32:34,130 data_processor 15212 9756 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Londres_Royaume-Uni_processed_20250409_103234.csv
+INFO 2025-04-09 10:32:34,237 signals 15212 9756 Nouvelle analyse pour Londres,Royaume-Uni, 2025. Mois le moins cher: January (74.44€)
+INFO 2025-04-09 10:32:34,237 views 15212 9756 Résultats enregistrés pour Londres,Royaume-Uni
+INFO 2025-04-09 10:32:34,248 signals 15212 9756 Destination mise à jour: Londres,Royaume-Uni (ID: 3)
+INFO 2025-04-09 10:32:34,254 basehttp 15212 9756 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:32:34,295 basehttp 15212 7600 "GET /destinations/londresroyaume-uni/ HTTP/1.1" 200 53158
+INFO 2025-04-09 10:34:03,612 basehttp 15212 3504 "GET / HTTP/1.1" 200 31561
+INFO 2025-04-09 10:34:07,913 basehttp 15212 3504 "GET /destinations/parisfrance/ HTTP/1.1" 200 52808
+INFO 2025-04-09 10:34:08,958 signals 15212 3504 Nouvelle tâche de scraping créée pour Paris,France (ID: 12, statut: pending)
+INFO 2025-04-09 10:34:08,966 signals 15212 3504 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:34:08,976 signals 15212 3504 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:34:23,770 data_processor 15212 3504 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:34:23,770 data_processor 15212 3504 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103423.csv
+INFO 2025-04-09 10:34:23,779 data_processor 15212 3504 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:34:23,785 data_processor 15212 3504 Données traitées avec succès
+INFO 2025-04-09 10:34:23,785 data_processor 15212 3504 Statistiques calculées avec succès
+INFO 2025-04-09 10:34:23,785 data_processor 15212 3504 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_103423.csv
+INFO 2025-04-09 10:34:23,865 signals 15212 3504 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: July (80.54€)
+INFO 2025-04-09 10:34:23,866 views 15212 3504 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:34:23,874 signals 15212 3504 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:34:23,883 basehttp 15212 3504 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:34:23,908 basehttp 15212 3504 "GET /destinations/parisfrance/ HTTP/1.1" 200 53140
+INFO 2025-04-09 10:34:59,133 autoreload 15212 3856 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:35:00,283 autoreload 15752 16708 Watching for file changes with StatReloader
+INFO 2025-04-09 10:35:01,468 basehttp 15752 17328 "GET /destinations/parisfrance/ HTTP/1.1" 200 52808
+INFO 2025-04-09 10:35:04,930 signals 15752 17328 Nouvelle tâche de scraping créée pour Paris,France (ID: 13, statut: pending)
+INFO 2025-04-09 10:35:04,933 signals 15752 17328 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:35:04,953 signals 15752 17328 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:35:19,862 data_processor 15752 17328 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:35:19,862 data_processor 15752 17328 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103519.csv
+INFO 2025-04-09 10:35:19,871 data_processor 15752 17328 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:35:19,887 data_processor 15752 17328 Données traitées avec succès
+INFO 2025-04-09 10:35:19,895 data_processor 15752 17328 Statistiques calculées avec succès
+INFO 2025-04-09 10:35:19,904 data_processor 15752 17328 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_103519.csv
+INFO 2025-04-09 10:35:20,043 signals 15752 17328 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: July (80.54€)
+INFO 2025-04-09 10:35:20,045 views 15752 17328 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:35:20,063 signals 15752 17328 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:35:20,075 basehttp 15752 17328 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:35:20,133 basehttp 15752 17328 "GET /destinations/parisfrance/ HTTP/1.1" 200 53140
+INFO 2025-04-09 10:36:08,361 autoreload 10328 16912 Watching for file changes with StatReloader
+INFO 2025-04-09 10:36:27,247 autoreload 16884 14144 Watching for file changes with StatReloader
+INFO 2025-04-09 10:36:29,905 basehttp 16884 10324 "GET / HTTP/1.1" 200 31561
+INFO 2025-04-09 10:36:33,440 basehttp 16884 10324 "GET /destinations/parisfrance/ HTTP/1.1" 200 52808
+INFO 2025-04-09 10:36:35,909 signals 16884 10324 Nouvelle tâche de scraping créée pour Paris,France (ID: 14, statut: pending)
+INFO 2025-04-09 10:36:35,919 signals 16884 10324 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:36:35,934 signals 16884 10324 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:36:50,794 data_processor 16884 10324 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:36:50,795 data_processor 16884 10324 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103650.csv
+INFO 2025-04-09 10:36:50,800 data_processor 16884 10324 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:36:50,801 data_processor 16884 10324 Données traitées avec succès
+INFO 2025-04-09 10:36:50,809 data_processor 16884 10324 Statistiques calculées avec succès
+INFO 2025-04-09 10:36:50,817 data_processor 16884 10324 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_103650.csv
+INFO 2025-04-09 10:36:50,891 signals 16884 10324 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: July (80.54€)
+INFO 2025-04-09 10:36:50,891 views 16884 10324 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:36:50,908 signals 16884 10324 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:36:50,917 basehttp 16884 10324 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:36:50,949 basehttp 16884 10324 "GET /destinations/parisfrance/ HTTP/1.1" 200 53140
+INFO 2025-04-09 10:37:39,222 basehttp 16884 10324 "GET /destinations/parisfrance/ HTTP/1.1" 200 52808
+INFO 2025-04-09 10:37:40,278 signals 16884 10324 Nouvelle tâche de scraping créée pour Paris,France (ID: 15, statut: pending)
+INFO 2025-04-09 10:37:40,287 signals 16884 10324 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:37:40,310 signals 16884 10324 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:39:15,549 data_processor 16884 10324 AirbnbDataProcessor initialisé avec succès
+INFO 2025-04-09 10:39:15,549 data_processor 16884 10324 Fichier le plus récent pour Paris,France: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103915.csv
+INFO 2025-04-09 10:39:15,582 data_processor 16884 10324 Données chargées avec succès: 12 lignes, 9 colonnes
+INFO 2025-04-09 10:39:15,582 data_processor 16884 10324 Données traitées avec succès
+INFO 2025-04-09 10:39:15,590 data_processor 16884 10324 Statistiques calculées avec succès
+INFO 2025-04-09 10:39:15,599 data_processor 16884 10324 Données traitées sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\processed\Paris_France_processed_20250409_103915.csv
+INFO 2025-04-09 10:39:15,688 signals 16884 10324 Nouvelle analyse pour Paris,France, 2025. Mois le moins cher: August (73.61€)
+INFO 2025-04-09 10:39:15,688 views 16884 10324 Résultats enregistrés pour Paris,France
+INFO 2025-04-09 10:39:15,697 signals 16884 10324 Destination mise à jour: Paris,France (ID: 1)
+INFO 2025-04-09 10:39:15,704 basehttp 16884 10324 "POST /run-scraper/ HTTP/1.1" 302 0
+INFO 2025-04-09 10:39:15,737 basehttp 16884 10324 "GET /destinations/parisfrance/ HTTP/1.1" 200 53115
+INFO 2025-04-09 10:46:45,073 basehttp 16884 3508 "GET / HTTP/1.1" 200 31563
+INFO 2025-04-09 10:47:12,174 autoreload 16884 14144 C:\Users\ryank\PycharmProjects\airbnb_analytics\scraper\scraper.py changed, reloading.
+INFO 2025-04-09 10:47:13,716 autoreload 11176 2264 Watching for file changes with StatReloader

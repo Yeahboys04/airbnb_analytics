@@ -998,3 +998,791 @@ INFO 2025-04-09 08:56:07,513 scraper 13476 9268 Mois December: prix moyen = 94.8
 INFO 2025-04-09 08:56:21,593 scraper 13476 9268 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_085621.csv
 INFO 2025-04-09 08:56:28,032 scraper 13476 9268 Driver Selenium fermé
 INFO 2025-04-09 08:56:28,032 scraper 13476 9268 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:03:23,725 scraper 8964 3740 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:03:23,729 scraper 8964 3740 Début du scraping pour Paris,France
+INFO 2025-04-09 10:03:23,729 scraper 8964 3740 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:03:25,302 scraper 8964 3740 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:03:25,306 scraper 8964 7560 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 10:03:25,306 scraper 8964 7768 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 10:03:25,306 scraper 8964 7560 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:03:25,306 scraper 8964 2548 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 10:03:25,308 scraper 8964 7768 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:03:25,308 scraper 8964 2548 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:03:51,002 scraper 8964 7560 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 10:03:51,026 scraper 8964 7560 Extraction réussie de 18 prix
+INFO 2025-04-09 10:03:51,131 scraper 8964 7560 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:03:51,147 scraper 8964 7768 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 10:03:51,147 scraper 8964 7560 Mois January: prix moyen = 179.11€, 18 échantillons
+INFO 2025-04-09 10:03:51,163 scraper 8964 7768 Extraction réussie de 18 prix
+INFO 2025-04-09 10:03:51,163 scraper 8964 3740 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:03:51,163 scraper 8964 7560 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 10:03:51,163 scraper 8964 7768 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:03:51,163 scraper 8964 7560 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:03:51,168 scraper 8964 7768 Mois February: prix moyen = 179.11€, 18 échantillons
+INFO 2025-04-09 10:03:51,171 scraper 8964 3740 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:03:51,171 scraper 8964 7768 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 10:03:51,171 scraper 8964 7768 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:03:53,933 scraper 8964 2548 Nombre d'hébergements trouvés: 1
+INFO 2025-04-09 10:03:53,933 scraper 8964 2548 Extraction réussie de 1 prix
+INFO 2025-04-09 10:03:53,941 scraper 8964 2548 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:03:53,941 scraper 8964 2548 Mois March: prix moyen = 83.00€, 1 échantillons
+INFO 2025-04-09 10:03:53,941 scraper 8964 2548 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 10:03:53,941 scraper 8964 3740 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:03:53,941 scraper 8964 2548 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:04:13,060 scraper 8964 7560 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:13,108 scraper 8964 7560 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:13,164 scraper 8964 7768 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:13,180 scraper 8964 7768 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:13,183 scraper 8964 7560 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:04:13,184 scraper 8964 7560 Mois April: prix moyen = 92.04€, 24 échantillons
+INFO 2025-04-09 10:04:13,185 scraper 8964 7560 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 10:04:13,185 scraper 8964 3740 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:04:13,185 scraper 8964 7560 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:04:13,186 scraper 8964 7768 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:04:13,188 scraper 8964 7768 Mois May: prix moyen = 92.04€, 24 échantillons
+INFO 2025-04-09 10:04:13,188 scraper 8964 3740 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:04:13,189 scraper 8964 7768 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 10:04:13,189 scraper 8964 7768 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:04:13,605 scraper 8964 2548 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:13,620 scraper 8964 2548 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:13,630 scraper 8964 2548 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:04:13,630 scraper 8964 2548 Mois June: prix moyen = 92.04€, 24 échantillons
+INFO 2025-04-09 10:04:13,630 scraper 8964 3740 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:04:13,630 scraper 8964 2548 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 10:04:13,644 scraper 8964 2548 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:04:35,175 scraper 8964 7560 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:35,207 scraper 8964 7560 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:35,321 scraper 8964 7560 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:04:35,426 scraper 8964 7560 Mois July: prix moyen = 80.54€, 24 échantillons
+INFO 2025-04-09 10:04:35,436 scraper 8964 7768 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:35,436 scraper 8964 7560 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 10:04:35,436 scraper 8964 3740 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:04:35,443 scraper 8964 7560 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:04:35,451 scraper 8964 7768 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:35,455 scraper 8964 7768 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:04:35,455 scraper 8964 7768 Mois August: prix moyen = 80.54€, 24 échantillons
+INFO 2025-04-09 10:04:35,508 scraper 8964 7768 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 10:04:35,508 scraper 8964 3740 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:04:35,525 scraper 8964 7768 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:04:35,615 scraper 8964 2548 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:35,624 scraper 8964 2548 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:35,632 scraper 8964 2548 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:04:35,633 scraper 8964 2548 Mois September: prix moyen = 80.54€, 24 échantillons
+INFO 2025-04-09 10:04:35,633 scraper 8964 2548 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 10:04:35,633 scraper 8964 3740 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:04:35,633 scraper 8964 2548 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:04:57,013 scraper 8964 7560 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:57,027 scraper 8964 7560 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:57,100 scraper 8964 7560 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:04:57,133 scraper 8964 7560 Mois October: prix moyen = 103.21€, 24 échantillons
+INFO 2025-04-09 10:04:57,158 scraper 8964 3740 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:04:57,174 scraper 8964 7768 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:57,192 scraper 8964 7768 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:57,195 scraper 8964 7768 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:04:57,195 scraper 8964 7768 Mois November: prix moyen = 103.21€, 24 échantillons
+INFO 2025-04-09 10:04:57,197 scraper 8964 3740 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:04:57,538 scraper 8964 2548 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 10:04:57,546 scraper 8964 2548 Extraction réussie de 24 prix
+INFO 2025-04-09 10:04:57,554 scraper 8964 2548 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:04:57,554 scraper 8964 2548 Mois December: prix moyen = 103.21€, 24 échantillons
+INFO 2025-04-09 10:04:57,554 scraper 8964 3740 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:04:57,562 scraper 8964 3740 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_100457.csv
+INFO 2025-04-09 10:05:03,851 scraper 8964 3740 Driver Selenium fermé
+INFO 2025-04-09 10:05:03,851 scraper 8964 3740 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:12:11,137 scraper 5332 13988 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:12:11,137 scraper 5332 13988 Début du scraping pour Paris,France
+INFO 2025-04-09 10:12:11,137 scraper 5332 13988 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:12:11,141 scraper 5332 4016 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:12:11,142 scraper 5332 4016 Utilisation des données en cache pour Paris,France, mois 1, année 2025
+INFO 2025-04-09 10:12:11,143 scraper 5332 13316 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:12:11,144 scraper 5332 13988 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:12:11,145 scraper 5332 13316 Utilisation des données en cache pour Paris,France, mois 2, année 2025
+INFO 2025-04-09 10:12:11,145 scraper 5332 4016 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:12:11,145 scraper 5332 13680 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:12:11,145 scraper 5332 13988 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:12:11,145 scraper 5332 4016 Utilisation des données en cache pour Paris,France, mois 3, année 2025
+INFO 2025-04-09 10:12:11,145 scraper 5332 13680 Utilisation des données en cache pour Paris,France, mois 4, année 2025
+INFO 2025-04-09 10:12:11,145 scraper 5332 13316 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:12:11,145 scraper 5332 13988 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:12:11,145 scraper 5332 4016 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:12:11,145 scraper 5332 13316 Utilisation des données en cache pour Paris,France, mois 5, année 2025
+INFO 2025-04-09 10:12:11,145 scraper 5332 13988 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:12:11,145 scraper 5332 4016 Utilisation des données en cache pour Paris,France, mois 6, année 2025
+INFO 2025-04-09 10:12:11,145 scraper 5332 13680 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:12:11,145 scraper 5332 13988 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:12:11,153 scraper 5332 13316 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:12:11,153 scraper 5332 4016 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:12:11,153 scraper 5332 13680 Utilisation des données en cache pour Paris,France, mois 7, année 2025
+INFO 2025-04-09 10:12:11,153 scraper 5332 13988 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:12:11,153 scraper 5332 13316 Utilisation des données en cache pour Paris,France, mois 8, année 2025
+INFO 2025-04-09 10:12:11,153 scraper 5332 4016 Utilisation des données en cache pour Paris,France, mois 9, année 2025
+INFO 2025-04-09 10:12:11,153 scraper 5332 13988 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:12:11,153 scraper 5332 13680 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:12:11,157 scraper 5332 13988 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:12:11,157 scraper 5332 4016 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:12:11,160 scraper 5332 4016 Utilisation des données en cache pour Paris,France, mois 12, année 2025
+INFO 2025-04-09 10:12:11,158 scraper 5332 13680 Utilisation des données en cache pour Paris,France, mois 10, année 2025
+INFO 2025-04-09 10:12:11,159 scraper 5332 13988 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:12:11,158 scraper 5332 13316 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:12:11,160 scraper 5332 13988 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:12:11,160 scraper 5332 13316 Utilisation des données en cache pour Paris,France, mois 11, année 2025
+INFO 2025-04-09 10:12:11,160 scraper 5332 13988 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:12:11,160 scraper 5332 13988 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:12:11,160 scraper 5332 13988 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_101211.csv
+INFO 2025-04-09 10:12:11,173 scraper 5332 13988 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:12:14,017 scraper 5332 13988 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:12:14,025 scraper 5332 13988 Début du scraping pour Paris,France
+INFO 2025-04-09 10:12:14,026 scraper 5332 13988 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:12:14,028 scraper 5332 10372 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:12:14,028 scraper 5332 10372 Utilisation des données en cache pour Paris,France, mois 1, année 2025
+INFO 2025-04-09 10:12:14,028 scraper 5332 8736 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:12:14,028 scraper 5332 13988 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:12:14,028 scraper 5332 9452 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:12:14,028 scraper 5332 10372 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:12:14,028 scraper 5332 8736 Utilisation des données en cache pour Paris,France, mois 2, année 2025
+INFO 2025-04-09 10:12:14,028 scraper 5332 9452 Utilisation des données en cache pour Paris,France, mois 3, année 2025
+INFO 2025-04-09 10:12:14,028 scraper 5332 10372 Utilisation des données en cache pour Paris,France, mois 4, année 2025
+INFO 2025-04-09 10:12:14,028 scraper 5332 13988 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:12:14,043 scraper 5332 13988 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:12:14,043 scraper 5332 10372 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:12:14,043 scraper 5332 9452 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:12:14,041 scraper 5332 8736 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:12:14,044 scraper 5332 13988 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:12:14,045 scraper 5332 10372 Utilisation des données en cache pour Paris,France, mois 7, année 2025
+INFO 2025-04-09 10:12:14,045 scraper 5332 9452 Utilisation des données en cache pour Paris,France, mois 6, année 2025
+INFO 2025-04-09 10:12:14,045 scraper 5332 8736 Utilisation des données en cache pour Paris,France, mois 5, année 2025
+INFO 2025-04-09 10:12:14,045 scraper 5332 13988 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:12:14,045 scraper 5332 13988 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:12:14,045 scraper 5332 10372 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:12:14,045 scraper 5332 13988 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:12:14,045 scraper 5332 8736 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:12:14,045 scraper 5332 9452 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:12:14,045 scraper 5332 10372 Utilisation des données en cache pour Paris,France, mois 8, année 2025
+INFO 2025-04-09 10:12:14,045 scraper 5332 8736 Utilisation des données en cache pour Paris,France, mois 10, année 2025
+INFO 2025-04-09 10:12:14,045 scraper 5332 9452 Utilisation des données en cache pour Paris,France, mois 9, année 2025
+INFO 2025-04-09 10:12:14,045 scraper 5332 13988 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:12:14,045 scraper 5332 8736 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:12:14,057 scraper 5332 10372 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:12:14,057 scraper 5332 13988 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:12:14,057 scraper 5332 8736 Utilisation des données en cache pour Paris,France, mois 12, année 2025
+INFO 2025-04-09 10:12:14,059 scraper 5332 10372 Utilisation des données en cache pour Paris,France, mois 11, année 2025
+INFO 2025-04-09 10:12:14,059 scraper 5332 13988 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:12:14,059 scraper 5332 13988 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:12:14,059 scraper 5332 13988 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:12:14,065 scraper 5332 13988 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_101214.csv
+INFO 2025-04-09 10:12:14,065 scraper 5332 13988 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:12:22,084 scraper 5332 13988 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:12:22,084 scraper 5332 13988 Début du scraping pour Paris,France
+INFO 2025-04-09 10:12:22,084 scraper 5332 13988 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:12:22,094 scraper 5332 4492 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:12:22,094 scraper 5332 8412 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:12:22,094 scraper 5332 4492 Utilisation des données en cache pour Paris,France, mois 1, année 2025
+INFO 2025-04-09 10:12:22,094 scraper 5332 8412 Utilisation des données en cache pour Paris,France, mois 2, année 2025
+INFO 2025-04-09 10:12:22,097 scraper 5332 8216 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:12:22,097 scraper 5332 13988 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:12:22,097 scraper 5332 8216 Utilisation des données en cache pour Paris,France, mois 3, année 2025
+INFO 2025-04-09 10:12:22,099 scraper 5332 4492 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:12:22,099 scraper 5332 13988 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:12:22,099 scraper 5332 8412 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:12:22,100 scraper 5332 8216 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:12:22,100 scraper 5332 4492 Utilisation des données en cache pour Paris,France, mois 4, année 2025
+INFO 2025-04-09 10:12:22,100 scraper 5332 13988 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:12:22,100 scraper 5332 8412 Utilisation des données en cache pour Paris,France, mois 5, année 2025
+INFO 2025-04-09 10:12:22,100 scraper 5332 8216 Utilisation des données en cache pour Paris,France, mois 6, année 2025
+INFO 2025-04-09 10:12:22,100 scraper 5332 13988 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:12:22,100 scraper 5332 13988 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:12:22,100 scraper 5332 13988 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:12:22,100 scraper 5332 4492 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:12:22,100 scraper 5332 8216 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:12:22,100 scraper 5332 8412 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:12:22,100 scraper 5332 4492 Utilisation des données en cache pour Paris,France, mois 7, année 2025
+INFO 2025-04-09 10:12:22,110 scraper 5332 8216 Utilisation des données en cache pour Paris,France, mois 9, année 2025
+INFO 2025-04-09 10:12:22,110 scraper 5332 8412 Utilisation des données en cache pour Paris,France, mois 8, année 2025
+INFO 2025-04-09 10:12:22,110 scraper 5332 13988 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:12:22,110 scraper 5332 13988 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:12:22,110 scraper 5332 4492 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:12:22,110 scraper 5332 8216 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:12:22,110 scraper 5332 8412 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:12:22,110 scraper 5332 13988 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:12:22,114 scraper 5332 4492 Utilisation des données en cache pour Paris,France, mois 10, année 2025
+INFO 2025-04-09 10:12:22,114 scraper 5332 8216 Utilisation des données en cache pour Paris,France, mois 11, année 2025
+INFO 2025-04-09 10:12:22,114 scraper 5332 8412 Utilisation des données en cache pour Paris,France, mois 12, année 2025
+INFO 2025-04-09 10:12:22,114 scraper 5332 13988 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:12:22,116 scraper 5332 13988 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:12:22,116 scraper 5332 13988 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:12:22,117 scraper 5332 13988 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_101222.csv
+INFO 2025-04-09 10:12:22,117 scraper 5332 13988 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:12:40,958 scraper 5332 13988 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:12:40,958 scraper 5332 13988 Début du scraping pour Lyon,France
+INFO 2025-04-09 10:12:40,958 scraper 5332 13988 Début du scraping parallèle des prix pour Lyon,France en 2025
+ERROR 2025-04-09 10:12:58,042 scraper 5332 8728 Erreur lors du scraping du mois 2: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:12:59,056 scraper 5332 13988 Pas de résultat pour le mois 2
+ERROR 2025-04-09 10:13:02,010 scraper 5332 12912 Erreur lors du scraping du mois 1: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:02,010 scraper 5332 13988 Pas de résultat pour le mois 1
+ERROR 2025-04-09 10:13:02,565 scraper 5332 12928 Erreur lors du scraping du mois 3: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:02,580 scraper 5332 13988 Pas de résultat pour le mois 3
+ERROR 2025-04-09 10:13:02,739 scraper 5332 8728 Erreur lors du scraping du mois 4: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:02,739 scraper 5332 13988 Pas de résultat pour le mois 4
+ERROR 2025-04-09 10:13:05,495 scraper 5332 12912 Erreur lors du scraping du mois 5: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:05,495 scraper 5332 13988 Pas de résultat pour le mois 5
+ERROR 2025-04-09 10:13:06,265 scraper 5332 12928 Erreur lors du scraping du mois 6: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:06,265 scraper 5332 13988 Pas de résultat pour le mois 6
+ERROR 2025-04-09 10:13:06,367 scraper 5332 8728 Erreur lors du scraping du mois 7: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:06,367 scraper 5332 13988 Pas de résultat pour le mois 7
+ERROR 2025-04-09 10:13:08,995 scraper 5332 12912 Erreur lors du scraping du mois 8: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:08,995 scraper 5332 13988 Pas de résultat pour le mois 8
+ERROR 2025-04-09 10:13:10,055 scraper 5332 12928 Erreur lors du scraping du mois 9: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-09 10:13:10,055 scraper 5332 8728 Erreur lors du scraping du mois 10: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:10,055 scraper 5332 13988 Pas de résultat pour le mois 9
+WARNING 2025-04-09 10:13:10,055 scraper 5332 13988 Pas de résultat pour le mois 10
+ERROR 2025-04-09 10:13:12,299 scraper 5332 12912 Erreur lors du scraping du mois 11: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:12,303 scraper 5332 13988 Pas de résultat pour le mois 11
+ERROR 2025-04-09 10:13:13,203 scraper 5332 12928 Erreur lors du scraping du mois 12: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:13:13,205 scraper 5332 13988 Pas de résultat pour le mois 12
+WARNING 2025-04-09 10:13:13,208 scraper 5332 13988 Aucun résultat obtenu pour la destination et l'année spécifiées
+ERROR 2025-04-09 10:13:13,208 scraper 5332 13988 Échec du scraping pour Lyon,France
+WARNING 2025-04-09 10:16:31,719 scraper 9468 5248 Impossible de déterminer la dernière version de ChromeDriver. Utilisation de la version par défaut.
+INFO 2025-04-09 10:16:31,719 scraper 9468 5248 Téléchargement de ChromeDriver depuis https://chromedriver.storage.googleapis.com/120.0.6099.109/chromedriver_win32.zip
+ERROR 2025-04-09 10:16:32,929 scraper 9468 5248 Erreur lors du téléchargement de ChromeDriver: 404
+INFO 2025-04-09 10:16:33,150 scraper 9468 5248 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:16:33,150 scraper 9468 5248 Début du scraping pour Lyon,France
+INFO 2025-04-09 10:16:33,150 scraper 9468 5248 Début du scraping parallèle des prix pour Lyon,France en 2025
+ERROR 2025-04-09 10:16:33,150 scraper 9468 11192 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,150 scraper 9468 2396 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,150 scraper 9468 11192 Impossible de créer un navigateur pour le mois 1
+ERROR 2025-04-09 10:16:33,150 scraper 9468 3704 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,166 scraper 9468 2396 Impossible de créer un navigateur pour le mois 2
+WARNING 2025-04-09 10:16:33,166 scraper 9468 5248 Pas de résultat pour le mois 1
+ERROR 2025-04-09 10:16:33,166 scraper 9468 11192 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,166 scraper 9468 3704 Impossible de créer un navigateur pour le mois 3
+ERROR 2025-04-09 10:16:33,166 scraper 9468 2396 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+WARNING 2025-04-09 10:16:33,166 scraper 9468 5248 Pas de résultat pour le mois 2
+ERROR 2025-04-09 10:16:33,166 scraper 9468 11192 Impossible de créer un navigateur pour le mois 4
+ERROR 2025-04-09 10:16:33,166 scraper 9468 3704 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,166 scraper 9468 2396 Impossible de créer un navigateur pour le mois 5
+WARNING 2025-04-09 10:16:33,166 scraper 9468 5248 Pas de résultat pour le mois 3
+ERROR 2025-04-09 10:16:33,181 scraper 9468 3704 Impossible de créer un navigateur pour le mois 6
+ERROR 2025-04-09 10:16:33,166 scraper 9468 11192 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,181 scraper 9468 2396 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+WARNING 2025-04-09 10:16:33,181 scraper 9468 5248 Pas de résultat pour le mois 4
+ERROR 2025-04-09 10:16:33,181 scraper 9468 3704 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,181 scraper 9468 11192 Impossible de créer un navigateur pour le mois 7
+ERROR 2025-04-09 10:16:33,181 scraper 9468 2396 Impossible de créer un navigateur pour le mois 8
+WARNING 2025-04-09 10:16:33,181 scraper 9468 5248 Pas de résultat pour le mois 5
+ERROR 2025-04-09 10:16:33,181 scraper 9468 3704 Impossible de créer un navigateur pour le mois 9
+ERROR 2025-04-09 10:16:33,181 scraper 9468 11192 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,197 scraper 9468 2396 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+WARNING 2025-04-09 10:16:33,197 scraper 9468 5248 Pas de résultat pour le mois 6
+ERROR 2025-04-09 10:16:33,197 scraper 9468 3704 ChromeDriver non trouvé. Impossible de créer une instance de navigateur.
+ERROR 2025-04-09 10:16:33,197 scraper 9468 11192 Impossible de créer un navigateur pour le mois 10
+ERROR 2025-04-09 10:16:33,197 scraper 9468 2396 Impossible de créer un navigateur pour le mois 11
+WARNING 2025-04-09 10:16:33,197 scraper 9468 5248 Pas de résultat pour le mois 7
+ERROR 2025-04-09 10:16:33,197 scraper 9468 3704 Impossible de créer un navigateur pour le mois 12
+WARNING 2025-04-09 10:16:33,197 scraper 9468 5248 Pas de résultat pour le mois 8
+WARNING 2025-04-09 10:16:33,213 scraper 9468 5248 Pas de résultat pour le mois 9
+WARNING 2025-04-09 10:16:33,213 scraper 9468 5248 Pas de résultat pour le mois 10
+WARNING 2025-04-09 10:16:33,213 scraper 9468 5248 Pas de résultat pour le mois 11
+WARNING 2025-04-09 10:16:33,213 scraper 9468 5248 Pas de résultat pour le mois 12
+WARNING 2025-04-09 10:16:33,213 scraper 9468 5248 Aucun résultat obtenu pour la destination et l'année spécifiées
+ERROR 2025-04-09 10:16:33,218 scraper 9468 5248 Échec du scraping pour Lyon,France
+INFO 2025-04-09 10:16:48,979 scraper 7072 12352 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:16:48,979 scraper 7072 12352 Début du scraping pour Lyon,France
+INFO 2025-04-09 10:16:48,979 scraper 7072 12352 Début du scraping parallèle des prix pour Lyon,France en 2025
+ERROR 2025-04-09 10:16:53,283 scraper 7072 12324 Erreur lors du scraping du mois 2: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:16:53,330 scraper 7072 12352 Pas de résultat pour le mois 2
+ERROR 2025-04-09 10:16:53,371 scraper 7072 1908 Erreur lors du scraping du mois 3: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:16:53,378 scraper 7072 12352 Pas de résultat pour le mois 3
+ERROR 2025-04-09 10:16:53,382 scraper 7072 8944 Erreur lors du scraping du mois 1: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:16:53,382 scraper 7072 12352 Pas de résultat pour le mois 1
+ERROR 2025-04-09 10:16:57,345 scraper 7072 1908 Erreur lors du scraping du mois 5: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-09 10:16:57,345 scraper 7072 12324 Erreur lors du scraping du mois 4: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-09 10:16:57,347 scraper 7072 8944 Erreur lors du scraping du mois 6: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:16:57,347 scraper 7072 12352 Pas de résultat pour le mois 5
+WARNING 2025-04-09 10:16:57,357 scraper 7072 12352 Pas de résultat pour le mois 4
+WARNING 2025-04-09 10:16:57,357 scraper 7072 12352 Pas de résultat pour le mois 6
+ERROR 2025-04-09 10:17:01,806 scraper 7072 12324 Erreur lors du scraping du mois 8: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-09 10:17:01,806 scraper 7072 8944 Erreur lors du scraping du mois 9: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:17:01,822 scraper 7072 12352 Pas de résultat pour le mois 8
+WARNING 2025-04-09 10:17:01,839 scraper 7072 12352 Pas de résultat pour le mois 9
+ERROR 2025-04-09 10:17:01,839 scraper 7072 1908 Erreur lors du scraping du mois 7: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:17:01,846 scraper 7072 12352 Pas de résultat pour le mois 7
+ERROR 2025-04-09 10:17:06,202 scraper 7072 12324 Erreur lors du scraping du mois 10: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:17:06,202 scraper 7072 12352 Pas de résultat pour le mois 10
+ERROR 2025-04-09 10:17:06,217 scraper 7072 1908 Erreur lors du scraping du mois 12: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:17:06,217 scraper 7072 12352 Pas de résultat pour le mois 12
+ERROR 2025-04-09 10:17:06,217 scraper 7072 8944 Erreur lors du scraping du mois 11: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:17:06,233 scraper 7072 12352 Pas de résultat pour le mois 11
+WARNING 2025-04-09 10:17:06,233 scraper 7072 12352 Aucun résultat obtenu pour la destination et l'année spécifiées
+ERROR 2025-04-09 10:17:06,233 scraper 7072 12352 Échec du scraping pour Lyon,France
+INFO 2025-04-09 10:19:41,923 scraper 10520 14520 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:19:41,923 scraper 10520 14520 Début du scraping pour Lyon,France
+INFO 2025-04-09 10:19:41,923 scraper 10520 14520 Début du scraping parallèle des prix pour Lyon,France en 2025
+ERROR 2025-04-09 10:19:46,671 scraper 10520 12600 Erreur lors du scraping du mois 3: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-09 10:19:46,686 scraper 10520 13584 Erreur lors du scraping du mois 2: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-09 10:19:46,686 scraper 10520 10396 Erreur lors du scraping du mois 1: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:46,797 scraper 10520 14520 Pas de résultat pour le mois 3
+WARNING 2025-04-09 10:19:46,812 scraper 10520 14520 Pas de résultat pour le mois 2
+WARNING 2025-04-09 10:19:46,812 scraper 10520 14520 Pas de résultat pour le mois 1
+ERROR 2025-04-09 10:19:50,957 scraper 10520 12600 Erreur lors du scraping du mois 4: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:50,964 scraper 10520 14520 Pas de résultat pour le mois 4
+ERROR 2025-04-09 10:19:50,974 scraper 10520 13584 Erreur lors du scraping du mois 5: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:50,974 scraper 10520 14520 Pas de résultat pour le mois 5
+ERROR 2025-04-09 10:19:50,989 scraper 10520 10396 Erreur lors du scraping du mois 6: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:50,989 scraper 10520 14520 Pas de résultat pour le mois 6
+ERROR 2025-04-09 10:19:54,998 scraper 10520 13584 Erreur lors du scraping du mois 8: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:54,998 scraper 10520 14520 Pas de résultat pour le mois 8
+ERROR 2025-04-09 10:19:55,014 scraper 10520 12600 Erreur lors du scraping du mois 7: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:55,014 scraper 10520 14520 Pas de résultat pour le mois 7
+ERROR 2025-04-09 10:19:55,045 scraper 10520 10396 Erreur lors du scraping du mois 9: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:55,045 scraper 10520 14520 Pas de résultat pour le mois 9
+ERROR 2025-04-09 10:19:58,955 scraper 10520 10396 Erreur lors du scraping du mois 12: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:58,971 scraper 10520 14520 Pas de résultat pour le mois 12
+ERROR 2025-04-09 10:19:58,982 scraper 10520 13584 Erreur lors du scraping du mois 10: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:58,987 scraper 10520 14520 Pas de résultat pour le mois 10
+ERROR 2025-04-09 10:19:58,987 scraper 10520 12600 Erreur lors du scraping du mois 11: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:19:58,987 scraper 10520 14520 Pas de résultat pour le mois 11
+WARNING 2025-04-09 10:19:59,002 scraper 10520 14520 Aucun résultat obtenu pour la destination et l'année spécifiées
+ERROR 2025-04-09 10:19:59,002 scraper 10520 14520 Échec du scraping pour Lyon,France
+INFO 2025-04-09 10:20:27,307 scraper 10916 13524 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:20:27,307 scraper 10916 13524 Début du scraping pour Lyon,France
+INFO 2025-04-09 10:20:27,307 scraper 10916 13524 Début du scraping parallèle des prix pour Lyon,France en 2025
+ERROR 2025-04-09 10:20:31,741 scraper 10916 14824 Erreur lors du scraping du mois 1: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:31,799 scraper 10916 13524 Pas de résultat pour le mois 1
+ERROR 2025-04-09 10:20:31,836 scraper 10916 12204 Erreur lors du scraping du mois 3: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:31,841 scraper 10916 13524 Pas de résultat pour le mois 3
+ERROR 2025-04-09 10:20:31,845 scraper 10916 7528 Erreur lors du scraping du mois 2: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:31,848 scraper 10916 13524 Pas de résultat pour le mois 2
+ERROR 2025-04-09 10:20:35,831 scraper 10916 12204 Erreur lors du scraping du mois 5: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:35,836 scraper 10916 13524 Pas de résultat pour le mois 5
+ERROR 2025-04-09 10:20:35,843 scraper 10916 14824 Erreur lors du scraping du mois 4: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:35,843 scraper 10916 13524 Pas de résultat pour le mois 4
+ERROR 2025-04-09 10:20:35,851 scraper 10916 7528 Erreur lors du scraping du mois 6: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:35,858 scraper 10916 13524 Pas de résultat pour le mois 6
+ERROR 2025-04-09 10:20:39,690 scraper 10916 14824 Erreur lors du scraping du mois 8: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:39,697 scraper 10916 13524 Pas de résultat pour le mois 8
+ERROR 2025-04-09 10:20:39,716 scraper 10916 12204 Erreur lors du scraping du mois 7: [WinError 193] %1 n’est pas une application Win32 valide
+ERROR 2025-04-09 10:20:39,716 scraper 10916 7528 Erreur lors du scraping du mois 9: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:39,720 scraper 10916 13524 Pas de résultat pour le mois 7
+WARNING 2025-04-09 10:20:39,731 scraper 10916 13524 Pas de résultat pour le mois 9
+ERROR 2025-04-09 10:20:44,750 scraper 10916 14824 Erreur lors du scraping du mois 10: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:44,761 scraper 10916 13524 Pas de résultat pour le mois 10
+ERROR 2025-04-09 10:20:44,761 scraper 10916 12204 Erreur lors du scraping du mois 11: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:44,777 scraper 10916 13524 Pas de résultat pour le mois 11
+ERROR 2025-04-09 10:20:44,792 scraper 10916 7528 Erreur lors du scraping du mois 12: [WinError 193] %1 n’est pas une application Win32 valide
+WARNING 2025-04-09 10:20:44,808 scraper 10916 13524 Pas de résultat pour le mois 12
+WARNING 2025-04-09 10:20:44,808 scraper 10916 13524 Aucun résultat obtenu pour la destination et l'année spécifiées
+ERROR 2025-04-09 10:20:44,808 scraper 10916 13524 Échec du scraping pour Lyon,France
+INFO 2025-04-09 10:25:07,739 scraper 15212 9756 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:25:07,739 scraper 15212 9756 Début du scraping pour Lyon,France
+INFO 2025-04-09 10:25:09,408 scraper 15212 9756 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:15,912 scraper 15212 9756 Driver Selenium fermé
+INFO 2025-04-09 10:25:15,912 scraper 15212 9756 Début du scraping parallèle des prix pour Lyon,France en 2025
+INFO 2025-04-09 10:25:17,075 scraper 15212 9756 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:23,326 scraper 15212 9756 Driver Selenium fermé
+INFO 2025-04-09 10:25:23,326 scraper 15212 13400 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:23,326 scraper 15212 12004 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:23,326 scraper 15212 3508 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:24,520 scraper 15212 3508 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 10:25:24,520 scraper 15212 3508 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:25:24,561 scraper 15212 13400 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 10:25:24,561 scraper 15212 13400 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:25:24,667 scraper 15212 12004 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 10:25:24,667 scraper 15212 12004 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:25:39,186 scraper 15212 3508 Mois 3: 18 hébergements trouvés
+INFO 2025-04-09 10:25:39,290 scraper 15212 3508 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_3.json
+INFO 2025-04-09 10:25:39,290 scraper 15212 3508 Mois March: prix moyen = 100.61€, 18 échantillons
+INFO 2025-04-09 10:25:40,405 scraper 15212 13400 Mois 1: 18 hébergements trouvés
+INFO 2025-04-09 10:25:40,494 scraper 15212 13400 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_1.json
+INFO 2025-04-09 10:25:40,494 scraper 15212 13400 Mois January: prix moyen = 100.61€, 18 échantillons
+INFO 2025-04-09 10:25:41,259 scraper 15212 12004 Mois 2: 18 hébergements trouvés
+INFO 2025-04-09 10:25:41,349 scraper 15212 12004 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_2.json
+INFO 2025-04-09 10:25:41,357 scraper 15212 12004 Mois February: prix moyen = 124.11€, 18 échantillons
+INFO 2025-04-09 10:25:45,593 scraper 15212 9756 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:25:45,595 scraper 15212 3508 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:46,729 scraper 15212 3508 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 10:25:46,729 scraper 15212 3508 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:25:46,757 scraper 15212 9756 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:25:46,757 scraper 15212 13400 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:47,866 scraper 15212 13400 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 10:25:47,866 scraper 15212 13400 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:25:49,209 scraper 15212 9756 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:25:49,209 scraper 15212 12004 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:25:50,309 scraper 15212 12004 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 10:25:50,309 scraper 15212 12004 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:25:59,702 scraper 15212 3508 Mois 4: 24 hébergements trouvés
+INFO 2025-04-09 10:25:59,814 scraper 15212 3508 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_4.json
+INFO 2025-04-09 10:25:59,814 scraper 15212 3508 Mois April: prix moyen = 74.08€, 24 échantillons
+INFO 2025-04-09 10:26:00,999 scraper 15212 13400 Mois 5: 24 hébergements trouvés
+INFO 2025-04-09 10:26:01,112 scraper 15212 13400 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_5.json
+INFO 2025-04-09 10:26:01,112 scraper 15212 13400 Mois May: prix moyen = 74.00€, 24 échantillons
+INFO 2025-04-09 10:26:03,017 scraper 15212 12004 Mois 6: 24 hébergements trouvés
+INFO 2025-04-09 10:26:03,137 scraper 15212 12004 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_6.json
+INFO 2025-04-09 10:26:03,137 scraper 15212 12004 Mois June: prix moyen = 71.25€, 24 échantillons
+INFO 2025-04-09 10:26:06,065 scraper 15212 3508 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:26:06,065 scraper 15212 9756 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:26:07,208 scraper 15212 3508 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 10:26:07,208 scraper 15212 3508 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:26:09,204 scraper 15212 9756 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:26:09,204 scraper 15212 13400 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:26:09,427 scraper 15212 9756 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:26:09,427 scraper 15212 12004 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:26:10,479 scraper 15212 13400 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 10:26:10,479 scraper 15212 13400 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:26:10,688 scraper 15212 12004 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 10:26:10,690 scraper 15212 12004 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:26:19,953 scraper 15212 3508 Mois 7: 24 hébergements trouvés
+INFO 2025-04-09 10:26:20,057 scraper 15212 3508 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_7.json
+INFO 2025-04-09 10:26:20,062 scraper 15212 3508 Mois July: prix moyen = 69.21€, 24 échantillons
+INFO 2025-04-09 10:26:24,051 scraper 15212 13400 Mois 8: 24 hébergements trouvés
+INFO 2025-04-09 10:26:24,163 scraper 15212 13400 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_8.json
+INFO 2025-04-09 10:26:24,163 scraper 15212 13400 Mois August: prix moyen = 69.12€, 24 échantillons
+INFO 2025-04-09 10:26:24,327 scraper 15212 12004 Mois 9: 24 hébergements trouvés
+INFO 2025-04-09 10:26:24,439 scraper 15212 12004 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_9.json
+INFO 2025-04-09 10:26:24,439 scraper 15212 12004 Mois September: prix moyen = 73.25€, 24 échantillons
+INFO 2025-04-09 10:26:26,339 scraper 15212 9756 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:26:26,339 scraper 15212 3508 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:26:27,504 scraper 15212 3508 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 10:26:27,504 scraper 15212 3508 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:26:30,488 scraper 15212 9756 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:26:30,488 scraper 15212 13400 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:26:30,699 scraper 15212 9756 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:26:30,699 scraper 15212 12004 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:26:31,599 scraper 15212 13400 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 10:26:31,600 scraper 15212 13400 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:26:31,830 scraper 15212 12004 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 10:26:31,830 scraper 15212 12004 Navigation vers https://www.airbnb.fr/s/Lyon--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:26:39,866 scraper 15212 3508 Mois 10: 24 hébergements trouvés
+INFO 2025-04-09 10:26:39,996 scraper 15212 3508 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_10.json
+INFO 2025-04-09 10:26:40,002 scraper 15212 3508 Mois October: prix moyen = 77.42€, 24 échantillons
+INFO 2025-04-09 10:26:44,779 scraper 15212 13400 Mois 11: 24 hébergements trouvés
+INFO 2025-04-09 10:26:44,892 scraper 15212 13400 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_11.json
+INFO 2025-04-09 10:26:44,892 scraper 15212 13400 Mois November: prix moyen = 93.62€, 24 échantillons
+INFO 2025-04-09 10:26:46,031 scraper 15212 12004 Mois 12: 24 hébergements trouvés
+INFO 2025-04-09 10:26:46,163 scraper 15212 12004 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Lyon_France_2025_12.json
+INFO 2025-04-09 10:26:46,163 scraper 15212 12004 Mois December: prix moyen = 94.71€, 24 échantillons
+INFO 2025-04-09 10:26:46,258 scraper 15212 9756 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:26:51,247 scraper 15212 9756 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:26:54,041 scraper 15212 9756 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:26:54,045 scraper 15212 9756 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250409_102654.csv
+INFO 2025-04-09 10:26:54,045 scraper 15212 9756 Scraping terminé avec succès pour Lyon,France
+INFO 2025-04-09 10:30:38,398 scraper 15212 9756 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:30:38,398 scraper 15212 9756 Début du scraping pour Londres,Royaume-Uni
+INFO 2025-04-09 10:30:39,649 scraper 15212 9756 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:30:45,853 scraper 15212 9756 Driver Selenium fermé
+INFO 2025-04-09 10:30:45,853 scraper 15212 9756 Début du scraping parallèle des prix pour Londres,Royaume-Uni en 2025
+INFO 2025-04-09 10:30:47,012 scraper 15212 9756 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:30:53,228 scraper 15212 9756 Driver Selenium fermé
+INFO 2025-04-09 10:30:53,228 scraper 15212 3264 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:30:53,228 scraper 15212 13760 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:30:53,228 scraper 15212 2624 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:30:54,390 scraper 15212 2624 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 10:30:54,390 scraper 15212 2624 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:30:54,395 scraper 15212 3264 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 10:30:54,396 scraper 15212 3264 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:30:54,398 scraper 15212 13760 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 10:30:54,398 scraper 15212 13760 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:31:10,581 scraper 15212 13760 Mois 1: 18 hébergements trouvés
+INFO 2025-04-09 10:31:10,680 scraper 15212 13760 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_1.json
+INFO 2025-04-09 10:31:10,680 scraper 15212 13760 Mois January: prix moyen = 74.44€, 18 échantillons
+INFO 2025-04-09 10:31:10,970 scraper 15212 3264 Mois 2: 18 hébergements trouvés
+INFO 2025-04-09 10:31:11,134 scraper 15212 3264 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_2.json
+INFO 2025-04-09 10:31:11,134 scraper 15212 3264 Mois February: prix moyen = 74.44€, 18 échantillons
+INFO 2025-04-09 10:31:13,229 scraper 15212 2624 Mois 3: 18 hébergements trouvés
+INFO 2025-04-09 10:31:13,437 scraper 15212 2624 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_3.json
+INFO 2025-04-09 10:31:13,437 scraper 15212 2624 Mois March: prix moyen = 80.39€, 18 échantillons
+INFO 2025-04-09 10:31:16,900 scraper 15212 9756 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:31:16,900 scraper 15212 13760 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:31:17,500 scraper 15212 9756 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:31:17,500 scraper 15212 3264 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:31:18,258 scraper 15212 13760 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 10:31:18,258 scraper 15212 13760 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:31:19,174 scraper 15212 3264 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 10:31:19,174 scraper 15212 3264 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:31:19,726 scraper 15212 2624 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:31:19,726 scraper 15212 9756 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:31:20,840 scraper 15212 2624 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 10:31:20,840 scraper 15212 2624 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:31:32,934 scraper 15212 13760 Mois 4: 24 hébergements trouvés
+INFO 2025-04-09 10:31:33,046 scraper 15212 13760 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_4.json
+INFO 2025-04-09 10:31:33,046 scraper 15212 13760 Mois April: prix moyen = 98.12€, 24 échantillons
+INFO 2025-04-09 10:31:34,189 scraper 15212 3264 Mois 5: 24 hébergements trouvés
+INFO 2025-04-09 10:31:34,326 scraper 15212 3264 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_5.json
+INFO 2025-04-09 10:31:34,326 scraper 15212 3264 Mois May: prix moyen = 108.33€, 24 échantillons
+INFO 2025-04-09 10:31:36,605 scraper 15212 2624 Mois 6: 24 hébergements trouvés
+INFO 2025-04-09 10:31:36,727 scraper 15212 2624 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_6.json
+INFO 2025-04-09 10:31:36,727 scraper 15212 2624 Mois June: prix moyen = 106.46€, 24 échantillons
+INFO 2025-04-09 10:31:39,313 scraper 15212 13760 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:31:39,313 scraper 15212 9756 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:31:40,402 scraper 15212 13760 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 10:31:40,402 scraper 15212 13760 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:31:40,522 scraper 15212 9756 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:31:40,522 scraper 15212 3264 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:31:41,648 scraper 15212 3264 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 10:31:41,648 scraper 15212 3264 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:31:42,983 scraper 15212 9756 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:31:42,983 scraper 15212 2624 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:31:44,125 scraper 15212 2624 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 10:31:44,125 scraper 15212 2624 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:31:56,761 scraper 15212 13760 Mois 7: 24 hébergements trouvés
+INFO 2025-04-09 10:31:56,896 scraper 15212 13760 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_7.json
+INFO 2025-04-09 10:31:56,896 scraper 15212 13760 Mois July: prix moyen = 100.54€, 24 échantillons
+INFO 2025-04-09 10:32:00,197 scraper 15212 3264 Mois 8: 24 hébergements trouvés
+INFO 2025-04-09 10:32:00,314 scraper 15212 3264 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_8.json
+INFO 2025-04-09 10:32:00,314 scraper 15212 3264 Mois August: prix moyen = 82.62€, 24 échantillons
+INFO 2025-04-09 10:32:02,450 scraper 15212 2624 Mois 9: 24 hébergements trouvés
+INFO 2025-04-09 10:32:02,580 scraper 15212 2624 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_9.json
+INFO 2025-04-09 10:32:02,587 scraper 15212 2624 Mois September: prix moyen = 78.33€, 24 échantillons
+INFO 2025-04-09 10:32:04,867 scraper 15212 9756 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:32:04,867 scraper 15212 13760 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:32:06,013 scraper 15212 13760 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 10:32:06,013 scraper 15212 13760 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:32:06,594 scraper 15212 9756 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:32:06,594 scraper 15212 3264 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:32:07,662 scraper 15212 3264 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 10:32:07,662 scraper 15212 3264 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:32:08,785 scraper 15212 9756 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:32:08,785 scraper 15212 2624 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:32:10,115 scraper 15212 2624 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 10:32:10,115 scraper 15212 2624 Navigation vers https://www.airbnb.fr/s/Londres--Royaume-Uni/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:32:20,416 scraper 15212 13760 Mois 10: 24 hébergements trouvés
+INFO 2025-04-09 10:32:20,555 scraper 15212 13760 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_10.json
+INFO 2025-04-09 10:32:20,555 scraper 15212 13760 Mois October: prix moyen = 89.08€, 24 échantillons
+INFO 2025-04-09 10:32:23,303 scraper 15212 3264 Mois 11: 24 hébergements trouvés
+INFO 2025-04-09 10:32:23,473 scraper 15212 3264 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_11.json
+INFO 2025-04-09 10:32:23,473 scraper 15212 3264 Mois November: prix moyen = 110.04€, 24 échantillons
+INFO 2025-04-09 10:32:26,750 scraper 15212 9756 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:32:27,484 scraper 15212 2624 Mois 12: 24 hébergements trouvés
+INFO 2025-04-09 10:32:27,719 scraper 15212 2624 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Londres_Royaume-Uni_2025_12.json
+INFO 2025-04-09 10:32:27,719 scraper 15212 2624 Mois December: prix moyen = 104.08€, 24 échantillons
+INFO 2025-04-09 10:32:29,687 scraper 15212 9756 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:32:34,089 scraper 15212 9756 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:32:34,096 scraper 15212 9756 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Londres_Royaume-Uni_2025_20250409_103234.csv
+INFO 2025-04-09 10:32:34,097 scraper 15212 9756 Scraping terminé avec succès pour Londres,Royaume-Uni
+INFO 2025-04-09 10:34:08,976 scraper 15212 3504 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:34:08,976 scraper 15212 3504 Début du scraping pour Paris,France
+INFO 2025-04-09 10:34:10,125 scraper 15212 3504 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:34:16,371 scraper 15212 3504 Driver Selenium fermé
+INFO 2025-04-09 10:34:16,371 scraper 15212 3504 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:34:17,523 scraper 15212 3504 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:34:23,736 scraper 15212 3504 Driver Selenium fermé
+INFO 2025-04-09 10:34:23,738 scraper 15212 11668 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:34:23,740 scraper 15212 11668 Utilisation des données en cache pour Paris,France, mois 1, année 2025
+INFO 2025-04-09 10:34:23,741 scraper 15212 4444 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:34:23,741 scraper 15212 15600 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:34:23,742 scraper 15212 3504 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:34:23,743 scraper 15212 4444 Utilisation des données en cache pour Paris,France, mois 3, année 2025
+INFO 2025-04-09 10:34:23,744 scraper 15212 15600 Utilisation des données en cache pour Paris,France, mois 2, année 2025
+INFO 2025-04-09 10:34:23,745 scraper 15212 3504 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:34:23,745 scraper 15212 11668 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:34:23,746 scraper 15212 4444 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:34:23,746 scraper 15212 3504 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:34:23,748 scraper 15212 11668 Utilisation des données en cache pour Paris,France, mois 4, année 2025
+INFO 2025-04-09 10:34:23,748 scraper 15212 4444 Utilisation des données en cache pour Paris,France, mois 5, année 2025
+INFO 2025-04-09 10:34:23,748 scraper 15212 15600 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:34:23,748 scraper 15212 3504 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:34:23,748 scraper 15212 11668 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:34:23,752 scraper 15212 15600 Utilisation des données en cache pour Paris,France, mois 6, année 2025
+INFO 2025-04-09 10:34:23,752 scraper 15212 3504 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:34:23,752 scraper 15212 4444 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:34:23,752 scraper 15212 11668 Utilisation des données en cache pour Paris,France, mois 7, année 2025
+INFO 2025-04-09 10:34:23,752 scraper 15212 3504 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:34:23,752 scraper 15212 4444 Utilisation des données en cache pour Paris,France, mois 8, année 2025
+INFO 2025-04-09 10:34:23,752 scraper 15212 15600 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:34:23,752 scraper 15212 11668 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:34:23,752 scraper 15212 3504 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:34:23,758 scraper 15212 4444 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:34:23,760 scraper 15212 15600 Utilisation des données en cache pour Paris,France, mois 9, année 2025
+INFO 2025-04-09 10:34:23,760 scraper 15212 11668 Utilisation des données en cache pour Paris,France, mois 10, année 2025
+INFO 2025-04-09 10:34:23,760 scraper 15212 3504 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:34:23,760 scraper 15212 4444 Utilisation des données en cache pour Paris,France, mois 11, année 2025
+INFO 2025-04-09 10:34:23,762 scraper 15212 15600 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:34:23,762 scraper 15212 3504 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:34:23,764 scraper 15212 15600 Utilisation des données en cache pour Paris,France, mois 12, année 2025
+INFO 2025-04-09 10:34:23,764 scraper 15212 3504 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:34:23,764 scraper 15212 3504 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:34:23,764 scraper 15212 3504 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:34:23,770 scraper 15212 3504 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103423.csv
+INFO 2025-04-09 10:34:23,770 scraper 15212 3504 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:35:04,961 scraper 15752 17328 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:35:04,961 scraper 15752 17328 Début du scraping pour Paris,France
+INFO 2025-04-09 10:35:06,255 scraper 15752 17328 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:35:12,469 scraper 15752 17328 Driver Selenium fermé
+INFO 2025-04-09 10:35:12,470 scraper 15752 17328 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:35:13,592 scraper 15752 17328 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:35:19,814 scraper 15752 17328 Driver Selenium fermé
+INFO 2025-04-09 10:35:19,823 scraper 15752 13320 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:35:19,823 scraper 15752 13320 Utilisation des données en cache pour Paris,France, mois 1, année 2025
+INFO 2025-04-09 10:35:19,825 scraper 15752 448 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:35:19,825 scraper 15752 17328 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:35:19,825 scraper 15752 448 Utilisation des données en cache pour Paris,France, mois 2, année 2025
+INFO 2025-04-09 10:35:19,825 scraper 15752 16468 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:35:19,825 scraper 15752 13320 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:35:19,825 scraper 15752 17328 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:35:19,830 scraper 15752 16468 Utilisation des données en cache pour Paris,France, mois 3, année 2025
+INFO 2025-04-09 10:35:19,830 scraper 15752 448 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:35:19,831 scraper 15752 13320 Utilisation des données en cache pour Paris,France, mois 4, année 2025
+INFO 2025-04-09 10:35:19,832 scraper 15752 17328 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:35:19,832 scraper 15752 448 Utilisation des données en cache pour Paris,France, mois 5, année 2025
+INFO 2025-04-09 10:35:19,832 scraper 15752 16468 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:35:19,832 scraper 15752 13320 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:35:19,835 scraper 15752 17328 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:35:19,835 scraper 15752 448 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:35:19,835 scraper 15752 16468 Utilisation des données en cache pour Paris,France, mois 6, année 2025
+INFO 2025-04-09 10:35:19,838 scraper 15752 13320 Utilisation des données en cache pour Paris,France, mois 7, année 2025
+INFO 2025-04-09 10:35:19,839 scraper 15752 17328 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:35:19,839 scraper 15752 448 Utilisation des données en cache pour Paris,France, mois 8, année 2025
+INFO 2025-04-09 10:35:19,842 scraper 15752 16468 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:35:19,842 scraper 15752 17328 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:35:19,842 scraper 15752 16468 Utilisation des données en cache pour Paris,France, mois 9, année 2025
+INFO 2025-04-09 10:35:19,842 scraper 15752 13320 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:35:19,842 scraper 15752 17328 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:35:19,842 scraper 15752 448 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:35:19,846 scraper 15752 13320 Utilisation des données en cache pour Paris,France, mois 10, année 2025
+INFO 2025-04-09 10:35:19,846 scraper 15752 17328 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:35:19,846 scraper 15752 16468 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:35:19,847 scraper 15752 448 Utilisation des données en cache pour Paris,France, mois 11, année 2025
+INFO 2025-04-09 10:35:19,847 scraper 15752 17328 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:35:19,847 scraper 15752 16468 Utilisation des données en cache pour Paris,France, mois 12, année 2025
+INFO 2025-04-09 10:35:19,850 scraper 15752 17328 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:35:19,851 scraper 15752 17328 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:35:19,851 scraper 15752 17328 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:35:19,862 scraper 15752 17328 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103519.csv
+INFO 2025-04-09 10:35:19,862 scraper 15752 17328 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:36:35,943 scraper 16884 10324 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:36:35,943 scraper 16884 10324 Début du scraping pour Paris,France
+INFO 2025-04-09 10:36:37,229 scraper 16884 10324 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:36:43,443 scraper 16884 10324 Driver Selenium fermé
+INFO 2025-04-09 10:36:43,443 scraper 16884 10324 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:36:44,606 scraper 16884 10324 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:36:50,760 scraper 16884 10324 Driver Selenium fermé
+INFO 2025-04-09 10:36:50,760 scraper 16884 7004 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:36:50,763 scraper 16884 7004 Utilisation des données en cache pour Paris,France, mois 1, année 2025
+INFO 2025-04-09 10:36:50,763 scraper 16884 15392 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:36:50,760 scraper 16884 14292 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:36:50,763 scraper 16884 10324 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:36:50,763 scraper 16884 7004 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:36:50,763 scraper 16884 15392 Utilisation des données en cache pour Paris,France, mois 3, année 2025
+INFO 2025-04-09 10:36:50,767 scraper 16884 14292 Utilisation des données en cache pour Paris,France, mois 2, année 2025
+INFO 2025-04-09 10:36:50,768 scraper 16884 7004 Utilisation des données en cache pour Paris,France, mois 4, année 2025
+INFO 2025-04-09 10:36:50,768 scraper 16884 10324 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:36:50,768 scraper 16884 14292 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:36:50,770 scraper 16884 14292 Utilisation des données en cache pour Paris,France, mois 6, année 2025
+INFO 2025-04-09 10:36:50,770 scraper 16884 10324 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:36:50,768 scraper 16884 15392 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:36:50,770 scraper 16884 7004 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:36:50,772 scraper 16884 10324 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:36:50,772 scraper 16884 14292 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:36:50,772 scraper 16884 15392 Utilisation des données en cache pour Paris,France, mois 5, année 2025
+INFO 2025-04-09 10:36:50,772 scraper 16884 7004 Utilisation des données en cache pour Paris,France, mois 7, année 2025
+INFO 2025-04-09 10:36:50,772 scraper 16884 10324 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:36:50,772 scraper 16884 14292 Utilisation des données en cache pour Paris,France, mois 8, année 2025
+INFO 2025-04-09 10:36:50,776 scraper 16884 10324 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:36:50,776 scraper 16884 15392 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:36:50,776 scraper 16884 7004 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:36:50,776 scraper 16884 10324 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:36:50,776 scraper 16884 14292 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:36:50,776 scraper 16884 15392 Utilisation des données en cache pour Paris,France, mois 9, année 2025
+INFO 2025-04-09 10:36:50,776 scraper 16884 7004 Utilisation des données en cache pour Paris,France, mois 10, année 2025
+INFO 2025-04-09 10:36:50,778 scraper 16884 10324 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:36:50,778 scraper 16884 14292 Utilisation des données en cache pour Paris,France, mois 11, année 2025
+INFO 2025-04-09 10:36:50,778 scraper 16884 15392 Données récupérées depuis le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:36:50,778 scraper 16884 10324 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:36:50,778 scraper 16884 15392 Utilisation des données en cache pour Paris,France, mois 12, année 2025
+INFO 2025-04-09 10:36:50,778 scraper 16884 10324 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:36:50,778 scraper 16884 10324 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:36:50,778 scraper 16884 10324 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:36:50,792 scraper 16884 10324 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103650.csv
+INFO 2025-04-09 10:36:50,793 scraper 16884 10324 Scraping terminé avec succès pour Paris,France
+INFO 2025-04-09 10:37:40,312 scraper 16884 10324 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 10:37:40,312 scraper 16884 10324 Début du scraping pour Paris,France
+INFO 2025-04-09 10:37:41,424 scraper 16884 10324 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:37:47,606 scraper 16884 10324 Driver Selenium fermé
+INFO 2025-04-09 10:37:47,606 scraper 16884 10324 Début du scraping parallèle des prix pour Paris,France en 2025
+INFO 2025-04-09 10:37:48,760 scraper 16884 10324 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:37:54,967 scraper 16884 10324 Driver Selenium fermé
+INFO 2025-04-09 10:37:54,967 scraper 16884 15396 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:37:54,967 scraper 16884 15416 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:37:54,967 scraper 16884 13060 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:37:56,172 scraper 16884 13060 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 10:37:56,172 scraper 16884 13060 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:37:56,197 scraper 16884 15396 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 10:37:56,197 scraper 16884 15396 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:37:56,287 scraper 16884 15416 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 10:37:56,287 scraper 16884 15416 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:08,416 scraper 16884 13060 Mois 3: 18 hébergements trouvés
+INFO 2025-04-09 10:38:08,536 scraper 16884 13060 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_3.json
+INFO 2025-04-09 10:38:08,542 scraper 16884 13060 Mois March: prix moyen = 176.72€, 18 échantillons
+INFO 2025-04-09 10:38:08,959 scraper 16884 15396 Mois 1: 18 hébergements trouvés
+INFO 2025-04-09 10:38:08,975 scraper 16884 15416 Mois 2: 18 hébergements trouvés
+INFO 2025-04-09 10:38:09,168 scraper 16884 15396 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_1.json
+INFO 2025-04-09 10:38:09,168 scraper 16884 15396 Mois January: prix moyen = 176.72€, 18 échantillons
+INFO 2025-04-09 10:38:09,176 scraper 16884 15416 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_2.json
+INFO 2025-04-09 10:38:09,176 scraper 16884 15416 Mois February: prix moyen = 209.78€, 18 échantillons
+INFO 2025-04-09 10:38:14,959 scraper 16884 10324 Résultat récupéré pour le mois 3
+INFO 2025-04-09 10:38:14,959 scraper 16884 13060 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:15,409 scraper 16884 10324 Résultat récupéré pour le mois 2
+INFO 2025-04-09 10:38:15,409 scraper 16884 15416 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:15,467 scraper 16884 10324 Résultat récupéré pour le mois 1
+INFO 2025-04-09 10:38:15,467 scraper 16884 15396 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:16,110 scraper 16884 13060 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 10:38:16,110 scraper 16884 13060 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:16,543 scraper 16884 15416 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 10:38:16,543 scraper 16884 15416 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:16,634 scraper 16884 15396 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 10:38:16,634 scraper 16884 15396 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:28,018 scraper 16884 13060 Mois 4: 24 hébergements trouvés
+INFO 2025-04-09 10:38:28,123 scraper 16884 13060 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_4.json
+INFO 2025-04-09 10:38:28,123 scraper 16884 13060 Mois April: prix moyen = 107.21€, 24 échantillons
+INFO 2025-04-09 10:38:28,458 scraper 16884 15396 Mois 6: 24 hébergements trouvés
+INFO 2025-04-09 10:38:28,669 scraper 16884 15416 Mois 5: 24 hébergements trouvés
+INFO 2025-04-09 10:38:28,726 scraper 16884 15396 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_6.json
+INFO 2025-04-09 10:38:28,758 scraper 16884 15396 Mois June: prix moyen = 91.62€, 24 échantillons
+INFO 2025-04-09 10:38:28,807 scraper 16884 15416 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_5.json
+INFO 2025-04-09 10:38:28,807 scraper 16884 15416 Mois May: prix moyen = 85.50€, 24 échantillons
+INFO 2025-04-09 10:38:34,500 scraper 16884 10324 Résultat récupéré pour le mois 4
+INFO 2025-04-09 10:38:34,500 scraper 16884 13060 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:35,101 scraper 16884 10324 Résultat récupéré pour le mois 6
+INFO 2025-04-09 10:38:35,102 scraper 16884 15396 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:35,102 scraper 16884 15416 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:35,102 scraper 16884 10324 Résultat récupéré pour le mois 5
+INFO 2025-04-09 10:38:35,657 scraper 16884 13060 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 10:38:35,657 scraper 16884 13060 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:36,231 scraper 16884 15416 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 10:38:36,231 scraper 16884 15416 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:36,246 scraper 16884 15396 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 10:38:36,247 scraper 16884 15396 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:47,649 scraper 16884 13060 Mois 7: 24 hébergements trouvés
+INFO 2025-04-09 10:38:47,786 scraper 16884 13060 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_7.json
+INFO 2025-04-09 10:38:47,786 scraper 16884 13060 Mois July: prix moyen = 95.54€, 24 échantillons
+INFO 2025-04-09 10:38:48,991 scraper 16884 15416 Mois 9: 24 hébergements trouvés
+INFO 2025-04-09 10:38:49,220 scraper 16884 15416 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_9.json
+INFO 2025-04-09 10:38:49,230 scraper 16884 15396 Mois 8: 18 hébergements trouvés
+INFO 2025-04-09 10:38:49,230 scraper 16884 15416 Mois September: prix moyen = 78.50€, 24 échantillons
+INFO 2025-04-09 10:38:49,319 scraper 16884 15396 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_8.json
+INFO 2025-04-09 10:38:49,319 scraper 16884 15396 Mois August: prix moyen = 73.61€, 18 échantillons
+INFO 2025-04-09 10:38:54,052 scraper 16884 10324 Résultat récupéré pour le mois 7
+INFO 2025-04-09 10:38:54,053 scraper 16884 13060 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:55,207 scraper 16884 13060 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 10:38:55,215 scraper 16884 13060 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:55,535 scraper 16884 15416 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:55,535 scraper 16884 10324 Résultat récupéré pour le mois 9
+INFO 2025-04-09 10:38:55,567 scraper 16884 10324 Résultat récupéré pour le mois 8
+INFO 2025-04-09 10:38:55,567 scraper 16884 15396 Utilisation du ChromeDriver à l'emplacement: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 10:38:56,701 scraper 16884 15396 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 10:38:56,701 scraper 16884 15416 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 10:38:56,706 scraper 16884 15396 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:38:56,706 scraper 16884 15416 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 10:39:07,775 scraper 16884 13060 Mois 10: 24 hébergements trouvés
+INFO 2025-04-09 10:39:07,881 scraper 16884 13060 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_10.json
+INFO 2025-04-09 10:39:07,886 scraper 16884 13060 Mois October: prix moyen = 101.75€, 24 échantillons
+INFO 2025-04-09 10:39:08,395 scraper 16884 15396 Mois 12: 24 hébergements trouvés
+INFO 2025-04-09 10:39:08,517 scraper 16884 15396 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_12.json
+INFO 2025-04-09 10:39:08,520 scraper 16884 15396 Mois December: prix moyen = 101.12€, 24 échantillons
+INFO 2025-04-09 10:39:09,156 scraper 16884 15416 Mois 11: 24 hébergements trouvés
+INFO 2025-04-09 10:39:09,262 scraper 16884 15416 Données sauvegardées dans le cache: C:\Users\ryank\PycharmProjects\airbnb_analytics\data\cache\Paris_France_2025_11.json
+INFO 2025-04-09 10:39:09,269 scraper 16884 15416 Mois November: prix moyen = 129.46€, 24 échantillons
+INFO 2025-04-09 10:39:14,185 scraper 16884 10324 Résultat récupéré pour le mois 10
+INFO 2025-04-09 10:39:14,776 scraper 16884 10324 Résultat récupéré pour le mois 12
+INFO 2025-04-09 10:39:15,541 scraper 16884 10324 Résultat récupéré pour le mois 11
+INFO 2025-04-09 10:39:15,549 scraper 16884 10324 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_103915.csv
+INFO 2025-04-09 10:39:15,549 scraper 16884 10324 Scraping terminé avec succès pour Paris,France
