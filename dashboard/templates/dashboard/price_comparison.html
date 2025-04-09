@@ -67,7 +67,7 @@
         {% if selected_month %}
         <!-- Affichage pour un mois spécifique -->
         <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-striped table-horizontal-mobile">
                 <thead>
                     <tr>
                         <th>Destination</th>
@@ -78,15 +78,15 @@
                 <tbody>
                     {% for dest in comparison_data %}
                     <tr>
-                        <td>{{ dest.name }}</td>
-                        <td>
+                        <td data-label="Destination">{{ dest.name }}</td>
+                        <td data-label="Prix moyen" class="price-value">
                             {% for month_id, month_data in dest.months.items %}
                             {% if month_id|stringformat:"i" == selected_month %}
-                            {{ month_data.avg_price|floatformat:2 }} €
+                            {{ month_data.avg_price|floatformat:2 }}€
                             {% endif %}
                             {% endfor %}
                         </td>
-                        <td>
+                        <td data-label="Est le moins cher">
                             {% for month_id, month_data in dest.months.items %}
                             {% if month_id|stringformat:"i" == selected_month and month_data.is_cheapest %}
                             <span class="badge bg-success"><i class="fa-solid fa-check me-1"></i> Oui</span>
@@ -101,14 +101,14 @@
         {% else %}
         <!-- Affichage pour tous les mois -->
         <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-striped table-sm">
                 <thead>
                     <tr>
                         <th>Mois</th>
                         {% for dest in comparison_data %}
                         <th>{{ dest.name }}</th>
                         {% endfor %}
-                        <th>Différence max</th>
+                        <th>Différence</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -118,7 +118,7 @@
                         {% for dest in comparison_data %}
                         <td {% if dest.months|get_item:month_id|get_item:'is_cheapest' %}class="table-success"{% endif %}>
                             {% if dest.months|get_item:month_id %}
-                            {{ dest.months|get_item:month_id|get_item:'avg_price'|floatformat:2 }} €
+                            <span class="price-value">{{ dest.months|get_item:month_id|get_item:'avg_price'|floatformat:0 }}€</span>
                             {% else %}
                             -
                             {% endif %}
@@ -127,8 +127,8 @@
                         <td>
                             {% with prices=comparison_data|map_month_prices:month_id %}
                             {% if prices|length > 1 %}
-                            {{ prices|price_difference|floatformat:2 }} €
-                            ({{ prices|price_difference_percent|floatformat:1 }}%)
+                            <span class="price-value">{{ prices|price_difference|floatformat:0 }}€</span>
+                            <small>({{ prices|price_difference_percent|floatformat:0 }}%)</small>
                             {% else %}
                             -
                             {% endif %}
@@ -158,6 +158,36 @@
     document.addEventListener('DOMContentLoaded', function() {
         const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
 
+        // Générer des couleurs distinctives pour chaque destination
+        const generateColors = (count) => {
+            const baseColors = [
+                chartColors.primary,
+                chartColors.secondary,
+                chartColors.blue,
+                chartColors.green,
+                chartColors.yellow,
+                chartColors.orange,
+                chartColors.purple
+            ];
+
+            // Assigner des couleurs en cycle si nous avons plus de destinations que de couleurs
+            return chartData.datasets.map((_, index) => baseColors[index % baseColors.length]);
+        };
+
+        // Mettre à jour les couleurs des datasets
+        const colors = generateColors(chartData.datasets.length);
+        chartData.datasets.forEach((dataset, index) => {
+            dataset.backgroundColor = colors[index] + '40'; // Ajouter transparence
+            dataset.borderColor = colors[index];
+            dataset.borderWidth = 2;
+            dataset.pointBackgroundColor = colors[index];
+            dataset.pointBorderColor = '#fff';
+            dataset.pointRadius = 5;
+            dataset.pointHoverRadius = 7;
+            dataset.tension = 0.3; // Ajouter courbe
+            dataset.fill = false;
+        });
+
         const comparisonChart = new Chart(comparisonCtx, {
             type: 'line',
             data: chartData,
@@ -172,12 +202,24 @@
                 scales: {
                     y: {
                         beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)',
+                            lineWidth: 1
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return value + '€';
+                            }
+                        },
                         title: {
                             display: true,
                             text: 'Prix moyen (€)'
                         }
                     },
                     x: {
+                        grid: {
+                            display: false
+                        },
                         title: {
                             display: true,
                             text: 'Mois'
@@ -186,7 +228,11 @@
                 },
                 plugins: {
                     legend: {
-                        position: 'bottom'
+                        position: 'bottom',
+                        labels: {
+                            boxWidth: 12,
+                            padding: 15
+                        }
                     },
                     tooltip: {
                         callbacks: {
@@ -199,6 +245,10 @@
                             }
                         }
                     }
+                },
+                animation: {
+                    duration: 1000,
+                    easing: 'easeOutQuart'
                 }
             }
         });

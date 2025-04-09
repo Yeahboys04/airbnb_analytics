@@ -1,4 +1,5 @@
 {% extends 'dashboard/base.html' %}
+{% load dashboard_extras %}
 
 {% block title %}{{ destination.name }} - Airbnb Analytics{% endblock %}
 
@@ -58,7 +59,7 @@
                     </div>
                     <div>
                         <h3>{{ analysis.cheapest_month }}</h3>
-                        <h4 class="text-success">{{ analysis.cheapest_month_price }} €</h4>
+                        <h4 class="text-success price-value">{{ analysis.cheapest_month_price }}€</h4>
                         <p class="mb-0 text-muted">
                             {% if analysis.season_analysis %}
                             <i class="fa-solid
@@ -86,7 +87,7 @@
             </div>
             <div class="card-body">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="display-4 me-3 text-danger">{{ analysis.most_expensive_month_price }} €</div>
+                    <div class="display-4 me-3 text-danger price-value">{{ analysis.most_expensive_month_price }}€</div>
                     <div>
                         <h5 class="mb-0">{{ analysis.most_expensive_month }}</h5>
                         <p class="text-muted mb-0">Mois le plus cher</p>
@@ -98,7 +99,7 @@
                 </div>
 
                 <div class="d-flex align-items-center">
-                    <div class="display-4 me-3 text-success">{{ analysis.potential_savings }} €</div>
+                    <div class="display-4 me-3 text-success price-value">{{ analysis.potential_savings }}€</div>
                     <div>
                         <h5 class="mb-0">{{ analysis.savings_percentage }}%</h5>
                         <p class="text-muted mb-0">d'économies potentielles</p>
@@ -131,7 +132,7 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-horizontal-mobile">
                         <thead>
                             <tr>
                                 <th>Rang</th>
@@ -144,25 +145,18 @@
                         <tbody>
                         {% for month in price_ranking %}
                         <tr {% if forloop.first %}class="table-success"{% endif %} {% if forloop.last %}class="table-danger"{% endif %}>
-                            <td>{{ forloop.counter }}</td>
-                            <td>{{ month.month }}</td>
-                            <td>{{ month.price }} €</td>
-                            <td>
-                                <span class="
-                                    {% if month.season == 'Hiver' %}text-primary
-                                    {% elif month.season == 'Printemps' %}text-success
-                                    {% elif month.season == 'Été' %}text-warning
-                                    {% elif month.season == 'Automne' %}text-brown
-                                    {% endif %}
-                                ">
-                                    {{ month.season }}
-                                </span>
+                            <td data-label="Rang">{{ forloop.counter }}</td>
+                            <td data-label="Mois">{{ month.month }}</td>
+                            <td data-label="Prix moyen" class="price-value">{{ month.price }}€</td>
+                            <td data-label="Saison">
+                                {% season_badge month.season %}
                             </td>
-                            <td>
+                            <td data-label="Diff. avec min">
                                 {% if forloop.first %}
                                 -
                                 {% else %}
-                                +{{ month.price_diff|floatformat:2 }} € ({{ month.percentage_diff|floatformat:1 }}%)
+                                <span class="price-value">+{{ month.price_diff|floatformat:2 }}€</span>
+                                <small>({{ month.percentage_diff|floatformat:1 }}%)</small>
                                 {% endif %}
                             </td>
                         </tr>
@@ -201,12 +195,12 @@
                             {% for data in price_data %}
                             <tr {% if data.is_cheapest %}class="table-success"{% endif %}>
                                 <td>{{ data.month_name }}</td>
-                                <td>{{ data.avg_price|floatformat:2 }} €</td>
-                                <td>{{ data.median_price|floatformat:2 }} €</td>
-                                <td>{{ data.min_price|floatformat:2 }} €</td>
-                                <td>{{ data.max_price|floatformat:2 }} €</td>
+                                <td class="price-value">{{ data.avg_price|floatformat:2 }}€</td>
+                                <td class="price-value">{{ data.median_price|floatformat:2 }}€</td>
+                                <td class="price-value">{{ data.min_price|floatformat:2 }}€</td>
+                                <td class="price-value">{{ data.max_price|floatformat:2 }}€</td>
                                 <td>{{ data.sample_size }}</td>
-                                <td>{{ data.season }}</td>
+                                <td>{% season_badge data.season %}</td>
                                 <td>{{ data.relative_price|floatformat:2 }}</td>
                             </tr>
                             {% endfor %}
@@ -227,14 +221,6 @@
     const chartData = {{ chart_data|safe }};
     const seasonData = {{ season_data|safe }};
 
-    // Couleurs pour les saisons
-    const seasonColors = {
-        'Hiver': '#2196F3',
-        'Printemps': '#4CAF50',
-        'Été': '#FF9800',
-        'Automne': '#795548'
-    };
-
     document.addEventListener('DOMContentLoaded', function() {
         // Graphique principal des prix
         const priceCtx = document.getElementById('priceChart').getContext('2d');
@@ -246,17 +232,28 @@
                     {
                         label: 'Prix moyen',
                         data: chartData.avg_prices,
-                        backgroundColor: '#FF5A5F',
-                        borderColor: '#FF5A5F',
+                        backgroundColor: function(context) {
+                            const index = context.dataIndex;
+                            const value = context.dataset.data[index];
+                            // Colorier les barres en fonction du prix (plus foncé = plus cher)
+                            return index === chartData.avg_prices.indexOf(Math.min(...chartData.avg_prices))
+                                ? chartColors.secondary  // Le moins cher
+                                : index === chartData.avg_prices.indexOf(Math.max(...chartData.avg_prices))
+                                ? chartColors.primary     // Le plus cher
+                                : chartColors.blue;       // Normal
+                        },
+                        borderColor: 'transparent',
                         borderWidth: 1,
+                        borderRadius: 6,
                         order: 1
                     },
                     {
                         label: 'Prix médian',
                         data: chartData.median_prices,
-                        backgroundColor: '#00A699',
-                        borderColor: '#00A699',
-                        borderWidth: 1,
+                        backgroundColor: 'rgba(0, 166, 153, 0.7)',
+                        borderColor: 'transparent',
+                        borderWidth:010,
+                        borderRadius: 6,
                         order: 2
                     },
                     {
@@ -276,15 +273,33 @@
                 scales: {
                     y: {
                         beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)',
+                            lineWidth: 1
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return value + '€';
+                            }
+                        },
                         title: {
                             display: true,
                             text: 'Prix (€)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
                         }
                     }
                 },
                 plugins: {
                     tooltip: {
                         callbacks: {
+                            label: function(context) {
+                                const value = context.parsed.y;
+                                return `${context.dataset.label}: ${value}€`;
+                            },
                             afterLabel: function(context) {
                                 const dataIndex = context.dataIndex;
                                 const min = chartData.min_prices[dataIndex];
@@ -292,7 +307,18 @@
                                 return `Min: ${min}€ - Max: ${max}€`;
                             }
                         }
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            boxWidth: 12,
+                            padding: 15
+                        }
                     }
+                },
+                animation: {
+                    duration: 1000,
+                    easing: 'easeOutQuart'
                 }
             }
         });
@@ -301,7 +327,12 @@
         const seasonCtx = document.getElementById('seasonChart').getContext('2d');
         const seasonLabels = Object.keys(seasonData);
         const seasonValues = Object.values(seasonData);
-        const seasonBgColors = seasonLabels.map(season => seasonColors[season]);
+        const seasonBgColors = [
+            chartColors.blue,      // Hiver
+            chartColors.green,     // Printemps
+            chartColors.yellow,    // Été
+            chartColors.orange     // Automne
+        ];
 
         const seasonChart = new Chart(seasonCtx, {
             type: 'pie',
@@ -310,7 +341,7 @@
                 datasets: [{
                     data: seasonValues,
                     backgroundColor: seasonBgColors,
-                    borderWidth: 1,
+                    borderWidth: 2,
                     borderColor: '#fff'
                 }]
             },
@@ -319,16 +350,25 @@
                 maintainAspectRatio: false,
                 plugins: {
                     legend: {
-                        position: 'bottom'
+                        position: 'bottom',
+                        labels: {
+                            padding: 15
+                        }
                     },
                     tooltip: {
                         callbacks: {
                             label: function(context) {
                                 const value = context.raw;
-                                return `${context.label}: ${value.toFixed(2)}€`;
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const percentage = ((value / total) * 100).toFixed(1);
+                                return `${context.label}: ${value.toFixed(2)}€ (${percentage}%)`;
                             }
                         }
                     }
+                },
+                animation: {
+                    animateRotate: true,
+                    animateScale: true
                 }
             }
         });

@@ -931,3 +931,70 @@ INFO 2025-04-09 00:54:05,001 scraper 2268 21740 Mois December: prix moyen = 74.5
 INFO 2025-04-09 00:54:13,051 scraper 2268 21740 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Lyon_France_2025_20250409_005413.csv
 INFO 2025-04-09 00:54:19,287 scraper 2268 21740 Driver Selenium fermé
 INFO 2025-04-09 00:54:19,288 scraper 2268 21740 Scraping terminé avec succès pour Lyon,France
+INFO 2025-04-09 08:50:27,946 scraper 13476 9268 AirbnbScraper initialisé avec succès
+INFO 2025-04-09 08:50:27,947 scraper 13476 9268 Début du scraping pour Paris,France
+INFO 2025-04-09 08:50:27,948 scraper 13476 9268 Début du scraping des prix pour Paris,France en 2025
+INFO 2025-04-09 08:50:29,447 scraper 13476 9268 Driver Selenium initialisé avec succès. Chemin: C:\Users\ryank\PycharmProjects\airbnb_analytics\chromedriver-win64\chromedriver.exe
+INFO 2025-04-09 08:50:29,447 scraper 13476 9268 Scraping du mois 1 (2025-01-15 à 2025-01-22)
+INFO 2025-04-09 08:50:29,447 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-01-15&checkout=2025-01-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:50:49,273 scraper 13476 9268 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 08:50:49,289 scraper 13476 9268 Extraction réussie de 1 prix
+INFO 2025-04-09 08:50:49,297 scraper 13476 9268 Mois January: prix moyen = 152.00€, 1 échantillons
+INFO 2025-04-09 08:50:59,450 scraper 13476 9268 Scraping du mois 2 (2025-02-15 à 2025-02-22)
+INFO 2025-04-09 08:50:59,450 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-02-15&checkout=2025-02-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:51:16,389 scraper 13476 9268 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 08:51:16,397 scraper 13476 9268 Extraction réussie de 3 prix
+INFO 2025-04-09 08:51:16,405 scraper 13476 9268 Mois February: prix moyen = 166.33€, 3 échantillons
+INFO 2025-04-09 08:51:30,443 scraper 13476 9268 Scraping du mois 3 (2025-03-15 à 2025-03-22)
+INFO 2025-04-09 08:51:30,443 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-03-15&checkout=2025-03-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:51:49,398 scraper 13476 9268 Nombre d'hébergements trouvés: 18
+INFO 2025-04-09 08:51:49,415 scraper 13476 9268 Extraction réussie de 2 prix
+INFO 2025-04-09 08:51:49,415 scraper 13476 9268 Mois March: prix moyen = 213.00€, 2 échantillons
+INFO 2025-04-09 08:51:58,469 scraper 13476 9268 Scraping du mois 4 (2025-04-15 à 2025-04-22)
+INFO 2025-04-09 08:51:58,469 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-04-15&checkout=2025-04-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:52:16,520 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:52:16,527 scraper 13476 9268 Extraction réussie de 13 prix
+INFO 2025-04-09 08:52:16,527 scraper 13476 9268 Mois April: prix moyen = 99.23€, 13 échantillons
+INFO 2025-04-09 08:52:24,860 scraper 13476 9268 Scraping du mois 5 (2025-05-15 à 2025-05-22)
+INFO 2025-04-09 08:52:24,860 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-05-15&checkout=2025-05-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:52:43,061 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:52:43,077 scraper 13476 9268 Extraction réussie de 14 prix
+INFO 2025-04-09 08:52:43,077 scraper 13476 9268 Mois May: prix moyen = 93.00€, 14 échantillons
+INFO 2025-04-09 08:52:57,020 scraper 13476 9268 Scraping du mois 6 (2025-06-15 à 2025-06-22)
+INFO 2025-04-09 08:52:57,020 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-06-15&checkout=2025-06-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:53:13,946 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:53:13,962 scraper 13476 9268 Extraction réussie de 14 prix
+INFO 2025-04-09 08:53:13,964 scraper 13476 9268 Mois June: prix moyen = 79.86€, 14 échantillons
+INFO 2025-04-09 08:53:26,761 scraper 13476 9268 Scraping du mois 7 (2025-07-15 à 2025-07-22)
+INFO 2025-04-09 08:53:26,761 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-07-15&checkout=2025-07-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:53:43,836 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:53:43,853 scraper 13476 9268 Extraction réussie de 12 prix
+INFO 2025-04-09 08:53:43,853 scraper 13476 9268 Mois July: prix moyen = 85.58€, 12 échantillons
+INFO 2025-04-09 08:53:54,544 scraper 13476 9268 Scraping du mois 8 (2025-08-15 à 2025-08-22)
+INFO 2025-04-09 08:53:54,545 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-08-15&checkout=2025-08-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:54:10,837 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:54:10,845 scraper 13476 9268 Extraction réussie de 11 prix
+INFO 2025-04-09 08:54:10,845 scraper 13476 9268 Mois August: prix moyen = 94.09€, 11 échantillons
+INFO 2025-04-09 08:54:22,534 scraper 13476 9268 Scraping du mois 9 (2025-09-15 à 2025-09-22)
+INFO 2025-04-09 08:54:22,535 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-09-15&checkout=2025-09-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:54:38,852 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:54:38,868 scraper 13476 9268 Extraction réussie de 14 prix
+INFO 2025-04-09 08:54:38,868 scraper 13476 9268 Mois September: prix moyen = 75.79€, 14 échantillons
+INFO 2025-04-09 08:54:52,198 scraper 13476 9268 Scraping du mois 10 (2025-10-15 à 2025-10-22)
+INFO 2025-04-09 08:54:52,198 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-10-15&checkout=2025-10-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:55:10,468 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:55:10,476 scraper 13476 9268 Extraction réussie de 20 prix
+INFO 2025-04-09 08:55:10,476 scraper 13476 9268 Mois October: prix moyen = 93.90€, 20 échantillons
+INFO 2025-04-09 08:55:21,624 scraper 13476 9268 Scraping du mois 11 (2025-11-15 à 2025-11-22)
+INFO 2025-04-09 08:55:21,624 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-11-15&checkout=2025-11-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:55:37,444 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:55:37,452 scraper 13476 9268 Extraction réussie de 14 prix
+INFO 2025-04-09 08:55:37,460 scraper 13476 9268 Mois November: prix moyen = 99.21€, 14 échantillons
+INFO 2025-04-09 08:55:51,831 scraper 13476 9268 Scraping du mois 12 (2025-12-15 à 2025-12-22)
+INFO 2025-04-09 08:55:51,831 scraper 13476 9268 Navigation vers https://www.airbnb.fr/s/Paris--France/homes?checkin=2025-12-15&checkout=2025-12-22&adults=2&children=0&infants=0&pets=0
+INFO 2025-04-09 08:56:07,505 scraper 13476 9268 Nombre d'hébergements trouvés: 24
+INFO 2025-04-09 08:56:07,513 scraper 13476 9268 Extraction réussie de 17 prix
+INFO 2025-04-09 08:56:07,513 scraper 13476 9268 Mois December: prix moyen = 94.88€, 17 échantillons
+INFO 2025-04-09 08:56:21,593 scraper 13476 9268 Données sauvegardées dans C:\Users\ryank\PycharmProjects\airbnb_analytics\data\raw\Paris_France_2025_20250409_085621.csv
+INFO 2025-04-09 08:56:28,032 scraper 13476 9268 Driver Selenium fermé
+INFO 2025-04-09 08:56:28,032 scraper 13476 9268 Scraping terminé avec succès pour Paris,France

@@ -1,4 +1,5 @@
 {% extends 'dashboard/base.html' %}
+{% load dashboard_extras %}
 
 {% block title %}Tableau de bord - Airbnb Analytics{% endblock %}
 
@@ -10,66 +11,80 @@
 <!-- Statistiques générales -->
 <div class="row mb-4">
     <div class="col-md-3">
-        <div class="card stats-card h-100">
+        <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title text-muted">Destinations</h5>
-                <div class="d-flex align-items-center">
-                    <div class="display-4 me-3">{{ stats.destination_count }}</div>
+                <div class="d-flex align-items-start">
+                    <div class="stats-icon-container me-3">
+                        <i class="fa-solid fa-location-dot fa-2x text-primary"></i>
+                    </div>
                     <div>
-                        <span class="text-muted">destinations analysées</span>
+                        <h6 class="text-muted">Destinations</h6>
+                        <h3 class="mb-0">{{ stats.destination_count }}</h3>
+                        <small class="text-muted">destinations analysées</small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="col-md-3">
-        <div class="card stats-card h-100">
+        <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title text-muted">Économies moyennes</h5>
-                <div class="d-flex align-items-center">
-                    <div class="display-4 me-3">{{ stats.avg_savings }}%</div>
+                <div class="d-flex align-items-start">
+                    <div class="stats-icon-container me-3">
+                        <i class="fa-solid fa-piggy-bank fa-2x text-success"></i>
+                    </div>
                     <div>
-                        <span class="text-muted">en choisissant le bon mois</span>
+                        <h6 class="text-muted">Économies moyennes</h6>
+                        <h3 class="mb-0">{{ stats.avg_savings }}%</h3>
+                        <small class="text-muted">en choisissant le bon mois</small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="col-md-3">
-        <div class="card stats-card h-100">
+        <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title text-muted">Variation annuelle</h5>
-                <div class="d-flex align-items-center">
-                    <div class="display-4 me-3">{{ stats.avg_variation }}%</div>
+                <div class="d-flex align-items-start">
+                    <div class="stats-icon-container me-3">
+                        <i class="fa-solid fa-chart-line fa-2x text-info"></i>
+                    </div>
                     <div>
-                        <span class="text-muted">coefficient de variation moyen</span>
+                        <h6 class="text-muted">Variation annuelle</h6>
+                        <h3 class="mb-0">{{ stats.avg_variation }}%</h3>
+                        <small class="text-muted">coefficient de variation moyen</small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="col-md-3">
-        <div class="card stats-card h-100">
+        <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title text-muted">Saison la moins chère</h5>
-                <div class="d-flex align-items-center">
-                    {% with max_season=stats.cheapest_seasons.items|dictsort:1|last %}
-                    <div class="display-4 me-3">
+                <div class="d-flex align-items-start">
+                    <div class="stats-icon-container me-3">
+                        {% with max_season=stats.cheapest_seasons.items|dictsort:1|last %}
                         {% if max_season.0 == 'Hiver' %}
-                            <i class="fa-solid fa-snowflake season-winter"></i>
+                            <i class="fa-solid fa-snowflake fa-2x season-winter"></i>
                         {% elif max_season.0 == 'Printemps' %}
-                            <i class="fa-solid fa-seedling season-spring"></i>
+                            <i class="fa-solid fa-seedling fa-2x season-spring"></i>
                         {% elif max_season.0 == 'Été' %}
-                            <i class="fa-solid fa-sun season-summer"></i>
+                            <i class="fa-solid fa-sun fa-2x season-summer"></i>
                         {% elif max_season.0 == 'Automne' %}
-                            <i class="fa-solid fa-leaf season-autumn"></i>
+                            <i class="fa-solid fa-leaf fa-2x season-autumn"></i>
                         {% endif %}
+                        {% endwith %}
                     </div>
                     <div>
-                        <span class="fs-3">{{ max_season.0 }}</span><br>
-                        <span class="text-muted">pour {{ max_season.1 }} destinations</span>
+                        <h6 class="text-muted">Saison la moins chère</h6>
+                        {% with max_season=stats.cheapest_seasons.items|dictsort:1|last %}
+                        <h3 class="mb-0">{{ max_season.0 }}</h3>
+                        <small class="text-muted">pour {{ max_season.1 }} destinations</small>
+                        {% endwith %}
                     </div>
-                    {% endwith %}
                 </div>
             </div>
         </div>
@@ -130,7 +145,7 @@
             <div class="card-body">
                 {% if destinations %}
                 <div class="table-responsive">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-horizontal-mobile">
                         <thead>
                             <tr>
                                 <th>Destination</th>
@@ -142,28 +157,30 @@
                         <tbody>
                             {% for dest in destinations %}
                             <tr>
-                                <td>
+                                <td data-label="Destination">
                                     <a href="{% url 'destination_detail' slug=dest.slug %}">
                                         {{ dest.name }}
                                     </a>
                                 </td>
-                                <td>
+                                <td data-label="Mois le moins cher">
                                     {% for result in dest.analysis_results.all %}
                                     {% if forloop.first %}
-                                    <span class="cheapest-badge">{{ result.cheapest_month }}</span>
+                                    <span class="cheapest-badge">
+                                        <i class="fa-solid fa-piggy-bank me-1"></i>{{ result.cheapest_month }}
+                                    </span>
                                     {% endif %}
                                     {% empty %}
                                     <span class="text-muted">Non disponible</span>
                                     {% endfor %}
                                 </td>
-                                <td>
+                                <td data-label="Dernier scraping">
                                     {% if dest.last_scraping %}
                                     {{ dest.last_scraping|date:"d/m/Y H:i" }}
                                     {% else %}
                                     <span class="text-muted">Jamais</span>
                                     {% endif %}
                                 </td>
-                                <td>
+                                <td data-label="Actions">
                                     <a href="{% url 'destination_detail' slug=dest.slug %}" class="btn btn-sm btn-outline-primary">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
@@ -195,14 +212,6 @@
     const seasonData = {{ season_data|safe }};
     const savingsData = {{ savings_data|safe }};
 
-    // Couleurs pour les saisons
-    const seasonColors = {
-        'Hiver': '#2196F3',
-        'Printemps': '#4CAF50',
-        'Été': '#FF9800',
-        'Automne': '#795548'
-    };
-
     document.addEventListener('DOMContentLoaded', function() {
         // Graphique des prix par destination
         if (destinationPrices.length > 0) {
@@ -221,23 +230,26 @@
                             {
                                 label: 'Prix moyen',
                                 data: avgPrices,
-                                backgroundColor: '#36A2EB',
-                                borderColor: '#36A2EB',
-                                borderWidth: 1
+                                backgroundColor: chartColors.primary,
+                                borderColor: chartColors.primary,
+                                borderWidth: 1,
+                                borderRadius: 6
                             },
                             {
                                 label: 'Prix minimum',
                                 data: minPrices,
-                                backgroundColor: '#4BC0C0',
-                                borderColor: '#4BC0C0',
-                                borderWidth: 1
+                                backgroundColor: chartColors.secondary,
+                                borderColor: chartColors.secondary,
+                                borderWidth: 1,
+                                borderRadius: 6
                             },
                             {
                                 label: 'Prix maximum',
                                 data: maxPrices,
-                                backgroundColor: '#FF6384',
-                                borderColor: '#FF6384',
-                                borderWidth: 1
+                                backgroundColor: chartColors.orange,
+                                borderColor: chartColors.orange,
+                                borderWidth: 1,
+                                borderRadius: 6
                             }
                         ]
                     },
@@ -247,11 +259,46 @@
                         scales: {
                             y: {
                                 beginAtZero: true,
+                                grid: {
+                                    color: 'rgba(0, 0, 0, 0.05)',
+                                    lineWidth: 1
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        return value + '€';
+                                    }
+                                },
                                 title: {
                                     display: true,
                                     text: 'Prix (€)'
                                 }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                }
                             }
+                        },
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const value = context.raw;
+                                        return `${context.dataset.label}: ${value.toFixed(2)}€`;
+                                    }
+                                }
+                            },
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    boxWidth: 12,
+                                    padding: 15
+                                }
+                            }
+                        },
+                        animation: {
+                            duration: 1000,
+                            easing: 'easeOutQuart'
                         }
                     }
                 }
@@ -263,6 +310,14 @@
         const seasonValues = [];
         const seasonBgColors = [];
 
+        // Map des couleurs par saison
+        const seasonColorMap = {
+            'Hiver': chartColors.blue,
+            'Printemps': chartColors.green,
+            'Été': chartColors.yellow,
+            'Automne': chartColors.orange
+        };
+
         for (const season of seasonLabels) {
             // Calculer la moyenne pour chaque saison
             const prices = seasonData[season];
@@ -271,7 +326,7 @@
                 : 0;
 
             seasonValues.push(avgPrice);
-            seasonBgColors.push(seasonColors[season]);
+            seasonBgColors.push(seasonColorMap[season] || chartColors.primary);
         }
 
         const seasonChart = new Chart(
@@ -300,10 +355,16 @@
                             callbacks: {
                                 label: function(context) {
                                     const value = context.raw;
-                                    return `${context.label}: ${value.toFixed(2)}€`;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = total > 0 ? ((value / total) * 100).toFixed(1) : 0;
+                                    return `${context.label}: ${value.toFixed(2)}€ (${percentage}%)`;
                                 }
                             }
                         }
+                    },
+                    animation: {
+                        animateRotate: true,
+                        animateScale: true
                     }
                 }
             }
@@ -325,18 +386,27 @@
                             {
                                 label: 'Économie (€)',
                                 data: savingsValues,
-                                backgroundColor: '#FF9F40',
+                                backgroundColor: chartColors.orange,
+                                borderColor: chartColors.orange,
+                                borderWidth: 1,
+                                borderRadius: 6,
                                 yAxisID: 'y',
                                 order: 1
                             },
                             {
                                 label: 'Économie (%)',
                                 data: savingsPercentages,
-                                backgroundColor: '#FF6384',
-                                borderColor: '#FF6384',
+                                backgroundColor: 'rgba(0,0,0,0)',
+                                borderColor: chartColors.primary,
+                                borderWidth: 2,
+                                tension: 0.3,
                                 type: 'line',
                                 yAxisID: 'y1',
-                                order: 0
+                                order: 0,
+                                pointBackgroundColor: chartColors.primary,
+                                pointBorderColor: '#fff',
+                                pointRadius: 5,
+                                pointHoverRadius: 7
                             }
                         ]
                     },
@@ -347,6 +417,15 @@
                             y: {
                                 beginAtZero: true,
                                 position: 'left',
+                                grid: {
+                                    color: 'rgba(0, 0, 0, 0.05)',
+                                    lineWidth: 1
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        return value + '€';
+                                    }
+                                },
                                 title: {
                                     display: true,
                                     text: 'Économie (€)'
@@ -355,14 +434,50 @@
                             y1: {
                                 beginAtZero: true,
                                 position: 'right',
+                                grid: {
+                                    drawOnChartArea: false
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        return value + '%';
+                                    }
+                                },
                                 title: {
                                     display: true,
                                     text: 'Économie (%)'
-                                },
+                                }
+                            },
+                            x: {
                                 grid: {
-                                    drawOnChartArea: false
+                                    display: false
                                 }
                             }
+                        },
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const value = context.raw;
+                                        if (context.dataset.yAxisID === 'y') {
+                                            return `${context.dataset.label}: ${value.toFixed(2)}€`;
+                                        } else if (context.dataset.yAxisID === 'y1') {
+                                            return `${context.dataset.label}: ${value.toFixed(2)}%`;
+                                        }
+                                        return `${context.dataset.label}: ${value}`;
+                                    }
+                                }
+                            },
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    boxWidth: 12,
+                                    padding: 15
+                                }
+                            }
+                        },
+                        animation: {
+                            duration: 1000,
+                            easing: 'easeOutQuart'
                         }
                     }
                 }

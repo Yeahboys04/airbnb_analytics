@@ -1,5 +1,6 @@
 from django import template
 import logging
+from django.utils.html import format_html
 
 register = template.Library()
 logger = logging.getLogger('django')
@@ -198,3 +199,29 @@ def price_difference_percent(prices):
     except Exception as e:
         logger.error(f"Erreur dans price_difference_percent: {str(e)}, prices={prices}")
         return 0
+
+
+@register.simple_tag
+def season_badge(season):
+    """Génère un badge HTML pour une saison avec l'icône appropriée"""
+    icons = {
+        'Hiver': 'fa-snowflake',
+        'Printemps': 'fa-seedling',
+        'Été': 'fa-sun',
+        'Automne': 'fa-leaf'
+    }
+
+    classes = {
+        'Hiver': 'season-winter',
+        'Printemps': 'season-spring',
+        'Été': 'season-summer',
+        'Automne': 'season-autumn'
+    }
+
+    icon = icons.get(season, 'fa-calendar-days')
+    css_class = classes.get(season, '')
+
+    return format_html(
+        '<span class="season-badge {}"><i class="fa-solid {} me-1"></i>{}</span>',
+        css_class, icon, season
+    )
